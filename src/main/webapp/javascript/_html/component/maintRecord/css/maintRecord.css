@@ -1,0 +1,312 @@
+.component_maintRecord{
+	height: 100%;
+	min-width: 750px;
+    background-color: #E8EAED;
+	position: relative;
+}
+
+.component_maintRecord>div.mrContent{
+    width: 100%;
+    height: 100%;
+}
+
+.component_maintRecord>.mrContent>div{
+    width: 100%;
+}
+
+.component_maintRecord>.mrContent>div.top>div{
+    text-align: center;
+    width: 100%;
+}
+
+.component_maintRecord>.mrContent>div.top>div>*,
+.component_maintRecord>.mrContent>div.top .instance>*,
+.component_maintRecord>.mrContent>div.top>div.searchField>div:last-child>div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.component_maintRecord>.mrContent>div.top>div.searchField>div{
+    position: relative;
+}
+
+.component_maintRecord>.mrContent>div.top>div.searchField>div:nth-child(2)>.tm{
+    width: 110px;
+    background-color: #fff;
+}
+
+.component_maintRecord>.mrContent>div.top>div.searchField>div:nth-child(2)>*:not(.panel){
+    height: 35px;
+    display: inline-block;
+    float: left;
+}
+
+@media(max-width: 1150px){
+    .component_maintRecord>.mrContent>div.top>div.searchField>div:last-child{
+        display: none;
+    }
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage i:hover{
+    border-color: #b7b7b7;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage>i{
+    font-size: 12px;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_maintRecord>.mrContent>div.top div.warnPage>i:first-child:hover+i{
+    border-left-color: #b7b7b7;
+}
+
+.component_maintRecord>.mrContent>.top span.wait.zero,
+.component_maintRecord>.mrContent>.top span.executing.zero{
+    opacity: 0.4;
+}
+
+/*item*/
+
+.component_maintRecord>.mrContent>.bottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 161px;
+    background-color: #fff;
+}
+
+.component_maintRecord>.mrContent>.bottom>div{
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.component_maintRecord>.mrContent>.bottom>div.trans{
+    transition: width 0.3s;
+}
+
+.component_maintRecord>.mrContent>.bottom>div.list{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.component_maintRecord>.mrContent>.bottom>div.detail{
+    width: 0px;
+}
+
+.component_maintRecord>.mrContent>.bottom.showDetail>div.list{
+    width: 50%;
+}
+
+.component_maintRecord>.mrContent>.bottom.showDetail>div.detail{
+    width: 50%;
+    border: 1px solid #DBE3E5;
+    border-top: none;
+    border-bottom: none;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr{
+    line-height: 45px;
+    transition: background-color 0.4s;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr.closed{
+    opacity: 0.75;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr:not(:last-child){
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr:not(.empty):not(.h):hover,
+.component_maintRecord>.mrContent>.bottom .recContainer tr.active{
+    background-color: #eeeff1;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr:not(.empty)>td:first-child{
+    cursor: pointer;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td{
+    text-align: center;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(1){
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(2){
+    text-align: left;
+    cursor: pointer;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}
+
+.component_maintRecord>.mrContent>.top span.wait,
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td>span.level0,
+.component_maintRecord>.mrContent>div.top div.instance>span.level0{
+    background-color: #1ab394;
+}
+
+.component_maintRecord>.mrContent>.top span.executing,
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td>span.level1,
+.component_maintRecord>.mrContent>div.top div.instance>span.level1{
+    background-color: #F8AC59;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td>span.level2,
+.component_maintRecord>.mrContent>div.top div.instance>span.level2{
+    background-color: #ccc;
+}
+
+.component_maintRecord>.mrContent>div.top div.instance>span.level,
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td>span.level{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(5){
+    padding-left: 20px;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(5)>div{
+    height: 8px;
+    border-radius: 3px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(5)>div>span{
+    opacity: 0;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    text-align: right;
+    width: 120px;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(5)>div>span.min{
+    right: auto;
+    left: 0px;
+    text-align: left;
+}
+
+.component_maintRecord>.mrContent>.bottom .recContainer tr>td:nth-child(5):hover>div>span{
+    opacity: 1;
+}
+
+/*detail*/
+
+.component_maintRecord>.mrContent>.bottom .detailContainer{
+    min-height: 100px;
+    min-width: 400px;
+    position: relative;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar{
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 30px;
+    height: 46px;
+    width: 100%;
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar>*{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar button{
+    min-width: 80px;
+    padding: 5px 12px;
+    margin-top: 2px;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar>.closeDetail{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar>.closeDetail>div{
+    background: url(../img/clear.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.actionBar>.closeDetail:hover>div{
+    background-position: -72px 0px;
+    opacity: 0.7;
+}
+
+.component_maintRecord>.mrContent>.bottom>.detail>.recDetail{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 46px;
+    background-color: #eeeff1;
+}

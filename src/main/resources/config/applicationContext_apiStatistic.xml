@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/jee
+		http://www.springframework.org/schema/jee/spring-jee-4.2.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	
+	<!-- api 调用分析的 filter，构造函数第一个参数是 order -->
+	<bean id="thirdPartyServiceCallAna" class="com.ckxh.cloud.persistence.common.apistatistic.ThirdPartyServiceCallAna" >
+		<constructor-arg index="0" value="0"></constructor-arg>
+	</bean>
+	<bean id="thirdPartyServiceApiAuthAna" class="com.ckxh.cloud.persistence.common.apistatistic.ThirdPartyServiceApiAuthAna" >
+		<constructor-arg index="0" value="1"></constructor-arg>
+	</bean>
+	<bean id="webSocketAuthAna" class="com.ckxh.cloud.persistence.common.apistatistic.WebSocketAuthAna" >
+		<constructor-arg index="0" value="2"></constructor-arg>
+	</bean>
+	<!-- FrequencyAna 必须放在最后，需要保证统计到的请求都是有效的请求（无效请求可能在前面的 filter 中被过滤掉） -->
+	<bean id="frequencyAna" class="com.ckxh.cloud.persistence.common.apistatistic.FrequencyAna" >
+		<constructor-arg index="0" value="3"></constructor-arg>
+	</bean>
+
+</beans>

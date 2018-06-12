@@ -1,0 +1,134 @@
+
+.component_dataMonitor_widget_metadataShow{
+    width: 100%;
+    height: 460px;
+}
+
+.component_dataMonitor_widget_metadataShow>div{
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList{
+    width: 22%;
+	border-right: 1px solid rgb(229, 229, 229);
+    background-color: #f2f2ef;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList .ztree{
+	padding: 0px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList .ztree li a{
+	height: 40px!important;
+	padding-left: 10px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList .ztree li a>.node_name{
+	line-height: 40px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList .ztree li span.button.chk{
+	margin-top: 12px!important;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdList .ztree li a.curSelectedNode{
+	background-color: rgb(32, 118, 142);
+	color: #fff;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent{
+	width: 78%;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-top: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch > .switchTmSel{
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    cursor: pointer;
+    line-height: 45px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch > .switchTmSel:hover{
+    color: #3a85a9;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent.showRange>.topSearch > .switchTmSel{
+    line-height: 90px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch form .form-group{
+    margin-right: 20px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch .tmRange{
+    display: none;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent.showRange>.topSearch{
+    padding: 8px 0px;
+    height: 100px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch .tm{
+    width: 150px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent.showRange>.topSearch .tmRange{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent.showRange>.topSearch form{
+    display: none;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.topSearch .tmRange label{
+    text-align: center;
+    max-width: 130px; 
+    min-width: 120px;
+    line-height: 75px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.metaDataDiv{
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.metaDataDiv>div.empty{
+    width: 180px;
+    height: 150px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 70px;
+    background: 50% 10% url('../img/link.png') no-repeat;
+/*    color: #ed5565;*/
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent.showRange>.metaDataDiv{
+    top: 100px;
+}
+
+.component_dataMonitor_widget_metadataShow>div.mdContent>.metaDataDiv>*{
+    height: 100%;
+    width: 100%;
+}

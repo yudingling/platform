@@ -1,0 +1,157 @@
+
+.main_mobile_service3rd_my3rd{
+    height: 100%;
+}
+
+.main_mobile_service3rd_my3rd>*{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.main_mobile_service3rd_my3rd>div.infocc{
+    top: 0px;
+    bottom: 53px;
+    position: absolute;
+}
+
+.main_mobile_service3rd_my3rd>div.infocc>div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main_mobile_service3rd_my3rd>nav{
+    bottom: 0px;
+    position: absolute;
+    border-top: 1px solid #67bbaa;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav{
+	margin: 0px;
+}
+
+.main_mobile_service3rd_my3rd>nav>.navbar-collapse{
+	border: none;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li{
+	float: left;
+    width: 50%;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li.active{
+    background-color: transparent!important;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li>a{
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 14px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li>a:focus,
+.main_mobile_service3rd_my3rd>nav>.nav>li>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li.active>a{
+    box-shadow: 0 5px 0 0 #67bbaa inset;
+}
+
+@media(max-width: 768px){
+	.main_mobile_service3rd_my3rd>nav>.nav>li.active>a{
+    	box-shadow: 0 6px 0 0 #67bbaa inset;
+	}
+}
+
+.main_mobile_service3rd_my3rd>nav>.nav>li.active>a,
+.main_mobile_service3rd_my3rd>nav>.nav>li.active>a:focus,
+.main_mobile_service3rd_my3rd>nav>.nav>li.active>a:hover{
+    color: #16846d!important;
+    background-color: transparent!important;
+}
+
+
+/* iframe */
+
+.main_mobile_service3rd_my3rd>.iframeContainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.main_mobile_service3rd_my3rd.iframeShow>.iframeContainer{
+    display: block;
+}
+
+.main_mobile_service3rd_my3rd.iframeShow>*:not(.iframeContainer){
+    display: none!important;
+}
+ 
+.main_mobile_service3rd_my3rd>.iframeContainer>iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 0!important;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav{
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    height: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav *{
+    text-align: center;
+    color: #ccc;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    height: 50px;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav>i{
+    width: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav>i:hover{
+    color: #fff;
+    text-shadow: #fff 0px 0px 8px;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav>div>span{
+    line-height: 50px;
+    margin-left: -150px;
+    transition: margin-left 0.5s;
+    border-left: 1px solid #807f7f;
+    padding: 0px 10px;
+    cursor: default;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav>div:last-child{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(34,34,34,.8);
+    transition: width 0.5s;
+    z-index: -1;
+}
+
+.main_mobile_service3rd_my3rd>.iframeContainer>.iframeNav:hover>div:last-child{
+    width: 100%;
+}

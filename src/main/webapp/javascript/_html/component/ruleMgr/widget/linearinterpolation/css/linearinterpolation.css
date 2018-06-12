@@ -1,0 +1,34 @@
+.component_ruleMgr_widget_lip{
+	width: 100%;
+}
+
+.component_ruleMgr_widget_lip .tableContainer{
+	height: 300px;
+}
+
+.component_ruleMgr_widget_lip .tableContainer .table{
+    width: 100%;
+    height: 100%;
+}
+
+.component_ruleMgr_widget_lip .table i.fa{
+    cursor: pointer;
+    margin-left: 12px;
+    margin-top: 11px;
+    color: #9AA0A0;
+    float: left;
+}
+
+.component_ruleMgr_widget_lip .table i.fa:hover{
+    color: #6C6F6F;
+}
+
+.component_ruleMgr_widget_lip .table i.fa.excel{
+	margin-right: 12px;
+	float: right;
+}
+
+/* hide the horizontal scroll bar in jqxgrid */
+.component_ruleMgr_widget_lip .tableContainer .table .jqx-scrollbar-custom-zd[id^='horizontal']{
+    display: none;
+}

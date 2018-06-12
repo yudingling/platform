@@ -1,0 +1,239 @@
+<div>
+    <div class="upgNav">
+        <nav class="navSteps">
+            <ol>
+                <li class="step1 current"><em>基本信息</em></li>
+                <li class="step2"><em>描述</em></li>
+                <li class="step3"><em>运行方式</em></li>
+                <li class="step4"><em>授权</em></li>
+                <li class="step5"><em>费用设置</em></li>
+                <li class="step6"><em>完成</em></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="steps">
+        <div class="step1">
+            <div>
+                <div class="col-sm-offset-3 col-md-offset-3 col-sm-9 col-md-9 fmDesc">
+                    <span>标</span>
+                    <span class="nochange">*</span>
+                    <span>的内容在审核通过后将不能再修改</span>
+                </div>
+                <form class="form-horizontal">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">服务名称</label>
+                        <div class="col-sm-5 col-md-5">
+                            <input type="text" class="form-control tpsNm" placeholder="服务名称">
+                        </div>
+                        <div class="col-sm-1 col-md-1 nochange">
+                            <span class="nochange">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm" style="display: none">
+                        <label class="col-sm-3 col-md-3 control-label">服务标识</label>
+                        <label class="col-sm-9 col-md-9 control-label lbSkey" style="text-align: left; font-weight: normal;"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">服务图片</label>
+                        <div class="col-sm-6 col-md-6 imgDiv" title="点击选择图片">
+                        </div>
+                        <div class="col-sm-3 col-md-3 nochange">
+                            <span class="nochange">*</span><span style="margin-top: -4px; margin-left: 6px">(推荐500*350px，需小于200KB)</span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">服务地址</label>
+                        <div class="col-sm-7 col-md-7">
+                            <input type="text" class="form-control tpsUrl" placeholder="服务的url地址">
+                        </div>
+                        <div class="col-sm-2 col-md-2 nochange">
+                            <span class="nochange">*</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-primary next">下一步</button>
+            </div>
+        </div>
+        <div class="step2">
+            <div class="customScrollBar">
+                <div class="col-sm-offset-3 col-md-offset-3 col-sm-9 col-md-9 fmDesc">
+                    <span>标</span>
+                    <span class="nochange">*</span>
+                    <span>的内容在审核通过后将不能再修改</span>
+                </div>
+                <form class="form-horizontal">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">简介</label>
+                        <div class="col-sm-7 col-md-7">
+                            <textarea class="form-control brief" style="height: 70px" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">详述</label>
+                        <div class="col-sm-7 col-md-7">
+                            <textarea class="form-control desc" style="height: 100px" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">可见性</label>
+                        <div class="col-sm-7 col-md-7">
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="0" checked> 公开
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="1"> 私有
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="2"> 指定用户可见
+                            </label>
+                            <div class="visibleUidsCC" style="margin-top: 5px; display: none">
+                                <input type="text" class="form-control visibleUids" placeholder="多个用户id用回车分隔">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">帮助文档</label>
+                        <div class="col-sm-7 col-md-7">
+                            <input type="text" class="form-control help" placeholder="帮助文档的url地址">
+                        </div>
+                        <div class="col-sm-2 col-md-2 nochange">
+                            <span class="nochange">*</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-default prev">上一步</button>
+                <button type="button" class="btn btn-primary next">下一步</button>
+            </div>
+        </div>
+        <div class="step3">
+            <div>
+                <div class="col-sm-offset-2 col-md-offset-2 col-sm-10 col-md-10 fmDesc">
+                    <span>针对不同的服务类型，请选择相应的运行方式，审核通过后将不能再修改</span>
+                </div>
+                <div class="col-sm-offset-2 col-md-offset-2 col-sm-10 col-md-10 fmDesc radioGp" style="padding-bottom: 20px;">
+                    <label class="radio-inline">
+                        <input type="radio" name="execTP" value="1" checked> 主动访问(针对有ui交互、页面访问类型服务)
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="execTP" value="0"> 后台自动调用(针对api类型服务)
+                    </label>
+                </div>
+                <form class="tmForm form-horizontal" style="display: none">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">调用方式：</label>
+                        <div class="col-sm-8 col-md-8">
+                            <div class="tmType"></div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm periodic" style="display: none">
+                        <label class="col-sm-3 col-md-3 control-label">间隔周期：</label>
+                        <div class="col-sm-2 col-md-2">
+                            <input type="text" class="form-control interval" placeholder="值大于等于1">
+                        </div>
+                        <div class="col-sm-3 col-md-3 unit">
+                            <span>分钟</span>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm fixedTime" style="display: none">
+                        <div class="col-sm-3 col-md-3 add">
+                            <label class="control-label">启动时间点：</label>
+                            <i class="fa fa-plus-circle fa-lg add" title="增加"></i>
+                        </div>
+                        <div class="col-sm-6 col-md-6 customScrollBar">
+                            <div class="chkTTs">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-default prev">上一步</button>
+                <button type="button" class="btn btn-primary next">下一步</button>
+            </div>
+        </div>
+        <div class="step4">
+            <div>
+                <div style="padding: 10px 0px">
+                    <span>所需授权在审核通过后将不能再修改</span>
+                </div>
+                <div class="authList customScrollBar">
+                    <div class="authListCC"></div>
+                </div>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-default prev">上一步</button>
+                <button type="button" class="btn btn-primary next">下一步</button>
+            </div>
+        </div>
+        <div class="step5">
+            <div>
+                <div style="padding: 10px 0px">
+                    <span>费用设置在审核通过后将不能再修改</span>
+                </div>
+                <div class="radioGp" style="padding-bottom: 30px">
+                    <label class="radio-inline">
+                        <input type="radio" name="feeTp" value="0" checked> 免费
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="feeTp" value="1"> 按次数计费
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="feeTp" value="2"> 按时长计费
+                    </label>
+                </div>
+                <form class="feeCount form-horizontal" style="display: none">
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>试用次数</span>
+                            <input type="text" class="countFree form-control" placeholder="大于等于0">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>购买</span>
+                            <div class="countNum"></div>
+                            <span>次</span>
+                            <span>的费用</span>
+                            <input type="text" class="countBase form-control" placeholder="大于0.01">
+                            <span>(￥)</span>
+                        </div>
+                    </div>
+                </form>
+                <form class="feeTime form-horizontal" style="display: none">
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>试用天数</span>
+                            <input type="text" class="timeFree form-control" placeholder="大于等于0">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>购买</span>
+                            <div class="timePeriod"></div>
+                            <span>的费用</span>
+                            <input type="text" class="timeBase form-control" placeholder="大于0.01">
+                            <span>(￥)</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-default prev">上一步</button>
+                <button type="button" class="btn btn-primary next">提 交</button>
+            </div>
+        </div>
+        <div class="step6">
+            <div class="finalInfo">
+                <span style="font-size: 16px;"><i class="fa fa-check-circle-o" aria-hidden="true"></i><span>提交成功</span></span>
+                <span>服务<span class="svNm" style="color: #1a7bb9; margin: 0px 5px;"></span>进入了审核状态，后续可在'我的服务'中查看审核结果</span>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-default">关 闭</button>
+            </div>
+        </div>
+    </div>
+</div>

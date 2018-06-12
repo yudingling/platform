@@ -1,0 +1,59 @@
+<div>
+    <div class="upgNav">
+        <nav class="navSteps">
+            <ol>
+                <li class="step1 current"><em>关联设备</em></li>
+                <li class="step2"><em>工单描述</em></li>
+                <li class="step3"><em>分发</em></li>
+                <li class="step4"><em>完成</em></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="steps">
+        <div class="step1">
+            <div class="upgTree">
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-primary btn-sm next">下一步</button>
+            </div>
+        </div>
+        <div class="step2">
+            <div>
+                <textarea class="form-control" style="width: 100%; height: 100%"></textarea>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-success btn-sm prev">上一步</button>
+                <button type="button" class="btn btn-primary btn-sm next" style="margin-left: 30px;">下一步</button>
+            </div>
+        </div>
+        <div class="step3">
+            <div style="overflow: hidden; position: relative;">
+                <div class="distKind">
+                    <div class="area">分发至区域</div>
+                    <div class="split" style="width: 1px; background-color: #e2e2e2"></div>
+                    <div class="person">分发至人员</div>
+                </div>
+                <div class="distArea">
+                    <button type="button" class="btn btn-default btn-circle return" title="重新选择"><i class="fa fa-undo"></i></button>
+                    <div></div>
+                </div>
+                <div class="distPerson">
+                    <button type="button" class="btn btn-default btn-circle return" title="重新选择"><i class="fa fa-undo"></i></button>
+                    <div></div>
+                </div>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-success btn-sm prev">上一步</button>
+                <button type="button" class="btn btn-primary btn-sm next" style="margin-left: 30px;">完 成</button>
+            </div>
+        </div>
+        <div class="step4">
+            <div class="finalInfo" style="padding-top: 120px; text-align: center;">
+                <span style="font-size: 15px;"><i class="fa fa-check-circle-o" aria-hidden="true" style="margin-right: 3px;"></i>工单创建成功</span>
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-sm" style="display: none;">关 闭</button>
+            </div>
+        </div>
+    </div>
+</div>

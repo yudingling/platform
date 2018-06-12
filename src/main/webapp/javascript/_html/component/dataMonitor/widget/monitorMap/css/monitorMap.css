@@ -1,0 +1,276 @@
+
+.component_dataMonitor_widget_monitorMap{
+    height: 100%!important;
+    width: 100%!important;
+    position: relative;
+}
+
+/*  bottomFix */
+.component_dataMonitor_widget_monitorMap>.discovery{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    bottom: 0px;
+    transform: translateY(120px);
+    transition-property: left, transform, box-shadow;
+    transition-duration: 0.5s;
+    z-index: 2;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery>div:first-child{
+    z-index: 2;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery>div:last-child{
+    background-color: #fff;
+    opacity: 0.3;
+    transition: opacity 0.6s;
+    z-index: 1;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer{
+    height: 120px;
+    white-space: nowrap;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: -moz-inline-box;
+    display: -webkit-inline-box;
+    padding-top: 5px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a{
+    display: inline-block;
+    width: 170px;
+    height: 110px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a:last-child{
+    margin-right: 5px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #676a6c;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div{
+    width: 100%;
+    padding-top: 4px;
+    padding-left: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div>div.img{
+    position: absolute;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div>div.img>img{
+    width: 38px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div>div.img+span{
+    color: #e7711b;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div>span{
+    width: 100%;
+    display: block;
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a>div>span:last-child>i{
+    margin-right: 10px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a.active{
+    background-color: #1ab394;
+}
+
+.component_dataMonitor_widget_monitorMap>.discovery .discoveryContainer>a.active *{
+    color: #fff;
+}
+
+.component_dataMonitor_widget_monitorMap>.discoveryBtn{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    height: 27px;
+    width: 80px;
+    border-radius: 2px;
+    background-color: #fff;
+    transform: translateY(0px);
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s;
+    z-index: 2;
+    color: #969696;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.component_dataMonitor_widget_monitorMap>.discoveryBtn:hover{
+    color: #292929;
+}
+
+.component_dataMonitor_widget_monitorMap>.discoveryBtn>i{
+    font-size: 21px;
+    line-height: 27px;
+    margin-right: 8px;
+    float: right;
+}
+
+.component_dataMonitor_widget_monitorMap>.discoveryBtn>span{
+    line-height: 29px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.component_dataMonitor_widget_monitorMap>.discoveryBtn>i:before{
+    content: "\f102";
+}
+
+.component_dataMonitor_widget_monitorMap>.mapTool{
+    transform: translateY(0);
+    transition: transform 0.5s;
+    bottom: 41px!important;
+}
+
+.component_dataMonitor_widget_monitorMap.discoveryShow>.discovery{
+    transform: translateY(0px);
+    box-shadow: 0px -1px 6px rgba(0,0,0,0.15);
+}
+
+.component_dataMonitor_widget_monitorMap.discoveryShow>.mapTool{
+    transform: translateY(-111px);
+}
+
+.component_dataMonitor_widget_monitorMap.discoveryShow>.discoveryBtn{
+    transform: translateY(-110px);
+    box-shadow: -1px -1px 2px 0px rgba(0,0,0,0.1),1px -1px 2px 0px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_dataMonitor_widget_monitorMap.discoveryShow>.discoveryBtn>i:before{
+    content: "\f103";
+}
+
+
+/* top fix */
+
+.component_dataMonitor_widget_monitorMap>.metaList{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 170px;
+    top: 0px;
+    background-color: #fff;
+    transform: translateY(-170px);
+    transition-property: left, transform, box-shadow;
+    transition-duration: 0.5s;
+    z-index: 3;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.slcContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.component_dataMonitor_widget_monitorMap.metaListShow>.metaList{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.slcContainer .slcContainerFuck{
+    height: 170px;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.slcContainer .slcContainerFuck .metaPluginSlc{
+    display: inline-block;
+    border-right: 1px solid #dbdbdb;
+    overflow: hidden;
+    /* height: 100%; */
+    height: 170px; /* cause the 'slcContainer' node was initialized by 'customScrollBar' (x axis), set height of 'metaPluginSlc' to '100%' doesn't work in ie */
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.slcContainer .slcContainerFuck .metaPluginSlc>div{
+    height: 100%;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.slcContainer .slcContainerFuck{
+    white-space: nowrap;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: -moz-inline-box;
+    display: -webkit-inline-box;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.listAction{
+    position: absolute;
+    bottom: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: none;
+    z-index: 1;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.closeMeta{
+    right: 5px;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList:hover>.listAction{
+    display: block;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.closeMeta>div{
+    background: url(../img/clear.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.listAction:hover{
+    background-color: #aaa;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.closeMeta:hover>div{
+    background-position: -48px 0px;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.expandMeta{
+    right: 45px;
+    font-size: 16px;
+    color: #b3b3b3;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.component_dataMonitor_widget_monitorMap>.metaList>.expandMeta:hover{
+    color: #fff;
+}

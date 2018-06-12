@@ -1,0 +1,40 @@
+
+.myPanel.panel{
+	width: auto;
+    height: auto;
+    position: absolute;
+	border-color:#bfbfbf;
+	margin-bottom:0px;
+	box-shadow: 0 0 0.75em #bfbfbf;
+    z-index: 5000000;
+    display: none;
+}
+
+.myPanel.panel .panel-heading{
+	background-color:#fff;
+	padding:6px 15px;
+	font-weight:700;
+	border-bottom-color:#bfbfbf;
+}
+
+.myPanel.panel .panel-body{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    top: 31px;
+    padding: 0px;
+}
+
+.myPanel.panel .panel-body.autoH{
+    position: relative;
+    height: auto;
+    top: auto;
+    bottom: auto;
+}
+
+.myPanel.panel .panel-body.autoW{
+    position: relative;
+    width: auto;
+    top: auto;
+    bottom: auto;
+}

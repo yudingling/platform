@@ -1,0 +1,45 @@
+.component_userAccount_widget_ntfSet{
+    width: 100%;
+    min-height: 520px;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group .autoPush>.panel-body>div{
+    width: 100%;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group .autoPush>.panel-body>div:last-child>div{
+    width: 100%;
+    max-width: 450px;
+    margin: 20px 20px 20px 0px;
+    display: inline-block;
+    float: left;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel{
+    border: none;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel:not(:first-child){
+    margin-top: 10px;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel>.panel-heading>.panel-title{
+    font-size: 15px;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel>.panel-heading>.panel-title>a{
+    display: block;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel>.panel-collapse>.panel-body{
+    border-top: 1px solid #e7eaec;
+    padding-left: 30px;
+}
+
+.component_userAccount_widget_ntfSet>.panel-group>.panel>.panel-collapse>.panel-body>span{
+    display: block; 
+    padding: 5px 0px 15px 0px; 
+    color: #908f8f;
+}
+
+

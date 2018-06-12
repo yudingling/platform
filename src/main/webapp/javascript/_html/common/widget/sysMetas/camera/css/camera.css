@@ -1,0 +1,264 @@
+
+.common_widget_sysMetas_camera{
+    overflow: hidden;
+    position: relative;
+}
+
+.common_widget_sysMetas_camera>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+}
+
+.common_widget_sysMetas_camera>div.cmd{
+    display: none;
+}
+
+.common_widget_sysMetas_camera>div.video{
+    width: 100%;
+    background-color: #424242;
+}
+
+.common_widget_sysMetas_camera>div.video>span{
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    color: #fff;
+}
+
+.common_widget_sysMetas_camera.showCmd>div.cmd{
+    display: block;
+    width: 200px;
+    float: right;
+}
+
+.common_widget_sysMetas_camera.showCmd>div.video{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+    right: 200px;
+    width: auto;
+    height: auto;
+}
+
+.common_widget_sysMetas_camera>div.video>div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.common_widget_sysMetas_camera>div.video>div.player{
+    display: block;
+}
+
+.common_widget_sysMetas_camera>div.video>div.offline{
+    display: none;
+    background: url('../img/offline.png') no-repeat center;
+    background-color: #000;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal>div{
+    position: relative;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small>div{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.common_widget_sysMetas_camera>div.cmd div.direction *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.common_widget_sysMetas_camera>div.cmd .switch{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal>div.direction{
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 0px #b5b5b5 inset;
+    margin: 10px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c0{
+    top: 75px;
+    right: 12px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c45{
+    top: 30px;
+    right: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c90{
+    top: 12px;
+    right: 75px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c135{
+    top: 30px;
+    left: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c180{
+    top: 75px;
+    left: 12px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c225{
+    bottom: 30px;
+    left: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c270{
+    bottom: 12px;
+    left: 75px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.direction .switch.c315{
+    bottom: 30px;
+    right: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small>div.direction{
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 0px #b5b5b5 inset;
+    margin: 10px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.direction .switch.c0{
+    top: 50px;
+    right: 12px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.direction .switch.c90{
+    top: 12px;
+    right: 50px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.direction .switch.c180{
+    top: 50px;
+    left: 12px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.direction .switch.c270{
+    bottom: 12px;
+    left: 50px;
+}
+
+.common_widget_sysMetas_camera>div.cmd div.kz>div{
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.15), 0 1px 5px rgba(200,200,200,0.1);
+    background: -moz-linear-gradient(#d6d6d6, #fff);
+    background: -ms-linear-gradient(#d6d6d6, #fff);
+    background: -o-linear-gradient(#d6d6d6, #fff);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d6d6d6), to(#fff));
+    background: -webkit-linear-gradient(#d6d6d6, #fff);
+    background: linear-gradient(#d6d6d6, #fff);
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    border:1px solid #ccc; 
+    text-align:center; 
+    font-size:14px;
+    
+    color: #909090;
+    cursor: pointer;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.kz>div{
+    margin-left: 10px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.kz>div{
+    margin-left: 4px;
+}
+
+.common_widget_sysMetas_camera>div.cmd div.kz>div i{
+    line-height: 30px;
+}
+
+.common_widget_sysMetas_camera>div.cmd div.kz>div.clicked{
+    color: #25d025;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.normal div.kz>div:not(:first-child){
+    margin-top: 20px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small div.kz>div:not(:first-child){
+    margin-top: 10px;
+}
+
+.common_widget_sysMetas_camera>div.cmd>div.small>div.kz>div:first-child{
+    margin-top: 35px;
+}
+
+/* slide */
+
+.common_widget_sysMetas_camera.showCmd>div.slideBtn{
+    width: 22px;
+    height: 36px;
+    display: none;
+    color: #fff;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined>div.cmd,
+.common_widget_sysMetas_camera.showCmd.mined>div.slideBtn{
+    transition: transform 0.3s;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined>div.video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined>div.cmd{
+    z-index: 1;
+    background-color: #fff;
+    transform: translateX(100%);
+}
+
+.common_widget_sysMetas_camera.showCmd.mined>div.slideBtn{
+    display: block;
+    background: url('../img/grid_handle_black_left.png') no-repeat;
+    background-position: 0px -108px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined>div.slideBtn:hover{
+    background-position: 0px -72px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined.opened>div.slideBtn{
+    display: block;
+    transform: translateX(-200px);  /*width of the cmd div*/
+    background-position: 0px -36px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined.opened>div.slideBtn:hover{
+    background-position: 0px 0px;
+}
+
+.common_widget_sysMetas_camera.showCmd.mined.opened>div.cmd{
+    transform: translateX(0%);
+}

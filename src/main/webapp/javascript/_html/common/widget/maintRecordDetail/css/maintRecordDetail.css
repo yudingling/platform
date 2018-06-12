@@ -1,0 +1,66 @@
+.common_widget_maintRecordDetail{
+    width: 100%;
+    height: 100%;
+}
+
+.common_widget_maintRecordDetail>div{
+    width: 100%;
+    position: relative;
+}
+
+.common_widget_maintRecordDetail>div.recDesc .form-group>label:first-child{
+    /*font-weight: normal;*/
+}
+
+.common_widget_maintRecordDetail .unm{
+    color: #3c4954;
+    margin-right: 3px;
+}
+
+.common_widget_maintRecordDetail>.recDesc{
+    background: linear-gradient(to bottom, #bacbd2, #89a1ab);
+    color: #fff;
+    padding: 15px;
+}
+
+.common_widget_maintRecordDetail span.label{
+    padding: 1px 3px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.common_widget_maintRecordDetail span.label-info{
+    background-color: #6f797d;
+}
+
+.common_widget_maintRecordDetail span.label-primary{
+    background-color: #ec9981;
+}
+
+.common_widget_maintRecordDetail>.recDesc table tr{
+    height: 28px;
+}
+
+.common_widget_maintRecordDetail>.recDesc table td{
+    vertical-align: top;
+}
+
+.common_widget_maintRecordDetail>.recDesc table tr>td:first-child{
+    font-weight: bold;
+}
+
+.common_widget_maintRecordDetail>.recTmLine .cd-timeline-img.wait{
+    background-color: #1ab394;
+}
+
+.common_widget_maintRecordDetail>.recTmLine .cd-timeline-img.ended{
+    background-color: #a2a2a2;
+}
+
+.common_widget_maintRecordDetail>.recTmLine .cd-timeline-img.execute{
+    background-color: #f8ac59;
+}
+
+.common_widget_maintRecordDetail>.recTmLine .respFrom::before{
+    content: '\2014 \00A0';
+}

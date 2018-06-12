@@ -1,0 +1,70 @@
+.component_userAccount_widget_development,
+.component_userAccount_widget_development>div,
+.component_userAccount_widget_development>div>*,
+.component_userAccount_widget_development div.sslDiv>*,
+.component_userAccount_widget_development div.sdkDiv>*{
+    width: 100%;
+}
+
+.component_userAccount_widget_development>div{
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.component_userAccount_widget_development>div>div:first-child{
+    height: 30px;
+    border-bottom: 1px solid #e7eaec;
+    font-weight: bold;
+}
+
+.component_userAccount_widget_development>div>div:last-child{
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+.component_userAccount_widget_development>div>div:last-child>div{
+    margin-top: 15px;
+}
+
+.component_userAccount_widget_development div.sslDiv .file{
+    display: inline-block;
+    width: 100px;
+    height: 83px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    background-color: #f5f5f5!important;
+    cursor: pointer;
+}
+
+.component_userAccount_widget_development div.sslDiv .file.wait{
+    cursor: not-allowed;
+}
+
+.component_userAccount_widget_development div.sslDiv .crt,
+.component_userAccount_widget_development div.sslDiv .ca{
+    background: url(../img/crt.png) no-repeat;
+    background-position: 50% 20%;
+}
+
+.component_userAccount_widget_development div.sslDiv .key{
+    background: url(../img/key.png) no-repeat;
+    background-position: 50% 20%;
+    background-size: 44px;
+}
+
+.component_userAccount_widget_development div.sslDiv .file>div{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.component_userAccount_widget_development div.sdkDiv>.tabsCti{
+    height: 400px;
+    background-color: #e8eaed;
+    padding: 10px;
+}

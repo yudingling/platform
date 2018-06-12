@@ -1,0 +1,17 @@
+.fileSelector{
+    position: relative;
+}
+
+.fileSelector input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%!important;
+    height: 100%!important;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+::-webkit-file-upload-button { cursor:pointer; }

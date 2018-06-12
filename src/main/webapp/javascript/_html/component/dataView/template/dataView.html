@@ -1,0 +1,49 @@
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0);">数据</a></li>
+                    <li><input type="checkbox" class="bswitch multi"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="list">
+        </div>
+        <div class="detail showRange">
+            <div style="width: 100%; height:100%; position: relative; overflow: hidden;">
+                <div class="topSearch">
+                    <i class="fa fa-calendar-check-o hvr-push switchTmSel" title="切换时间选择方式"></i>
+                    <form class="form-inline">
+                        <div class="form-group  form-group-sm">
+                            <label>起始时间:</label>
+                            <input type="text" class="form-control stm tm">
+                        </div>
+                        <div class="form-group  form-group-sm">
+                            <label>结束时间:</label>
+                            <input type="text" class="form-control etm tm">
+                        </div>
+                        <button type="button" class="btn btn-info" style="width: 90px">查询</button>
+                    </form>
+                    <div class="tmRange">
+                        <label class="col-md-2 col-sm-2">时间范围:</label>
+                        <div class="col-md-10 col-sm-10">
+                            <input type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="horzMetaDiv">
+                </div>
+                <div class="vertMetaDiv">
+                    <div class="vertMetaDivInner">
+                    </div>
+                </div>
+                <div class="metaDataDiv customScrollBar">
+                    <div class="metaDataDivContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

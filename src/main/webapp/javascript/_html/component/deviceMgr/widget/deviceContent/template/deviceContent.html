@@ -1,0 +1,152 @@
+<div>
+    <from class="form-inline cmd">
+        <div class="form-group" bindAuth='{clientInfo put post}'>
+            <button type="button" class="btn btn-primary save" >保 存</button>
+            <button type="button" class="btn btn-default cancel">取 消</button>
+        </div>
+    </from>
+    <div class="rightContainer">
+    	<div class="clientCt">
+    		<div class="col-sm-6 col-md-6">
+	    		<div class="tabs">
+		            <div data-pws-tab="base" class="base customScrollBar" data-pws-tab-name="基本信息" data-pws-tab-icon="fa-asterisk">
+		                <form class="form-horizontal">
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">设备标识：</label>
+		                        <div class="col-sm-8 col-md-8" style="display:none">
+		                            <input type="text" class="form-control id">
+		                        </div>
+                                <label class="col-sm-9 col-md-9 control-label labelForVal id">&nbsp;</label>
+		                    </div>
+                            <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">设备名称：</label>
+		                        <div class="col-sm-8 col-md-8">
+		                            <input type="text" class="form-control name">
+		                        </div>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">位置：</label>
+		                        <div class="col-sm-4 col-md-4">
+		                            <input type="text" class="form-control lgtd" placeholder="经度">
+		                        </div>
+		                        <div class="col-sm-4 col-md-4">
+		                            <input type="text" class="form-control lttd" placeholder="纬度">
+		                        </div>
+		                        <i class="fa fa-map-marker fa-lg mapMarker" title="地图选址, 查看历史轨迹"></i>
+		                    </div>
+                            <div class="form-group form-group-sm locMap" style="display: none">
+                                <div class="col-sm-8 col-md-8 col-sm-offset-3 col-md-offset-3"></div>
+                            </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">厂家及型号：</label>
+		                        <div class="col-sm-4 col-md-4">
+		                        	<select class="form-control manufacturer"></select>
+		                        </div>
+		                        <div class="col-sm-4 col-md-4">
+		                            <select class="form-control product"></select>
+		                        </div>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">数据公开：</label>
+		                        <div class="col-sm-3 col-md-3">
+		                        	<input type="checkbox" class="bswitch isPublic">
+		                        </div>
+		                    </div>
+                            <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">标签：</label>
+                                <div class="col-sm-8 col-md-8">
+                                    <input type="text" class="cliTags">
+                                </div>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">创建日期：</label>
+		                        <label class="col-sm-9 col-md-9 control-label labelForVal createTs">&nbsp;</label>
+		                    </div>
+		                </form>
+		            </div>
+		            <div data-pws-tab="shadow" class="shadow setting customScrollBar" data-pws-tab-name="设备参数"  data-pws-tab-icon="fa-plug">
+		            	<form class="form-horizontal">
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">版本号：</label>
+		                        <div class="col-sm-2 col-md-2">
+		                            <input type="text" class="form-control curShadowID" style="display:none">
+		                            <input type="text" class="form-control curShadowVersion" disabled>
+		                        </div>
+		                        <i class="fa fa-history fa-lg historyShadow" title="查看历史版本"></i>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">参数信息：</label>
+		                        <div class="col-sm-8 col-md-8">
+		                        	<textarea class="form-control stateDesc" style="height: 450px" spellcheck="false"></textarea>
+		                        </div>
+		                    </div>
+                            <div class="form-group form-group-sm hisSD">
+		                        <label class="col-sm-3 col-md-3 control-label">历史版本号：</label>
+		                        <div class="col-sm-2 col-md-2">
+		                            <input type="text" class="form-control hisShadowVersion" disabled>
+		                        </div>
+		                    </div>
+		                    <div class="form-group form-group-sm hisSD">
+		                        <label class="col-sm-3 col-md-3 control-label">历史参数信息：</label>
+		                        <div class="col-sm-8 col-md-8">
+		                        	<textarea class="form-control hisStateDesc" style="height: 450px"  spellcheck="false"></textarea>
+		                        </div>
+		                    </div>
+		                </form>
+		            </div>
+		            <div data-pws-tab="pro" class="pro setting customScrollBar" data-pws-tab-name="其他设置" data-pws-tab-icon="fa-share-alt">
+		                <form class="form-horizontal">
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">固件版本：</label>
+		                        <div class="col-sm-4 col-md-4" style="min-width: 150px;">
+		                            <input type="text" class="form-control firmwareID" style="display:none">
+		                            <input type="text" class="form-control firmwareNM" disabled>
+		                        </div>
+		                        <i class="fa fa-history fa-lg historyFirmware" title="查看历史版本"></i>
+                                <span bindAuth="{firmwareUpgrade post}">
+                                    <i class="fa fa-cloud-upload fa-lg upgradeFirmware" title="固件升级" style="margin-left: 10px;"></i>
+                                </span>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">数据压缩：</label>
+                                <label class="col-sm-9 col-md-9 control-label labelForVal compress">&nbsp;</label>
+		                    </div>
+                            <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">数据拆包：</label>
+                                <label class="col-sm-9 col-md-9 control-label labelForVal splitPacket">&nbsp;</label>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">消息间隔限制：</label>
+                                <label class="col-sm-9 col-md-9 control-label labelForVal minSubIntv">&nbsp;</label>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">协议版本：</label>
+		                        <label class="col-sm-9 col-md-9 control-label labelForVal ptVersion">&nbsp;</label>
+		                    </div>
+		                    <div class="form-group form-group-sm">
+		                        <label class="col-sm-3 col-md-3 control-label">所属用户：</label>
+		                        <label class="col-sm-9 col-md-9 control-label labelForVal ownerUnm">&nbsp;</label>
+		                    </div>
+		                </form>
+		            </div>
+		        </div>
+	    	</div>
+	        <div class="metadata col-sm-6 col-md-6">
+	        </div>
+    	</div>
+    	<div class="groupCt" style="display: none; padding-left: 15px">
+    		<div class="tabs">
+	            <div data-pws-tab="base" class="base customScrollBar" data-pws-tab-name="基本信息" data-pws-tab-icon="fa-asterisk">
+	                <form class="form-horizontal">
+	                    <div class="form-group form-group-sm">
+	                        <label class="col-sm-3 col-md-3 control-label">分组名称：</label>
+	                        <div class="col-sm-6 col-md-6">
+	                            <input type="text" class="form-control gpName">
+	                        </div>
+	                    </div>
+	                </form>
+	            </div>
+	        </div>
+    	</div>
+    </div>
+</div>

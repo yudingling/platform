@@ -1,0 +1,54 @@
+
+.main_mobile_userOpenInfo{
+    height: 100%;
+}
+
+.main_mobile_userOpenInfo div.icon{
+    height: 140px; 
+    position: relative;
+}
+
+.main_mobile_userOpenInfo div.icon>div{
+    width: 140px; 
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+}
+
+.main_mobile_userOpenInfo div.icon img{
+    width: 100%;
+}
+
+.main_mobile_userOpenInfo .steps>div{
+    background-color: #fff;
+}
+
+.main_mobile_userOpenInfo .steps table{
+    border: 1px solid #e7eaec;
+    width: 100%;
+}
+
+.main_mobile_userOpenInfo .steps table tr:not(:last-child){
+    border-bottom: 1px solid #e7eaec;
+}
+
+.main_mobile_userOpenInfo .steps table tr.active{
+    background: #1ab394;
+    color: #fff;
+}
+
+.main_mobile_userOpenInfo .steps table tr>td{
+    height: 40px;
+}
+
+.main_mobile_userOpenInfo .steps table tr>td:first-child{
+    width: 70%;
+    padding-left: 15px;
+}
+
+.main_mobile_userOpenInfo .steps table tr>td:last-child{
+    text-align: center;
+    opacity: 0.6;
+    width: 30%;
+}

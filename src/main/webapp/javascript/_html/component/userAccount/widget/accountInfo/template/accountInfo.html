@@ -1,0 +1,235 @@
+<div class="customScrollBar">
+    <div class="icon">
+        <div>
+            <img src="../javascript/_html/common/linkimg/user.png"> <a href="javascript:void(0);" class="hvr-back-pulse imgEdit">编辑</a>
+        </div>
+        <!-- user name -->
+        <div class="unm">
+            <span class="editClick" title="点击编辑"></span> 
+            <span class="verifyIcon">   
+            	<small class="crtTs"></small>             	
+            </span> 
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="moreContent">
+        <a href="javascript:void(0);" class="more" data-toggle="collapse"
+           data-target=".component_userAccount_widget_acInfo .moreInfo"
+           aria-expanded="false">
+           <i class="fa fa-th-large" style="margin-right: 10px;"></i>更多 <i class="fa fa-angle-down pull-right"></i></a>
+        <div class="moreInfo collapse">
+            <form class="form-horizontal" style="padding-left: 8px;">
+                <div class="form-group pUnm">
+                    <label class="col-sm-3 col-md-3 control-label">所属:</label>
+                    <div class="col-sm-9 col-md-9">
+                        <label class="control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group email">
+                    <label class="col-sm-3 col-md-3 control-label">邮箱:</label>
+                    <div class="col-sm-9 col-md-9">
+                        <label class="control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group phone">
+                    <label class="col-sm-3 col-md-3 control-label">手机:</label>
+                    <div class="col-sm-9 col-md-9">
+                        <label class="control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group profit">
+                    <label class="col-sm-3 col-md-3 control-label">收益:</label>
+                    <div class="col-sm-9 col-md-9">
+                        <label class="control-label"></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa fa-lock resetPwd" title="重置密码" style="cursor: pointer; font-size: 16px;"></i> 
+                    <i class="fa fa-mobile changePhone" title="更改手机号" style="cursor: pointer; font-size: 19px; margin-left: 15px;"></i>
+                    <i class="fa fa-user userRnauthInfo" title="实名认证" style="cursor: pointer; font-size: 16px; margin-left: 15px;"></i>
+                    <i class="fa fa-money withdraw" title="提现" style="cursor: pointer; font-size: 16px; margin-left: 15px;"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="qrCode">
+        <div class="center"></div>
+    </div>
+    <div class="modal fade iconEdit" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 520px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">头像编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row" style="height: 160px">
+                            <div class="currentIcon">
+                                <span>当前头像</span>
+                                <div>
+                                    <img src="../javascript/_html/common/linkimg/user.png" style="width: 80px">
+                                </div>
+                            </div>
+                            <div class="newIcon">
+                                <div class="upload">上传照片</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel"
+                            data-dismiss="modal">取 消
+                    </button>
+                    <button type="button" class="btn btn-primary sure">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pwdEdit" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 450px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">修改密码</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form>
+                                <div class="form-group">
+                                    <input type="password" class="form-control oldPwd" placeholder="原密码">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control oldPwd1" placeholder="新密码">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control oldPwd2" placeholder="再次输入新密码">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel" data-dismiss="modal">取 消</button>
+                    <button type="button" class="btn btn-primary sure">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade phoneEdit" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 450px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">更改手机号</h4>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                    <form style="display: inline-block">
+                        <div class="form-group">
+                            <input type="text" class="form-control newPhone" placeholder="新手机号">
+                        </div>
+                        <div class="form-group">
+                            <div class="verifyDiv">
+                                <input type="text" class="form-control verify" placeholder="验证码">
+                                <button type="button" class="btn btn-link" disabled="disabled">获取</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel" data-dismiss="modal">
+                    	取 消
+                    </button>
+                    <button type="button" class="btn btn-primary sure">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade nameEdit" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 550px">
+            <div class="modal-content" style="top:-55px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">实名认证</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group authInfo">
+                                    <label class="col-sm-3 col-md-3 control-label">认证情况</label>
+                                    <div class="col-sm-8 col-md-8" style="margin-top: 7px;">
+                                        <p class="result" style="color:red">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">姓名</label>
+                                    <div class="col-sm-8 col-md-8">
+                                        <input type="text" class="form-control name" placeholder="请输入姓名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">身份证号</label>
+                                    <div class="col-sm-8 col-md-8">
+                                        <input type="text" class="form-control idNumber" placeholder="请输入身份证号">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">身份证正面</label>
+                                    <div class="col-sm-8 col-md-8 uploadA upload">
+                                        <div>上传</div>
+                                        <div class="imgPanel">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">身份证反面</label>
+                                    <div class="col-sm-8 col-md-8 uploadB upload">
+                                        <div>上传</div>
+                                        <div class="imgPanel">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-3 col-md-3 control-label">手机号</label>
+                                    <div class="col-sm-8 col-md-8 phone" style="line-height: 32px;">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel" data-dismiss="modal">取 消</button>
+                    <button type="button" class="btn btn-primary sure">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade widthdrawModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="top:-55px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">提现</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

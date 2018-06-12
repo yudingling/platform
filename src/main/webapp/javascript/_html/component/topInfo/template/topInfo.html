@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav created">
+            </ul>
+            <ul class="nav navbar-nav navbar-right default">
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" title="设置" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li bindAuth='{myAccount get}'><a href="javascript:void(0);" data="create" cls="component.userAccount" path="component/userAccount/userAccount">我的账号</a></li>
+                        <li bindAuth='{infoCenter get}'><a href="javascript:void(0);" data="create" cls="component.infoCenter" path="component/infoCenter/infoCenter">消息中心</a></li>
+                        <li role="separator" class="divider" bindAuth='{infoCenter get}||{myAccount get}'></li>
+                        <li><a href="javascript:void(0);" data="exit">退出</a></li>
+                    </ul>
+                </li>
+                <li bindAuth='{infoCenter get}'><a href="javascript:void(0);" title="消息" data="infoBrief"><i class="fa fa-bell-o"></i><span class="badge badge-warn"></span></a></li>
+            </ul>
+            <form class="navbar-form navbar-right searchAll" role="search">
+                <i class="fa fa-search fa-lg pull-right"></i>
+                <input type="text" class="form-control pull-right" >
+            </form>
+        </div>
+    </div>
+</nav>

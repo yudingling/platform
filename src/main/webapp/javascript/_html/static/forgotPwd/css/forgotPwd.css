@@ -1,0 +1,48 @@
+
+.static_forgotPwd{
+    height: 100%;
+}
+
+.static_forgotPwd .icon{
+    width: 100%;
+    height: 100px;
+    background: url(../../../common/linkimg/logo.png) no-repeat;
+    background-position: 25% 20%;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.static_forgotPwd form{
+    height: 420px;
+    max-width: 300px;
+    width: 100%;
+}
+
+@media(max-width: 300px){
+    .static_forgotPwd form{
+        padding: 0px 10px;
+    }
+}
+
+.static_forgotPwd form .pt{
+    text-align: center; 
+    font-size: 18px
+}
+
+.static_forgotPwd form>button{
+	margin-top: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.static_forgotPwd form>p{
+	margin-top: 30px;
+}
+
+.static_forgotPwd .copyright{
+	position: absolute;
+	bottom: 16px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+.component_userAccount_widget_resource{
+    width: 100%;
+    min-height: 520px;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel{
+    border: none;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel:not(:first-child){
+    margin-top: 10px;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel>.panel-heading>.panel-title{
+    font-size: 15px;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel>.panel-heading>.panel-title>a{
+    display: block;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel>.panel-collapse>.panel-body{
+    border-top: 1px solid #e7eaec;
+    padding-left: 30px;
+}
+
+.component_userAccount_widget_resource>.panel-group>.panel>.panel-collapse.resMgr>.panel-body>div{
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+    float: left;
+}

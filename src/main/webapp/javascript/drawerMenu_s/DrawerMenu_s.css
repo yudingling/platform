@@ -1,0 +1,118 @@
+
+.drawer_s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 0;
+}
+.drawer_s li {
+  pointer-events: none;
+  position: relative;
+  list-style: none;
+  line-height: 100%;
+  transform: translateZ(0);
+
+}
+.drawer_s a {
+  pointer-events: auto;
+  position: relative;
+  display: block;
+  min-width: 50px;
+  line-height: 100%;
+  /* Reset font-size */
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+.drawer_s i {
+  display: block;
+  font-size: 15px;
+}
+.drawer_s span {
+  font-size: 12px;
+  font-family: Raleway;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  right: 100%;
+  top: 0px;
+  padding-right: 5px;
+  line-height: 45px;
+    color: #0f2e3a;
+}
+
+.drawer_s li:hover ul {
+  /* Open the fly-out menu */
+  transform: translateY(33px);
+  /* Enable this if you wish to replicate hoverIntent */
+}
+.drawer_s > li {
+  display: block;
+  /* Add a shadow to the top-level link */
+  /* Show the shadow when the link is hovered over */
+  /* Fly out menus */
+}
+
+.drawer_s > li > a {
+  	color: #838383;
+  	padding: 6px 0px 5px 0px;
+}
+.drawer_s > li>a>i{
+	font-size: 22px;
+}
+
+.drawer_s > li:hover>a>i{
+	opacity: 0.5;
+}
+
+.drawer_s > li:hover a {
+  background: #173e4d;
+  color: #fff;
+}
+.drawer_s > li a:hover {
+  background: #67bbaa;
+}
+
+.drawer_s > li ul {
+  position: absolute;
+  /* Stack below the top level */
+  z-index: -1;
+  top: 0;
+  right: 0px;
+  height: auto;
+  width: 100%;
+  white-space: nowrap;
+  /* Close the menus */
+  transform: translateY(-100%);
+  transition: 0.5s transform;
+  padding: 0px;
+  background-color: #173e4d;
+}
+
+.drawer_s > li ul a{
+	padding: 15px 0px;
+}
+
+.drawer_s > li ul li:hover span{
+	display: block;
+}
+
+.drawer_s.clicked > li ul{
+    transform: translateY(-100%);
+    transition: 0s;
+}
+
+.drawer_s.clicked > li:hover>a>i{
+	opacity: 1;
+	transition: 0s;
+}
+
+.drawer_s.clicked > li:hover a {
+  background: transparent;
+  color: #838383;
+  transition: 0s;
+}

@@ -1,0 +1,88 @@
+<div>
+	<div class="search">
+		<div class="input-group input-group-sm">
+			<input type="text" class="form-control nameOrId"
+				placeholder="服务名 或 创建者  搜索..."> <span
+				class="input-group-btn">
+				<button class="btn btn-default" type="button">
+					<i class="fa fa-search"></i>
+				</button>
+			</span>
+		</div>
+		<div style="position: relative; left: 110%; top: -25px;">
+			<label class="checkbox-inline"> <input type="radio" class="one" checked="checked" value="0" name="check">&nbsp;
+				<small>新申请</small>
+			</label>			
+			<label class="checkbox-inline"> <input type="radio" class="two" value="1" name="check">&nbsp; 
+				<small>已认证通过</small>
+			</label>
+		</div>
+	</div>
+	<div class="content">
+		<div class="grid">
+		    <div>
+				<div class="gridContainer" style="width:100%;height:100%"></div>
+			</div>
+			<div class="svPage" style="height:40px;margin-right:10px;">
+				<i class="fa fa-arrow-left"></i> 
+				<i class="fa fa-arrow-right"></i> 
+				<input type="text" class="form-control currentPage"> <span>/&nbsp;</span>
+				<span class="totalPage"></span>
+			</div>
+		</div>
+		<div class="detail">
+			<div style="position: relative; width: 100%; height: 100%">
+				<div class="outter customScrollBar">
+					<div class="outterCC">
+						<div style="border-bottom: 1px solid #e5e5e5; padding-bottom: 5px;padding-top: 7px;">
+							<label class="control-label" style="padding-left: 12px;">认证内容：</label><br>
+							<label class="control-label check">1.使用测试账号去试用，并校对功能与其描述是否一致</label><br>					
+						</div>
+						<div class="rlNameDiv" style="display: none"><br>
+							<p style="padding-left: 12px;">认证名称：<span class="rlName"></span>
+							</p>
+						</div>
+						<div class="serviceInfo">		    
+							<div class="tip" style="display: none; text-align: center; line-height: 450px; vertical-align: middle; font-weight: bold;">暂未服务详情！</div>
+						</div>					
+					</div>
+				</div>
+				<div class="checkBtn text-center" style="padding-top: 4px;">
+					<button type="button" class="btn btn-warning btn-sm pass disabled" disabled style="margin-right: 30px; margin-top: 2px">通过</button>
+					<button type="button" class="btn btn-warning btn-sm refuse disabled" disabled style="margin-top: 2px">不合格</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade failEdit" role="dialog"
+		aria-labelledby="gridSystemModalLabel">
+		<div class="modal-dialog" role="document" style="max-width: 500px">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">失败原因</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="form-group">
+								<label class="col-sm-3 control-label" style="width: 19%;">失败原因</label>
+								<div class="col-sm-9" style="padding-left: 0px">
+									<div class="form-group">
+										<textarea class="form-control reason" style="height: 100px" placeholder="请输入审核的原因，多条请回车"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default cancel" data-dismiss="modal">取 消</button>
+					<button type="button" class="btn btn-primary sure">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

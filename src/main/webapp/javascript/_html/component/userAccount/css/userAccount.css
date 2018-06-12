@@ -1,0 +1,106 @@
+.component_userAccount{
+	height: 100%;
+	min-width: 800px;
+	position: relative;
+}
+
+.component_userAccount>div{
+    height: 100%;
+}
+
+.component_userAccount>.infoLeft{
+    width: 220px;
+    position: relative;
+    background-color: #e8eaed;
+}
+
+.component_userAccount>.infoRight{
+    position: absolute;
+    left: 220px;
+    right: 0px;
+    top: 0px;
+    background-color: #fff;
+}
+
+.component_userAccount>.infoRight>*{
+    width: 100%;
+}
+
+.component_userAccount>.infoRight>.resourceInfo{
+    height: 60px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.component_userAccount>.infoRight>.resourceInfo>div.widget{
+    width: auto;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.component_userAccount>.infoRight>.resourceInfo>div.widget i{
+    font-size: 33px;
+}
+
+.component_userAccount>.infoRight>nav .nav{
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.component_userAccount>.infoRight>nav .nav>li{
+	float: left;
+    width: 100px;
+}
+
+.component_userAccount>.infoRight>nav .nav>li.active{
+    background-color: transparent!important;
+}
+
+.component_userAccount>.infoRight>nav .nav>li>a{
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 24px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.component_userAccount>.infoRight>nav .nav>li>a:focus,
+.component_userAccount>.infoRight>nav .nav>li>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_userAccount>.infoRight>nav .nav>li.active>a{
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+@media(max-width: 768px){
+	.component_userAccount>.infoRight>nav .nav>li.active>a{
+    	box-shadow: 0 -6px 0 0 #67bbaa inset;
+	}
+}
+
+.component_userAccount>.infoRight>nav .nav>li.active>a,
+.component_userAccount>.infoRight>nav .nav>li.active>a:focus,
+.component_userAccount>.infoRight>nav .nav>li.active>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_userAccount>.infoRight>.content{
+    top: 122px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #f3f3f4;
+    border-top: 1px solid #f3f3f4;
+    position: absolute;
+}
+
+.component_userAccount>.infoRight>.content div.contentInner{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}

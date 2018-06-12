@@ -1,0 +1,76 @@
+.component_userAccount_widget_accountInfo_withdraw_accAdder,
+.component_userAccount_widget_accountInfo_withdraw_accAdder>*{
+    width: 100%;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo{
+	font-size: 22px;
+	background-color: rgb(246, 246, 245);
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo>ul li a{
+	margin-left: 20px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo li:not(:last-child) i{
+	color: #4CA293;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo li.delete i{
+	color: #ed5565;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo li:not(:last-child) i:hover{
+    color: #469594;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.cmdInfo li.delete i:hover{
+	color: #d9534f;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content{
+    height: 300px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.grid{
+    width: 60%;
+}
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail{
+    width: 40%;
+    border-left: none;
+    padding: 40px 5px 0px 5px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail label{
+    text-align: right;
+    font-weight: normal;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.grid .tpStr{
+    line-height: 26px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail div.aid button>div,
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail div.aid ul>li>a>div{
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail div.aid button>span.txt,
+.component_userAccount_widget_accountInfo_withdraw_accAdder>.content>.detail div.aid ul>li>a>span{
+    line-height: 30px;
+}

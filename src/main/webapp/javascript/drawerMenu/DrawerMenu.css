@@ -1,0 +1,115 @@
+
+.drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 0;
+}
+.drawer li {
+  pointer-events: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  line-height: 100%;
+  transform: translateZ(0);
+
+}
+.drawer a {
+  pointer-events: auto;
+  position: relative;
+  display: block;
+  min-width: 80px;
+  padding: 4px 5px 7px 5px;
+  line-height: 100%;
+  /* Reset font-size */
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+}
+.drawer i {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-size: 26px;
+}
+.drawer span {
+  font-size: 12px;
+  font-family: Raleway;
+  text-transform: uppercase;
+}
+.drawer li:hover ul {
+  /* Open the fly-out menu */
+  transform: translateX(-100%);
+  /* Enable this if you wish to replicate hoverIntent */
+}
+.drawer > li {
+  display: block;
+  /* Add a shadow to the top-level link */
+  /* Show the shadow when the link is hovered over */
+  /* Fly out menus */
+}
+.drawer > li > a {
+  background: #f6f6f5;
+  color: #317290;
+}
+.drawer > li:hover a {
+  background: #173e4d;
+  color: #fff;
+}
+.drawer > li a:hover {
+  background: #67bbaa;
+}
+.drawer > li > a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 4px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.drawer > li:hover a:after {
+  opacity: 1;
+}
+.drawer > li ul {
+  position: absolute;
+  /* Stack below the top level */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  white-space: nowrap;
+  /* Close the menus */
+  transform: translateX(0%);
+  transition: 0.5s transform;
+  padding: 0px;
+  background-color: #173e4d;
+}
+
+.drawer.clicked > li ul{
+    transform: translateX(0%);
+    transition: 0s;
+}
+
+.drawer.clicked > li:hover>a>i{
+	transition: 0s;
+}
+
+.drawer.clicked > li:hover a {
+  background: #f6f6f5;
+  color: #317290;
+  transition: 0s;
+}
+
+.drawer.clicked > li:hover a:after{
+	opacity: 0;
+	transition: 0s;
+}

@@ -1,0 +1,34 @@
+
+.common_widget_sysMetas_image{
+    position: relative;
+    overflow: hidden;
+}
+
+.common_widget_sysMetas_image>.slc{
+    height: 100%;
+    width: 100%;
+}
+
+/* hide the horizontal scroll bar in jqxgrid */
+.common_widget_sysMetas_image>.slc .gridContainer .jqx-scrollbar-custom-zd[id^='horizontal']{
+    display: none;
+}
+
+.common_widget_sysMetas_image .drawer_s{
+	z-index: 1;
+}
+
+.common_widget_sysMetas_image>.slc .callDataContainer label{
+    font-size: inherit;
+}
+
+.common_widget_sysMetas_image>.slc .callDataContainer label.desc{
+    display: none;
+    transition: opacity 0.5s;
+    color: #0c8269;
+}
+
+.common_widget_sysMetas_image>.slc .callDataContainer label.labelForVal{
+    font-weight: normal;
+    text-align: left;
+}

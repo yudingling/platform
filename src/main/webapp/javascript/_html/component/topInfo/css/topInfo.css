@@ -1,0 +1,105 @@
+.component_topInfo{
+    background-color: #173e4d;
+    z-index: 20;
+}
+
+.component_topInfo .navbar-nav>li>a{
+    color: #a7b1c2;
+}
+
+.component_topInfo .nav > li.active > a{
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+.component_topInfo .nav > li.active.warn>a,
+.component_topInfo .nav > li.active.service>a{
+    box-shadow: none;
+}
+
+.component_topInfo .nav > li.splic > div{
+    border-left: 0.1rem solid #50656F;
+    height: 2rem;
+    margin: 1rem 0.5rem 0px 0.5rem;
+}
+
+@media(max-width: 1030px){
+    .component_topInfo .nav > li.splic{
+        display: none;
+    }
+}
+
+.component_topInfo .navbar-brand{
+    background: url(../../../common/linkimg/logo.png) no-repeat;
+    background-size: contain;
+    height: 45px;
+    width: 45px;
+    margin: 3px 15px 0px 0px !important;
+}
+
+.component_topInfo .searchAll{
+    margin: 0px;
+}
+
+.component_topInfo .searchAll i.fa{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #F7F5F5;
+    background-color: #356880;
+    cursor: pointer;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.component_topInfo .searchAll input{
+    height: 49px;
+    width: 0px;
+    border-radius: 0px;
+    display: none;
+}
+
+.component_topInfo .fa-stethoscope,
+.component_topInfo .fa-cog,
+.component_topInfo .fa-bell-o{
+    font-size: 1.6em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.component_topInfo span.badge-warn{
+    background-color: #ed5565;
+    color: #fff;
+    position: absolute;
+    left: 3.3rem;
+    top: 0.666rem;
+}
+
+@media(max-width: 1350px){
+	.component_topInfo .searchAll{
+		display: none;
+	}
+}
+
+@media(max-width: 768px){
+	.component_topInfo .navbar-brand{
+		margin-left: 12px!important;
+	}
+	
+	.component_topInfo .nav > li .splic{
+		display: none;
+	}
+	
+	.component_topInfo  .navbar-nav{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.component_topInfo .navbar-collapse{
+		border: none;
+	}
+	
+	.component_topInfo .navbar-collapse.collapse.in li{
+		z-index: 1;
+	}
+}

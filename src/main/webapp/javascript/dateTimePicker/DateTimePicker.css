@@ -1,0 +1,21 @@
+.flatpickr-calendar{
+    z-index: 1000000000;
+}
+
+.flatpickr-calendar input[disabled]{
+	opacity: 0.4;
+}
+
+.flatpickr-calendar input[disabled]+span,
+.flatpickr-calendar input[disabled]+span+span{
+    display: none;
+}
+
+.flatpickr-calendar input[disabled]:hover{
+	background-color: transparent;
+}
+
+input.flatpickr-input.active{
+    background-color: #fff;
+    border-color: #1ab394;
+}

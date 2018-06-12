@@ -1,0 +1,94 @@
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0);" >运维人员</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="ctTop">
+            <ul class="list-inline">
+                <li class="append"><a href="javascript:void(0);" title="新增运维区域"><i class="fa fa-plus-circle"></i></a></li>
+                <li class="delete"><a href="javascript:void(0);" title="删除运维区域"><i class="fa fa-minus-circle"></i></a></li>
+                <li class="ok" style="display: none"><a href="javascript:void(0);"><i class="fa fa-trash-o"></i>确定</a></li>
+                <li class="cancel" style="display: none"><a href="javascript:void(0);"><i class="fa fa-close"></i>取消</a></li>
+            </ul>
+            <div>
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control nameOrId" placeholder="运维人员邮箱/姓名...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="ctBottom">
+            <div class="list">
+            </div>
+            <div class="detail">
+                <div class="detailTop">
+                    <button type="button" class="btn btn-primary uAdd" style="width: 80px; display: none; margin-left: 0px;">新增</button>
+                    <div class="pull-right uOther" style="display: none; height: 100%">
+                        <button type="button" class="btn btn-danger uDisable">禁用</button>
+                        <button type="button" class="btn btn-danger uEnable">启用</button>
+                        <button type="button" class="btn btn-success uMove">移动至</button>
+                        <button type="button" class="btn btn-success uVerify">重新发送激活邮件</button>
+                    </div>
+                </div>
+                <div class="detailBottom">
+                    <div style="width: 100%; height: 100%; position: relative;">
+                        <div class="pull-right notePage">
+                            <i class="fa fa-arrow-left"></i>
+                            <i class="fa fa-arrow-right"></i>
+                            <input type="text" class="form-control currentPage">
+                            <span>/&nbsp;</span>
+                            <span class="totalPage"></span>
+                        </div>
+                        <div class="userList customScrollBar">
+                            <div class="userListCC">
+                                <table style="width: 100%">
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">添加运维人员</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal baseInfo">
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 control-label">所属区域</label>
+                            <label class="col-sm-8 col-md-8 control-label labelForVal gpNm"></label>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 control-label">邮箱</label>
+                            <div class="col-sm-5 col-md-5">
+                                <input type="text" class="form-control uId" placeholder="输入运维用户邮箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 col-md-4 control-label">姓名</label>
+                            <div class="col-sm-5 col-md-5">
+                                <input type="text" class="form-control uNm" placeholder="输入运维用户姓名">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary sure" style="width: 100px;">保 存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

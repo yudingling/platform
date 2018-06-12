@@ -1,0 +1,27 @@
+.component_infoBrief,
+.component_infoBrief>*{
+    width: 100%;
+    position: relative;
+}
+
+.component_infoBrief>ul{
+    margin: 0px;
+    background-color: #61afaf;
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.component_infoBrief>ul>li{
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 20px;
+    min-width: 120px;
+}
+
+.component_infoBrief>ul>li.active{
+    background-color: #f9f9f9;
+    color: #569a8c;
+}

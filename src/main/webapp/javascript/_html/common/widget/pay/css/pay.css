@@ -1,0 +1,38 @@
+.common_widget_pay{
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+}
+
+.common_widget_pay>.btn-group>label{
+    width: 70px;
+    padding: 4px;
+}
+
+.common_widget_pay>.btn-group>label.asLeft{
+    border-top-left-radius: 3px!important;
+    border-bottom-left-radius: 3px!important;
+}
+
+.common_widget_pay>.btn-group>label.active{
+    background-color: #67bbaa;
+    color: #fff;
+    border-color: #67bbaa;
+}
+
+.common_widget_pay>.payQr>div{
+    display: none;
+}
+
+.common_widget_pay>.payQr>div.active{
+    display: block;
+}
+
+.common_widget_pay>.payQr>.BalanceDiv label{
+    font-weight: normal;
+    padding-right: 0px;
+}
+
+.common_widget_pay>.payQr>.BalanceDiv label.labelForVal{
+    text-align: left;
+}

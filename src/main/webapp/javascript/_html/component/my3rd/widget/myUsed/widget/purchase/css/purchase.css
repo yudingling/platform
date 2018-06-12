@@ -1,0 +1,80 @@
+.component_my3rd_widget_myUsed_widget_ph{
+    width: 100%;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .upgNav{
+    background: linear-gradient(to bottom, #67bbaa, #6cccb7);
+}
+
+.component_my3rd_widget_myUsed_widget_ph .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .upgNav .cd-multi-steps li > *{
+    color: #fff;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .upgNav .cd-multi-steps li.current > *{
+    color: #007369;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .steps{
+	position: relative;
+    height: 310px;
+    overflow: hidden;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .steps>div>div:first-child,
+.component_my3rd_widget_myUsed_widget_ph .steps>div>form:first-child{
+    height: 250px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .navSteps em{
+    font-size: inherit;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .step4 .finalInfo{
+    text-align: center;
+    padding-top: 90px!important; 
+    font-size: 15px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .step4 .finalInfo>span{
+    display: block;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .step4 .finalInfo i{
+    color: #67bbaa; 
+    font-size: 17px; 
+    margin-right: 5px; 
+    margin-bottom: 10px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .step2 label{
+    font-size: 13px!important;
+    font-weight: normal;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .step2 .form-group{
+    padding-top: 15px;
+}
+
+.component_my3rd_widget_myUsed_widget_ph .steps button{
+    min-width: 80px;
+}

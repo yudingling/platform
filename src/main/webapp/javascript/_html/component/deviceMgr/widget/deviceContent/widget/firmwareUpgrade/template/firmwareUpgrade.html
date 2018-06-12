@@ -1,0 +1,46 @@
+<div>
+    <div class="upgNav">
+        <nav class="navSteps">
+            <ol>
+                <li class="step1 current"><em>选择设备</em></li>
+                <li class="step2"><em>上传文件</em></li>
+                <li class="step3"><em>完成</em></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="steps">
+        <div class="step1">
+            <div class="upgTree">
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-primary btn-sm next">下一步</button>
+            </div>
+        </div>
+        <div class="step2">
+            <form class="form-horizontal">
+                <div class="form-group form-group-sm" style="margin-top: 40px;">
+                    <div class="col-sm-offset-1 col-md-offset-1 col-sm-9 col-md-9">
+                        <input type="text" class="form-control upgFile" placeholder="选择固件" readonly>
+                    </div>
+                    <i class="fa fa-file fa-lg" title="选择固件" style="margin-top: 8px;"></i>
+                </div>
+                <div class="form-group form-group-sm">
+                    <div class="col-sm-offset-1 col-md-offset-1 col-sm-9 col-md-9">
+                        <input type="text" class="form-control upgVersion" placeholder="版本号">
+                    </div>
+                </div>
+            </form>
+            <div class="btnRow">
+                <button type="button" class="btn btn-success btn-sm prev">上一步</button>
+                <button type="button" class="btn btn-primary btn-sm next" style="margin-left: 30px;">完 成</button>
+            </div>
+        </div>
+        <div class="step3">
+            <div class="finalInfo" style="padding-top: 20px">
+            </div>
+            <div class="btnRow">
+                <button type="button" class="btn btn-sm" style="display: none">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

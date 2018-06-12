@@ -1,0 +1,223 @@
+.component_dataView{
+	height: 100%;
+	min-width: 1100px;
+	position: relative;
+}
+
+.component_dataView >nav .nav{
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.component_dataView >nav .nav>li{
+	float: left;
+}
+
+.component_dataView >nav .nav>li.active{
+    background-color: transparent!important;
+}
+
+.component_dataView >nav .nav>li>a{
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 24px 20px;
+    font-size: 14px;
+}
+
+.component_dataView >nav .nav>li>a:focus,
+.component_dataView >nav .nav>li>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_dataView >nav .nav>li.active>a{
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+@media(max-width: 768px){
+	.component_dataView >nav .nav>li.active>a{
+    	box-shadow: 0 -6px 0 0 #67bbaa inset;
+	}
+}
+
+.component_dataView >nav .nav>li.active>a,
+.component_dataView >nav .nav>li.active>a:focus,
+.component_dataView >nav .nav>li.active>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_dataView >nav .nav .bootstrap-switch-bs{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.component_dataView >nav .nav .bootstrap-switch-bs  span{
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.component_dataView >nav .nav .bootstrap-switch-bs .bootstrap-switch-info{
+    background-color: #41a7c5;
+    /*background-image: linear-gradient(to bottom, #2f96b4, #5bc0de);*/
+}
+
+.component_dataView >nav .nav .bootstrap-switch-bs .bootstrap-switch-success{
+    background-color: #499283;
+    /*background-image: linear-gradient(to bottom, #51a351, #62c462);*/
+}
+
+.component_dataView >nav .nav .bootstrap-switch-bs .bootstrap-switch-label{
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+
+.component_dataView > .content{
+    top: 62px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #EAEAEA;
+    position: absolute;
+}
+
+.component_dataView > .content>div{
+    height: 100%;
+}
+
+.component_dataView > .content>div.list{
+    width: 300px;
+    float: left;
+    padding: 10px;
+    box-shadow: 5px 6px 12px 0px #dedede;
+}
+
+.component_dataView > .content>div.detail{
+    position: absolute;
+    left: 300px;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    padding: 10px 15px 15px 15px;
+}
+
+.component_dataView > .content>div.detail .topSearch{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-top: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.component_dataView > .content>div.detail .topSearch > .switchTmSel{
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    cursor: pointer;
+    line-height: 45px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.component_dataView > .content>div.detail .topSearch > .switchTmSel:hover{
+    color: #3a85a9;
+}
+
+.component_dataView > .content>div.detail.showRange .topSearch > .switchTmSel{
+    line-height: 91px;
+}
+
+.component_dataView > .content>div.detail .topSearch form .form-group{
+    margin-right: 20px;
+}
+
+.component_dataView > .content>div.detail .topSearch .tmRange{
+    display: none;
+}
+
+.component_dataView > .content>div.detail.showRange .topSearch{
+    padding: 8px 0px;
+    height: 91px;
+}
+
+.component_dataView > .content>div.detail.showRange .topSearch .tmRange{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.component_dataView > .content>div.detail.showRange .topSearch form{
+    display: none;
+}
+
+.component_dataView > .content>div.detail .topSearch .tmRange label{
+    text-align: center;
+    max-width: 130px; 
+    min-width: 120px;
+    line-height: 75px;
+}
+
+.component_dataView > .content>div.detail .horzMetaDiv{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(246, 246, 245);
+    transition: all 0.5s;
+}
+
+.component_dataView > .content>div.detail .vertMetaDiv{
+    display: none;
+}
+
+.component_dataView > .content>div.detail .metaDataDiv{
+    position: absolute;
+    top: 110px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.5s;
+}
+
+.component_dataView > .content>div.detail.showRange .metaDataDiv{
+    top: 151px;
+}
+
+.component_dataView > .content>div.detail.vertShow .horzMetaDiv{
+    height: 0px;
+}
+.component_dataView > .content>div.detail.vertShow .metaDataDiv{
+    top: 50px;
+}
+
+.component_dataView > .content>div.detail.vertShow.showRange .metaDataDiv{
+    top: 91px;
+}
+
+.component_dataView > .content>div.detail .vertMetaDivInner{
+    width: 100%;
+}
+
+/* widget */
+
+.component_dataView > .content>div.detail .metaDataDiv .metaDataDivContent>*{
+	margin: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 3px 0px rgb(195, 195, 195);
+    display: inline-block;
+}
+
+@media(min-width: 1390px){
+	.component_dataView > .content>div.detail .metaDataDiv .metaDataDivContent>*{
+		width: 47%;
+	}
+}
+
+@media(max-width: 1390px){
+	.component_dataView > .content>div.detail .metaDataDiv .metaDataDivContent>*{
+		width: 90%;
+	}
+}
+
+

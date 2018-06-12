@@ -1,0 +1,166 @@
+.component_latestReport {
+    width: 100%;
+    height: 100%
+}
+
+.component_latestReport > .content {
+    top: 62px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #EAEAEA;
+    position: absolute;
+}
+
+.component_latestReport > .content > div {
+    height: 100%;
+}
+
+.component_latestReport > nav .nav {
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.component_latestReport > nav .nav > li {
+    float: left;
+}
+
+.component_latestReport > nav .nav > li.active {
+    background-color: transparent !important;
+}
+
+.component_latestReport > nav .nav > li > a {
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 24px 20px;
+    font-size: 14px;
+}
+
+.component_latestReport > nav .nav > li > a:focus,
+.component_latestReport > nav .nav > li > a:hover {
+    color: #317290 !important;
+    background-color: transparent !important;
+}
+
+.component_latestReport > nav .nav > li.active > a {
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+@media (max-width: 768px) {
+    .component_latestReport > nav .nav > li.active > a {
+        box-shadow: 0 -6px 0 0 #67bbaa inset;
+    }
+}
+
+.component_latestReport > nav .nav > li.active > a,
+.component_latestReport > nav .nav > li.active > a:focus,
+.component_latestReport > nav .nav > li.active > a:hover {
+    color: #317290 !important;
+    background-color: transparent !important;
+}
+
+.component_latestReport .reportContainer {
+    position: absolute;
+    top: 42px;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    padding: 1rem;
+}
+
+.component_latestReport .reportContainer > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.component_latestReport .reportContainer > div:last-child {
+    display: none;
+}
+
+.component_latestReport .reportContainer.showGrid > div:first-child {
+    display: none;
+}
+
+.component_latestReport .reportContainer.showGrid > div:last-child {
+    background-color: #fff;
+    display: block;
+    border-top: 1px solid #f5e6dc;
+}
+
+.component_latestReport form > * {
+    margin-right: 10px;
+}
+
+.component_latestReport form > *:not (:last-child ) label {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.component_latestReport .reportContainer .widgetCC {
+    margin-bottom: 10px;
+}
+
+.component_latestReport .reportContainer .widgetCC > div {
+    border: 1px solid #dadada;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px #d6d6d6;
+    padding: 5px;
+    min-height: 170px;
+}
+
+.component_latestReport .reportContainer .widgetCC > div table{
+    width: 100%;
+    margin: 0px;
+}
+
+.component_latestReport .reportContainer .widgetCC > div i.fa.fa-times {
+    display: none;
+}
+
+.component_latestReport .reportContainer>.gg td.fFixed{
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.component_latestReport .reportContainer>.gg td.fixed{
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.component_latestReport .reportContainer>.gg td{
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    height: 32px;
+}
+
+.component_latestReport .reportContainer>.gg .ggInner>.tHead{
+    height: 65px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.component_latestReport .reportContainer>.gg .ggInner>.qq{
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.component_latestReport .reportContainer>.gg .ggInner>.qq tr{
+    transition: background-color 0.4s;
+}
+
+.component_latestReport .reportContainer>.gg .ggInner>.qq tr:hover{
+    background-color: #d4e8e4;
+}
+
+.component_latestReport .reportContainer>.gg .ggInner>.qq tr>td:first-child{
+    cursor: pointer;
+}
+
+.component_latestReport .reportContainer.showGrid > div:last-child table tr.ctr.active{
+	background-color: #d4e9e4;
+}
+}

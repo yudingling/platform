@@ -1,0 +1,59 @@
+<div class="ruleContent">
+    <div class="setTop">
+        <div class="actionDiv">
+        	<span>元数据</span>
+            <i class="fa fa-plus-circle fa-lg append" title="添加元数据"></i>
+            <i class="fa fa-minus-circle fa-lg delete" title="删除元数据"></i>
+            <i class="fa fa-trash-o fa-lg spec ok" style="display: none"> <span>确定</span></i>
+            <i class="fa fa-close fa-lg spec cancel" style="display: none"> <span>取消</span></i>
+            <i class="fa fa-files-o fa-lg updateToOthers pull-right" style="margin-top: 3px; color: #ea4a0f; font-size: 16px;" bindAuth='{clientInfo put}' title="批量更新元数据至其他设备"></i>
+        </div>
+    </div>
+    <div class="setCenter">
+        <div class="mdList customScrollBar">
+        	<ul></ul>
+        </div>
+        <div class="mdContent customScrollBar">
+        	<form class="form-horizontal">
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">标识：</label>
+                    <div class="col-sm-8 col-md-8">
+                        <input type="text" class="form-control metaCid" placeholder="必填">
+                    </div>
+                    <label class="col-sm-8 col-md-8 control-label labelForVal metaCid" style="display: none">&nbsp;</label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">名称：</label>
+                    <div class="col-sm-8 col-md-8">
+                        <input type="text" class="form-control metaNm">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">传感器厂家：</label>
+                    <label class="col-sm-8 col-md-8 control-label labelForVal metaSSMf">&nbsp;</label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">传感器型号：</label>
+                    <label class="col-sm-8 col-md-8 control-label labelForVal metaSSPd">&nbsp;</label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">单位：</label>
+                    <div class="col-sm-4 col-md-4" style="min-width: 100px;">
+                        <input type="text" class="form-control metaUnit">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">系统元数据映射：</label>
+                    <div class="col-sm-4 col-md-4" style="min-width: 100px;">
+                        <input type="text" class="form-control metaSysMetaID" style="display:none">
+                        <input type="text" class="form-control metaSysMetaNM" disabled>
+                    </div>
+                    <i class="fa fa-bars fa-lg sysMetaList" title="更改"></i>
+                    <div class="col-sm-offset-4 col-md-offset-4 col-sm-8 col-md-8 metaSysChgInfo">
+                        <label>元数据映射的修改会带来规则的重置，如有需要设置规则，请保存完后前往"规则引擎"页面设置</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

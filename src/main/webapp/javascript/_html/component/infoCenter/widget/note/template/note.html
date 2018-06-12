@@ -1,0 +1,63 @@
+<div>
+    <ul class="noteFilter list-unstyled">
+        <li class="all"><a href="javascript:void(0);" data="all">所有消息<span></span></a></li>
+        <li class="catalog">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target=".component_infoCenter_widget_note .noteFilter2" aria-expanded="true"><i class="fa fa-angle-down"></i>消息级别</a>
+            <ul class="noteFilter noteFilter2 list-unstyled collapse in">
+                <li><a href="javascript:void(0);" data="0">提示<span></span></a></li>
+                <li><a href="javascript:void(0);" data="1">警告<span></span></a></li>
+                <li><a href="javascript:void(0);" data="2">异常<span></span></a></li>
+            </ul>
+        </li>
+        <li class="catalog">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target=".component_infoCenter_widget_note .noteFilter1" aria-expanded="false"><i class="fa fa-angle-down"></i>消息类型</a>
+            <ul class="noteFilter noteFilter1 list-unstyled collapse">
+            </ul>
+        </li>
+    </ul>
+    <div class="rightContent">
+        <div style="width:100%; height:100%; position: relative">
+            <div class="top" style="padding: 15px 0px; border-bottom: 1px solid #DBE3E5">
+                <div class="search" style="height: 40px">
+                    <div class="instance">
+                        <span class="info"></span>
+                        <span>提示</span>
+                    </div>
+                    <div class="instance">
+                        <span class="warn"></span>
+                        <span>警告</span>
+                    </div>
+                    <div class="instance">
+                        <span class="error"></span>
+                        <span>异常</span>
+                    </div>
+                    <div class="input-group input-group-sm pull-right" style="max-width: 280px">
+                        <input type="text" class="form-control noteTxt" placeholder="搜索消息">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                    <div class="checkbox checkbox-primary pull-right">
+                        <input class="styled" type="checkbox">
+                        <label>未读</label>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa fa-eye readSel" title="设为已读" style="display:none"></i>
+                    <a href="javascript:void(0);" class="readAll">已读所有</a>
+                    <div class="pull-right notePage">
+                        <i class="fa fa-arrow-left"></i>
+                        <i class="fa fa-arrow-right"></i>
+                        <input type="text" class="form-control currentPage">
+                        <span>/&nbsp;</span>
+                        <span class="totalPage"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom customScrollBar">
+                <div class="notesContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

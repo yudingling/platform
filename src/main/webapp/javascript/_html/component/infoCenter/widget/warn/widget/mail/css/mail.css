@@ -1,0 +1,69 @@
+/**
+ * Created by gzh on 2016/12/8.
+ */
+.component_infoCenter_widget_warn_mail{
+	background-color: white;
+	max-width: 100%;
+	min-width: 430px;
+}
+
+.component_infoCenter_widget_warn_mail>form .myPanel .title {
+	font-size: 15px;	
+	height: 20px;
+	padding-left:81px;
+	line-height: 20px;
+	color: #333;
+	font-weight:bold;
+}
+
+.component_infoCenter_widget_warn_mail>form .myPanel .close {
+	margin-top:-2px;
+	font-size:25px;
+}
+
+.component_infoCenter_widget_warn_mail>form .myPanel.panel .panel-body {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    top: 37px;
+    padding: 0px;
+}
+
+.component_infoCenter_widget_warn_mail>form {
+	margin-top: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.component_infoCenter_widget_warn_mail .myPanel.panel .panel-heading {
+    background-color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom-color: #bfbfbf;
+}
+
+.component_infoCenter_widget_warn_mail>form:first-child>label {
+	line-height: 21px;
+	vertical-align: middle;
+}
+
+.component_infoCenter_widget_warn_mail>form:first-child i {
+	font-size: 22px;
+	margin-top: 6px;
+	margin-left: -17px;
+	cursor: pointer;
+}
+
+
+.component_infoCenter_widget_warn_mail>form .btn_group {
+	float: right;
+	margin-right: 8px;
+}
+
+
+
+
+
+
+

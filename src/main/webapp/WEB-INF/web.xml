@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+	
+	<display-name></display-name>
+	
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>platform</param-value>
+	</context-param>
+	
+	<!-- cors 跨域访问，优先级别最高，放最上面 -->
+	<filter>
+  		<filter-name>corsFilter</filter-name>
+  		<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  		<init-param>
+    		<param-name>cors.allowed.origins</param-name>
+    		<param-value>*</param-value>
+  		</init-param>
+  		<init-param>
+    		<param-name>cors.allowed.methods</param-name>
+    		<param-value>GET,POST,PUT,DELETE</param-value>
+  		</init-param>
+  		<init-param>
+    		<param-name>cors.support.credentials</param-name>
+    		<param-value>true</param-value>
+  		</init-param>
+	</filter>
+	<filter-mapping>
+  		<filter-name>corsFilter</filter-name>
+  		<url-pattern>/platformApi/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- spring session in redis 配置，这个放在所有 filter 的最前面 -->
+	<filter>
+	    <filter-name>springSessionRepositoryFilter</filter-name>
+	    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>springSessionRepositoryFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+  
+    <!-- Spring 配置文件 -->
+	<context-param>
+  		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/applicationContext_*.xml</param-value>
+  	</context-param>
+    
+	<!-- Spring 监听 -->
+	<listener> 
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- 使 Spring 支持 request、session、global session 的 scope -->
+	<listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    
+    <!-- authenticate.
+        should not mapping '/platformApi/3rd/*' to authentication, thirdParty service can't get any credentials).
+    -->
+    <filter>
+		<filter-name>authenticateFilter</filter-name>
+		<filter-class>com.ckxh.cloud.persistence.common.auth.Authenticate</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>authenticateFilter</filter-name>
+		<url-pattern>/platformApi/own/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authenticateFilter</filter-name>
+		<url-pattern>/platformMain/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authenticateFilter</filter-name>
+		<url-pattern>/main/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authenticateFilter</filter-name>
+		<url-pattern>*.ws</url-pattern>
+	</filter-mapping>
+	
+	<!-- authenticate for mobile request -->
+	<filter>
+		<filter-name>authenticateFilter_mobile</filter-name>
+		<filter-class>com.ckxh.cloud.persistence.common.auth.Authenticate_mobile</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>authenticateFilter_mobile</filter-name>
+		<url-pattern>/platformMobile/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- authorize -->
+	<filter>
+		<filter-name>authorizeFilter</filter-name>
+		<filter-class>com.ckxh.cloud.persistence.common.auth.Authorize</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>authorizeFilter</filter-name>
+		<url-pattern>/platformApi/own/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authorizeFilter</filter-name>
+		<url-pattern>/platformMain/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authorizeFilter</filter-name>
+		<url-pattern>/main/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authorizeFilter</filter-name>
+		<url-pattern>*.ws</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>authorizeFilter</filter-name>
+		<url-pattern>/platformMobile/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- authorize for thirdParty api request -->
+	<filter>
+		<filter-name>authorizeFilter_3rd</filter-name>
+		<filter-class>com.ckxh.cloud.persistence.common.auth.Authorize_3rd</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>authorizeFilter_3rd</filter-name>
+		<url-pattern>/platformApi/3rd/*</url-pattern>
+	</filter-mapping>
+  
+  	<!-- 设置中文字符集 -->  
+	<filter>
+    	<filter-name>characterEncodingUTF8</filter-name>
+    	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    	<init-param>
+      		<param-name>encoding</param-name>
+      		<param-value>UTF-8</param-value>
+    	</init-param>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>characterEncodingUTF8</filter-name>
+    	<servlet-name>dispatcher</servlet-name>
+  	</filter-mapping>
+  	
+  	<!-- Spring mvc servlet. should not add '/' pattern to the mapping, cause all of the paths need to be one of the pattern defined below.  
+  	  '.ws' is using for websocket, cause we can not mapping a path for websocket (handler for websocket in spring mvc is not merely controller in common sense), 
+  	  the only way is set it as a extension -->
+    <servlet>
+    	<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- 自定义spring mvc 的配置文件名称和路径 -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:/dispatcher-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>dispatcher</servlet-name>
+    	<url-pattern>*.ws</url-pattern>
+    	<url-pattern>/platformApi/*</url-pattern>
+    	<url-pattern>/platformMain/*</url-pattern>
+    	<url-pattern>/platformMobile/*</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!-- 错误页面配置 -->
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+    	<location>/error/500.html</location>
+  	</error-page>
+  	<error-page>
+    	<error-code>500</error-code>
+    	<location>/error/500.html</location>
+  	</error-page>
+  	<error-page>
+    	<error-code>404</error-code>
+    	<location>/error/404.html</location>
+  	</error-page>
+  	<error-page>
+    	<error-code>401</error-code>
+    	<location>/error/401.html</location>
+  	</error-page>
+  	<error-page>
+  		<!-- custom '305' to indicate user not logged in -->
+    	<error-code>305</error-code>
+    	<location>/static/signin.jsp</location>
+  	</error-page>
+  	
+  	<!-- 首页。 注意，此处的页面不能被 spring 的 servlet 拦截到-->
+  	<welcome-file-list>
+		<welcome-file>/static/signin.jsp</welcome-file>
+	</welcome-file-list>
+   
+</web-app>

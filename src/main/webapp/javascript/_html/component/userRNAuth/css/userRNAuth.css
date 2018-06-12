@@ -1,0 +1,123 @@
+.component_userRNAuth {
+    height: 100%;
+    width: 100%;
+}
+
+.component_userRNAuth .search {
+	width: 50%;
+    max-width: 300px;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+.component_userRNAuth > .content {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    top: 72px;
+}
+
+.component_userRNAuth > .content > div {
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.component_userRNAuth > .content > .detail label.check {
+    padding-left: 35px;
+}
+
+.component_userRNAuth > .content > .grid {
+    margin-left: 5%;
+    width: 38%;
+}
+
+.component_userRNAuth > .content > .grid>div:first-child{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	bottom: 50px;
+}
+
+.component_userRNAuth > .content > .grid>div:last-child{
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	height: 40px;
+}
+
+.component_userRNAuth > .content > .detail {
+    width: 52%;
+    border-left: none;
+}
+
+.component_userRNAuth > .content > .detail img{
+	height: 250px;
+	float: left;
+}
+
+.component_userRNAuth label.labelForVal {
+    text-align: left;
+    font-weight: normal;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px !important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > input {
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i:hover {
+    border-color: #ccc;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > * {
+    display: inline-block;
+    float: left;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > * {
+    line-height: 45px;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i {
+    font-size: 12px;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i:first-child {
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i:first-child + i {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_userRNAuth > .content > .grid > .svPage > i:first-child:hover + i {
+    border-left-color: #ccc;
+}

@@ -1,0 +1,77 @@
+.component_dataView_widget_vert{
+    width: 100%;
+    padding: 10px;
+}
+
+.component_dataView_widget_vert .panel{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    transition-property: background-color;
+    -moz-transition-property: background-color; /* Firefox 4 */
+    -webkit-transition-property:background-color; /* Safari 和 Chrome */
+    -o-transition-property: background-color; /* Opera */
+}
+
+.component_dataView_widget_vert .btn-group{
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.component_dataView_widget_vert label.btn{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    color: inherit;
+    margin-bottom: 5px;
+    padding-left: 24px;
+    /*box-shadow: 0px 2px 15px 1px rgb(241, 241, 241);*/
+}
+
+.component_dataView_widget_vert label.btn .fa-check{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    font-size: 12px;
+}
+
+.component_dataView_widget_vert label.btn.active{
+    background-color: #69bcab;
+    color: #fff;
+}
+
+.component_dataView_widget_vert label.btn.active .fa-check{
+    display: block;
+}
+
+.component_dataView_widget_vert .panel,
+.component_dataView_widget_vert .panel .panel-heading{
+    border-radius: 0px;
+    border: none;
+    background-color: #eee;
+}
+
+.component_dataView_widget_vert .panel .panel-heading{
+    background-color: transparent;
+    color: inherit;
+}
+
+.component_dataView_widget_vert .panel:hover{
+    background-color: #e2e2e2; /*#d6d6d6*/
+}
+
+.component_dataView_widget_vert .panel:hover .panel-heading{
+    color: #1b1b1b;
+}
+
+.component_dataView_widget_vert label.btn.disabled{
+    color: #8c8c8c; /* #676a6c*/
+    background-color: rgb(255, 255, 255);
+}
+
+.component_dataView_widget_vert label.btn.disabled:hover{
+    background-color: rgb(255, 255, 255);
+}

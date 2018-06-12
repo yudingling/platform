@@ -1,0 +1,118 @@
+/**
+ * Created by gzh on 2016/12/8.
+ */
+.component_infoCenter_widget_warn_wechat {
+    background-color: white;
+    max-width: 100%;
+    min-width: 430px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .myPanel .title {
+    font-size: 15px;
+    height: 20px;
+    padding-left: 81px;
+    line-height: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.component_infoCenter_widget_warn_wechat > form .restrict{
+    font-size: 12px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .myPanel .close {
+    margin-top: -2px;
+    font-size: 25px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .myPanel.panel .panel-body {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    top: 37px;
+    padding: 0px;
+}
+
+.component_infoCenter_widget_warn_wechat > form {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .input {
+    padding: 0px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .imgDiv {
+    padding: 0px;
+    min-height: 130px;
+    max-height: 250px;
+    border: 1px solid #E5E6E7;
+}
+
+.component_infoCenter_widget_warn_wechat > form .choose {
+    color: gray;
+    line-height: 130px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .img {
+    max-height: 130px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .imgPanel{
+    width: 100%;
+    height: 130px;
+    margin-top: -140px;
+}
+
+.component_infoCenter_widget_warn_wechat > form .contact {
+    width: 100%;
+}
+
+.component_infoCenter_widget_warn_wechat > form .inputFileObj {
+    width: 100%;
+    height: 130px;
+    float: left;
+    margin-top: -140px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.component_infoCenter_widget_warn_wechat .myPanel.panel .panel-heading {
+    background-color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-bottom-color: #bfbfbf;
+}
+
+.component_infoCenter_widget_warn_wechat > form .bootstrap-tagsinput {
+    width: 370px;
+}
+
+.component_infoCenter_widget_warn_wechat > form:first-child > label {
+    line-height: 21px;
+    vertical-align: middle;
+}
+
+.component_infoCenter_widget_warn_wechat > form:first-child i {
+    font-size: 22px;
+    margin-top: 6px;
+    margin-left: -17px;
+    cursor: pointer;
+}
+
+.component_infoCenter_widget_warn_wechat > form .btn_group {
+    float: right;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+.component_myMaint_broadcastDetail{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.component_myMaint_broadcastDetail>*{
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.component_myMaint_broadcastDetail .occupy{
+    width: 45%;
+    height: 45px; 
+    padding: 5px 0px 0px 0px;
+    font-size: 17px;
+    margin: auto!important;
+    font-weight: normal;
+    position: absolute!important;
+    min-width: 90px;
+}
+
+.component_myMaint_broadcastDetail table tr{
+    height: 35px;
+}
+
+.component_myMaint_broadcastDetail table tr>td{
+    vertical-align: top;
+}
+

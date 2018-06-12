@@ -1,0 +1,24 @@
+svg .axis path{
+    fill: none;
+    stroke-width: 2px;
+    stroke: #222;
+}
+
+svg .axis line{
+    fill: none;
+    stroke-width: 1px;
+    stroke: #222;
+}
+
+svg .axis text{
+    font-size: 10px;
+}
+
+svg path.link{
+    stroke-width: 2px;
+    opacity: 0.6;
+}
+
+svg text.label-text{
+    font-size: 12px;
+}

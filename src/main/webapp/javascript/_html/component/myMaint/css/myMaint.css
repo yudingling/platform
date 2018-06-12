@@ -1,0 +1,59 @@
+.component_myMaint{
+	height: 100%;
+	min-width: 750px;
+}
+
+.component_myMaint>div{
+	height: 100%;
+    top: 0px;
+    position: absolute;
+    transition: left 0.3s;
+}
+
+.component_myMaint>div.left{
+	left: 0px;
+    width: 25%;
+}
+
+.component_myMaint>div.right{
+	left: 25%;
+    right: 0px;
+    background-color: #fff;
+}
+
+.component_myMaint.padLeft>div.left{
+	left: -15%;
+}
+
+.component_myMaint.padLeft>div.right{
+	left: 10%;
+}
+
+.component_myMaint>div.right>div{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.component_myMaint>div.right>div.desc{
+    height: 0px;
+    border-bottom: 5px solid #adcede;
+}
+
+.component_myMaint>div.right>div.exec{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.component_myMaint>div.right.down>div.desc{
+    display: block;
+    height: 200px;
+}
+
+.component_myMaint>div.right.down>div.exec{
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    bottom: 0px;
+}

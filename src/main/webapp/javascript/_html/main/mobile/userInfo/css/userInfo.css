@@ -1,0 +1,73 @@
+
+.main_mobile_userInfo{
+    height: 100%;
+}
+
+.main_mobile_userInfo a.moreHref{
+    color: #fff;
+}
+
+.main_mobile_userInfo a.moreHref>i{
+    transition: transform 0.3s;
+}
+
+.main_mobile_userInfo a.moreHref.open>i{
+    transform: rotate(180deg)
+}
+
+.main_mobile_userInfo .moreInfo>form>.form-group label{
+    padding: 0px;
+    font-weight: normal;
+    float: left;
+}
+
+.main_mobile_userInfo .moreInfo>form>.form-group>label:first-child{
+    width: 35%;
+    text-align: right;
+}
+
+.main_mobile_userInfo .moreInfo>form>.form-group>label:last-child{
+    width: 65%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.main_mobile_userInfo .qrCode{
+    height: 190px;
+    position: relative;
+}
+
+.main_mobile_userInfo .qrCode>div{
+    width: 140px;
+    height: 140px;
+    display: none;
+}
+
+.main_mobile_userInfo div.icon{
+    height: 140px; 
+    position: relative;
+}
+
+.main_mobile_userInfo div.icon>div{
+    width: 140px; 
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid #FFFFFF;
+}
+
+.main_mobile_userInfo div.icon img{
+    width: 100%;
+}
+
+.main_mobile_userInfo div.widget i{
+    font-size: 40px;
+}
+
+.main_mobile_userInfo div.widget>div>div:first-child{
+    width: 40%;
+    float: left;
+}
+.main_mobile_userInfo div.widget>div>div:last-child{
+    width: 60%;
+}

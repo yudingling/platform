@@ -1,0 +1,80 @@
+.component_3rdStore_widget_purchase{
+    width: 100%;
+}
+
+.component_3rdStore_widget_purchase .upgNav{
+    background: linear-gradient(to bottom, #67bbaa, #6cccb7);
+}
+
+.component_3rdStore_widget_purchase .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.component_3rdStore_widget_purchase .upgNav .cd-multi-steps li > *{
+    color: #fff;
+}
+
+.component_3rdStore_widget_purchase .upgNav .cd-multi-steps li.current > *{
+    color: #007369;
+}
+
+.component_3rdStore_widget_purchase .steps{
+	position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.component_3rdStore_widget_purchase .steps>div>div:first-child,
+.component_3rdStore_widget_purchase .steps>div>form:first-child{
+    height: 395px;
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+}
+
+.component_3rdStore_widget_purchase .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.component_3rdStore_widget_purchase .navSteps em{
+    font-size: inherit;
+}
+
+.component_3rdStore_widget_purchase .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.component_3rdStore_widget_purchase .step4 .finalInfo{
+    text-align: center;
+    padding: 90px 20px 20px 20px!important; 
+    font-size: 15px;
+}
+
+.component_3rdStore_widget_purchase .step4 .finalInfo>span{
+    display: block;
+}
+
+.component_3rdStore_widget_purchase .step4 .finalInfo i{
+    color: #67bbaa; 
+    font-size: 17px; 
+    margin-right: 5px; 
+    margin-bottom: 10px;
+}
+
+.component_3rdStore_widget_purchase .step2 label{
+    font-size: 13px!important;
+    font-weight: normal;
+}
+
+.component_3rdStore_widget_purchase .steps .svNm{
+    color: #1a7bb9;
+}
+
+.component_3rdStore_widget_purchase .steps button{
+    min-width: 80px;
+}

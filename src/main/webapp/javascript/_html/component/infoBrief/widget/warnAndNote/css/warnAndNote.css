@@ -1,0 +1,103 @@
+.component_infoBrief_warnAndNote,
+.component_infoBrief_warnAndNote>*,
+.component_infoBrief_warnAndNote>div>*,
+.component_infoBrief_warnAndNote>div>.itemList>div{
+    width: 100%;
+    position: relative;
+}
+
+.component_infoBrief_warnAndNote>div{
+    display: none;
+}
+
+.component_infoBrief_warnAndNote>div>.infoHead{
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    z-index: 1;
+    box-shadow: 0px 2px 4px 0px rgba(178, 181, 181, 0.22);
+}
+
+.component_infoBrief_warnAndNote>div>.infoHead>div{
+    width: 100%;
+    height: 40px;
+}
+
+.component_infoBrief_warnAndNote>div>.infoHead>div>*{
+    line-height: 40px;
+    display: inline-block;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div{
+    background-color: #fff;
+    padding: 0px 20px;
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div>div.media{
+    margin-top: 17px;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div.split{
+    background-color: #f9f9f9;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div .media-left{
+    cursor: default;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div .media-body{
+    display: table-cell;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div .media-body .media-heading.metadata{
+    font-weight: normal;
+    color: #777;
+    padding-bottom: 4px;
+    padding-top: 2px;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div .media-body .media-heading.metadata:before{
+    content: '\2014 \00A0';
+}
+
+
+.component_infoBrief_warnAndNote>div>.itemList>div .media-left>img{
+    width: 34px;
+    height: 34px;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div>.itemFoot{
+    padding-top: 10px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div>.itemFoot>*{
+    opacity: 0;
+    display: inline-block;
+    transition: opacity 0.6s;
+    color: #569a8c;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div>.itemFoot>a{
+    margin-left: 4px;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div>.itemFoot>span{
+    float: right;
+    opacity: 1!important;
+    color: #a7a7a7;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div:hover{
+    background-color: #f5f5f5;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div:hover>.itemFoot>*{
+    opacity: 1;
+}
+
+.component_infoBrief_warnAndNote>div>.itemList>div:hover>.itemFoot>a:hover{
+    /*color: #569a8c;*/
+}

@@ -1,0 +1,25 @@
+
+.component_userAccount_widget_ntfSet_pushUserMgr_pushUserTree{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.component_userAccount_widget_ntfSet_pushUserMgr_pushUserTree>div{
+    width: 100%;
+}
+
+.component_userAccount_widget_ntfSet_pushUserMgr_pushUserTree .search{
+    height: 36px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserMgr_pushUserTree .treeContainer{
+	top:36px;
+	bottom:0px;
+	position:absolute;
+}
+
+.component_userAccount_widget_ntfSet_pushUserMgr_pushUserTree .treeContainer ul.ztree{
+	margin: 0px 1px 0px 1px;
+	background-color:#fff;
+}

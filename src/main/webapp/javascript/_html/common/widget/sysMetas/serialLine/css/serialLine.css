@@ -1,0 +1,122 @@
+
+.common_widget_sysMetas_serialLine{
+    position: relative;
+    overflow: hidden;
+}
+
+.common_widget_sysMetas_serialLine>.slc{
+    height: 100%;
+    width: 100%;
+}
+
+.common_widget_sysMetas_serialLine>.slc.horizontal>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+}
+
+.common_widget_sysMetas_serialLine>.slc.vertical>div{
+    width: 100%;
+}
+
+.common_widget_sysMetas_serialLine>.slc .chartContainer,
+.common_widget_sysMetas_serialLine>.slc .gridContainer,
+.common_widget_sysMetas_serialLine>.slc .callDataContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.common_widget_sysMetas_serialLine>.slc .gridContainer{
+    border: none;
+}
+
+/* hide the horizontal scroll bar in jqxgrid */
+.common_widget_sysMetas_serialLine>.slc .gridContainer .jqx-scrollbar-custom-zd[id^='horizontal']{
+    display: none;
+}
+
+.common_widget_sysMetas_serialLine>.slc.horizontal .gridContainer,
+.common_widget_sysMetas_serialLine>.slc.horizontal .callDataContainer{
+    border-left: 1px solid #e5e5e5;
+}
+
+.common_widget_sysMetas_serialLine>.slc.vertical .gridContainer,
+.common_widget_sysMetas_serialLine>.slc.vertical .callDataContainer{
+    border-top: 1px solid #e5e5e5;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer{
+    display: none;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid.showCallData .gridContainer{
+    display: none;
+}
+.common_widget_sysMetas_serialLine>.slc .grid.showCallData .callDataContainer{
+    display: block;
+}
+
+.common_widget_sysMetas_serialLine .drawer_s{
+	z-index: 1;
+}
+
+.common_widget_sysMetas_serialLine .drawer_s .showChart{
+    display: none;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .gridContainer span.gridTitle{
+    line-height: 34px;
+    margin: 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .gridContainer span.gridTitle+span{
+    color: #828181;
+    font-size: 12px;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .gridContainer i.export{
+    float: right;
+    margin-right: 80px;
+    line-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .gridContainer i.export.minPos{
+    margin-right: 20px;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .gridContainer i.export:hover{
+    color: rgb(76,159,201);
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer label{
+    font-size: inherit;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer label.desc{
+    display: none;
+    transition: opacity 0.5s;
+    color: #0c8269;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer label.labelForVal{
+    font-weight: normal;
+    text-align: left;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer .tmRange>*{
+    display: inline-block;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer input.tm{
+    width: 150px;
+}
+
+.common_widget_sysMetas_serialLine>.slc .grid .callDataContainer .btn-group>label.active{
+    background-color: #a5a5a5;
+    color: #fff;
+    border-color: #a5a5a5;
+}

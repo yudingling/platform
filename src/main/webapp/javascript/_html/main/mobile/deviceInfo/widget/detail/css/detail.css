@@ -1,0 +1,52 @@
+.main_mobile_deviceInfo_detail {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+.main_mobile_deviceInfo_detail>.outer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 41px;
+}
+
+.main_mobile_deviceInfo_detail .metalabel {
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.main_mobile_deviceInfo_detail .box {
+    padding: 20px 10px 10px 15px;
+}
+
+.main_mobile_deviceInfo_detail .list-group-item{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #e7eaec;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main_mobile_deviceInfo_detail>.back{
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    line-height: 40px;
+    border-top: 1px solid #b9ded7;
+    box-shadow: 6px 6px 15px 2px #6da59a;
+    font-weight: bold;
+}
+
+.main_mobile_deviceInfo_detail>.back>i{
+    padding: 0px 14px;
+    line-height: 40px;
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

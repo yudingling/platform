@@ -1,0 +1,32 @@
+.objectSelector{
+	position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.objectSelector .objectContainer{
+	width:100%;
+	top:0px;
+	bottom:40px;
+	position:absolute;
+	overflow-y:auto
+}
+
+.objectSelector .objectContainer .cti{
+    width: 100%;
+    padding: 5px;
+}
+
+.objectSelector .objectContainer + div{
+	bottom:0px;
+	height:40px;
+	width:100%;
+	position:absolute;
+	padding-top:6px;
+	text-align:center;
+	border-top:1px solid #bfbfbf;
+}
+.objectSelector .objectContainer + div a{
+	width:65px;
+	padding:3px;
+}

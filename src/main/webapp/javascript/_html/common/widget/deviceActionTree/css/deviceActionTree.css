@@ -1,0 +1,25 @@
+
+.common_widget_dat{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.common_widget_dat>div{
+    width: 100%;
+}
+
+.common_widget_dat .search{
+    height: 36px;
+}
+
+.common_widget_dat .treeContainer{
+	top:36px;
+	bottom:0px;
+	position:absolute;
+}
+
+.common_widget_dat .treeContainer ul.ztree{
+	margin: 0px 1px 0px 1px;
+	background-color:#fff;
+}

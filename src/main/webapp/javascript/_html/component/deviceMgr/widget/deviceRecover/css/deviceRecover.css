@@ -1,0 +1,29 @@
+.component_deviceMgr_widget_dataRecover .search{
+    height: 36px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.component_deviceMgr_widget_dataRecover .content{
+    height: 370px;
+}
+
+.component_deviceMgr_widget_dataRecover .content>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+}
+
+.component_deviceMgr_widget_dataRecover .content>.grid{
+    width: 60%;
+}
+.component_deviceMgr_widget_dataRecover .content>.detail{
+    width: 40%;
+    border-left: none;
+}
+
+.component_deviceMgr_widget_dataRecover label.labelForVal{
+    text-align: left;
+    font-weight: normal;
+}

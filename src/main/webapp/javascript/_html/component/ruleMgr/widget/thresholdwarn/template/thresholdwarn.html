@@ -1,0 +1,41 @@
+<div>
+	<form class="form-horizontal">
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 col-md-3 control-label">分析顺序：</label>
+            <div class="col-sm-9 col-md-9">
+                <input type="text" class="order form-control" style="width: 50px">
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <label class="col-sm-3 col-md-3 control-label">触发条件：</label>
+            <div class="col-sm-9 col-md-9">
+                <div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" value="lt">
+				    <span>值 > </span>
+				    <input type="text" class="ltval form-control">
+				    <span> 则告警</span>
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" value="st">
+				    <span>值 < </span>
+				    <input type="text" class="stval form-control">
+				    <span> 则告警</span>
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios" value="range">
+				    <span>值不在 </span>
+				    <input type="text" class="rangeL form-control">
+				    <span> ~ </span>
+				    <input type="text" class="rangeR form-control">
+				    <span> 区间，则告警</span>
+				  </label>
+				</div>
+            </div>
+        </div>
+    </form>
+</div>

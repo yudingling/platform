@@ -1,0 +1,42 @@
+.component_userAccount_widget_resource_videoResource{
+    width: 500px;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #e7eaec;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.component_userAccount_widget_resource_videoResource>div{
+    width: 100%;
+}
+
+.component_userAccount_widget_resource_videoResource>div.videoHead{
+    height: 60px;
+}
+
+.component_userAccount_widget_resource_videoResource>div.videoHead>*{
+    display: inline-block;
+    float: left;
+}
+
+.component_userAccount_widget_resource_videoResource>div.videoGrid{
+    height: 180px;
+    position: relative;
+}
+
+.component_userAccount_widget_resource_videoResource .modal .modal-body{
+    padding: 0px 0px 30px 0px;
+}
+
+/* hide the horizontal scroll bar in jqxgrid */
+.component_userAccount_widget_resource_videoResource>div.videoGrid .jqx-scrollbar-custom-zd[id^='horizontal']{
+    display: none;
+}
+
+.component_userAccount_widget_resource_videoResource>div.videoGrid .videoGridTitle{
+    line-height: 33px; 
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif !important;
+}

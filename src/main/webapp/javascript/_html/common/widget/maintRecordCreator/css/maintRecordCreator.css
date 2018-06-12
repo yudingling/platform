@@ -1,0 +1,98 @@
+
+.common_widget_maintRecordCreator{
+    width: 100%;
+    position: relative;
+}
+
+.common_widget_maintRecordCreator .upgNav{
+    background: linear-gradient(to bottom, #67bbaa, #6cccb7);
+}
+
+.common_widget_maintRecordCreator .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.common_widget_maintRecordCreator .upgNav .cd-multi-steps li > *{
+    color: #fff;
+}
+
+.common_widget_maintRecordCreator .upgNav .cd-multi-steps li.current > *,
+.common_widget_maintRecordCreator .upgNav .cd-multi-steps li.visited > *{
+    color: #49545d;
+}
+
+.common_widget_maintRecordCreator .steps{
+	position: relative;
+    height: 330px;
+    overflow: hidden;
+}
+
+.common_widget_maintRecordCreator .steps>div>div:first-child{
+    height: 280px;
+    width: 100%;
+    padding: 10px;
+}
+
+.common_widget_maintRecordCreator .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.common_widget_maintRecordCreator .navSteps em{
+    font-size: inherit;
+}
+
+.common_widget_maintRecordCreator .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div.distKind>div{
+    width: 40%;
+    height: 60%;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 50px;
+    padding-top: 100px;
+    background-position: 50% 30%!important;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div.distKind>div:not(.split):hover{
+    box-shadow: 1px 1px 5px 0px #bdbdbd;
+    border: 1px solid #e0e0e0;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div.distKind>div:nth-child(1){
+    background: url(../img/area.png) no-repeat;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div.distKind>div:nth-child(3){
+    background: url(../img/person.png) no-repeat;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div .return{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.common_widget_maintRecordCreator .step3>div:first-child>div:not(:first-child)>div{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.common_widget_maintRecordCreator .step4 .finalInfo span{
+    font-weight: bold;
+}

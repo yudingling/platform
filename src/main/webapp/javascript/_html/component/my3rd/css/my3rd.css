@@ -1,0 +1,131 @@
+.component_my3rd{
+	height: 100%;
+	min-width: 1024px;
+	position: relative;
+    background-color: #EAEAEA;
+}
+
+/* main */
+
+.component_my3rd>.my3rdMain{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.component_my3rd>.my3rdMain>div,
+.component_my3rd>.my3rdMain>div>div{
+    height: 100%;
+    position: relative;
+}
+
+@media(max-width: 1280px){
+    .component_my3rd>.my3rdMain>div{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1280px){
+    .component_my3rd>.my3rdMain>div:first-child{
+        width: 63%;
+    }
+    .component_my3rd>.my3rdMain>div:last-child{
+        width: 37%;
+    }
+}
+
+.component_my3rd>.my3rdMain>div .ibox-content{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 48px;
+    bottom: 0px;
+    padding: 0px;
+}
+
+.component_my3rd>.my3rdMain .created3rd>.ibox-title i{
+    font-size: 21px;
+    color: #4CA293;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+/* iframe */
+
+.component_my3rd>.iframeContainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.component_my3rd.iframeShow>.iframeContainer{
+    display: block;
+}
+
+.component_my3rd.iframeShow>*:not(.iframeContainer){
+    display: none!important;
+}
+ 
+.component_my3rd>.iframeContainer>iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 0!important;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav{
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    height: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav *{
+    text-align: center;
+    color: #ccc;
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    height: 50px;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav>i{
+    width: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav>i:hover{
+    color: #fff;
+    text-shadow: #fff 0px 0px 8px;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav>div>span{
+    line-height: 50px;
+    margin-left: -150px;
+    transition: margin-left 0.5s;
+    border-left: 1px solid #807f7f;
+    padding: 0px 10px;
+    cursor: default;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav>div:last-child{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 100%;
+    background-color: rgba(34,34,34,.8);
+    transition: width 0.5s;
+    z-index: -1;
+}
+
+.component_my3rd>.iframeContainer>.iframeNav:hover>div:last-child{
+    width: 100%;
+}

@@ -1,0 +1,80 @@
+<div>
+    <div class="search">
+        <form class="form-inline">
+            <div class="form-group  form-group-sm" style="margin-right: 0px">
+                <label>时间范围:</label>
+                <input type="text" class="form-control stm tm">
+            </div>
+            <span style="margin-right: 0px">~</span>
+            <div class="form-group  form-group-sm">
+                <input type="text" class="form-control etm tm">
+            </div>
+            <div class="form-group  form-group-sm nameOrIdFG">
+                <input type="text" class="form-control nameOrId" placeholder="编码或名称搜索..." style="width: 200px">
+            </div>
+            <button type="button" class="btn btn-primary search">查询</button>
+            <button type="button" class="btn btn-default pull-right add">创建命令</button>
+            <button type="button" class="btn btn-primary switch pull-right save" >生 成</button>
+            <button type="button" class="btn btn-default switch pull-right cancel">取 消</button>
+        </form>
+    </div>
+	<div class="content">
+        <div class="step1">
+            <div class="grid">           
+	            <div style="width: 100%; border: none; height: 345px;">
+					<div class="gridContainer" style="width:100%;height:100%"></div>
+				</div>
+				<div class="pull-right svPage" style="height:40px;margin-right:10px;">
+					<i class="fa fa-arrow-left"></i> 
+					<i class="fa fa-arrow-right"></i> 
+					<input type="text" class="form-control currentPage"> <span>/&nbsp;</span>
+					<span class="totalPage"></span>
+				</div>				
+			</div>			
+          
+            <div class="detail customScrollBar">
+                <form class="form-horizontal" style="padding: 0px 15px">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">设备标识：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal clientId"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">设备名称：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal clientNm"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">命令时间：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal crtTM"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">命令内容：</label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <textarea class="form-control cmdContent" style="height: 100px" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">反馈时间：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal responseTM"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">反馈内容：</label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <textarea class="form-control responseContent" style="height: 100px"  spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="step2">
+            <div class="newTree">
+            </div>
+            <div class="newContent">
+                <textarea class="form-control" style="height: 97%"  spellcheck="false"></textarea>
+            </div>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+.common_widget_maintRecordDetail_locMap{
+    height: 200px!important;
+    width: 100%!important;
+    position: relative;
+    border: 1px solid #e5e6e7;
+}
+
+.common_widget_maintRecordDetail_locMap .mapTool{
+    display: none;
+}

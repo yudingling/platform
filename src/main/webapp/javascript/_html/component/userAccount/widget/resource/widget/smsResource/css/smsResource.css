@@ -1,0 +1,29 @@
+.component_userAccount_widget_resource_smsResource{
+    width: 500px;
+    position: relative;
+    padding: 15px 15px 10px 15px;
+    border: 1px solid #e7eaec;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.component_userAccount_widget_resource_smsResource>div{
+    width: 100%;
+}
+
+.component_userAccount_widget_resource_smsResource>div.smsHead{
+    height: 60px;
+}
+
+.component_userAccount_widget_resource_smsResource>div.smsHead>*{
+    display: inline-block;
+    float: left;
+}
+
+.component_userAccount_widget_resource_smsResource>div.smsChart{
+    height: 180px;
+}
+
+.component_userAccount_widget_resource_smsResource .modal .modal-body{
+    padding: 0px 0px 30px 0px;
+}

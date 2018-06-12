@@ -1,0 +1,78 @@
+.main_mobile_deviceInfo {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.main_mobile_deviceInfo .searchAll {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    z-index: 6000;
+    padding-left: 20px;
+}
+
+.main_mobile_deviceInfo .searchAll>.input-group{
+    display: none;
+    border: none!important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+    margin: 5px 0px;
+}
+
+.main_mobile_deviceInfo .searchAll>.input-group *{
+    border: none!important;
+}
+
+.main_mobile_deviceInfo .searchAll>.input-group button,
+.main_mobile_deviceInfo .searchAll>.input-group input{
+    height: 40px;
+    font-size: 14px;
+}
+
+.main_mobile_deviceInfo .cover {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.main_mobile_deviceInfo .switchBtn {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 3000;
+    transition: all 0.3s;
+}
+
+.main_mobile_deviceInfo>.steps .mheader{
+    text-align: center;
+    font-size: 16px;
+    line-height: 53px;
+    background-color: #607d8b;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.main_mobile_deviceInfo>.steps .mheader+div{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 53px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.main_mobile_deviceInfo>.steps>.view>.viewContent>div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+

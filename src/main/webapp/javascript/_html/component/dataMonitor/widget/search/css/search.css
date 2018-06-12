@@ -1,0 +1,251 @@
+.component_dataMonitor_widget_search{
+	width: 100%;
+    height: 100%;
+}
+
+.component_dataMonitor_widget_search>div{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* single */
+
+.component_dataMonitor_widget_search>.listContainer .single{
+    padding-top: 15px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.img{
+    position: absolute;
+    left: 15px;
+    top: 52px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.img>img{
+    width: 50px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span{
+    width: 100%;
+    display: block;
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: 25px;
+    padding-left: 80px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span:first-child{
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    color: inherit;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.empty{
+    text-align: center;
+    font-weight: normal;
+    padding: 0px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.metaLatest{
+    padding: 20px 0px 0px 15px;
+    font-size: 16px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.metaLatest>i{
+    margin-right: 20px; 
+    float: right; 
+    cursor: pointer;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.metaLatest>i:hover{
+    color: #000;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.metaIcon{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.metaIcon>i{
+    margin-right: 10px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>span.star{
+    color: #e7711b;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.tag{
+    padding: 15px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.tag>span{
+    border-radius: 0px;
+    padding: 6px;
+    cursor: default;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.tag>span:not(:last-child){
+    margin-right: 5px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single>div.tag>span>i{
+    margin-right: 3px;
+    color: #f7f7f7;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table{
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table td{
+    text-align: center;
+    height: 25px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table td:first-child{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table td.noSysMeta{
+    color: #ed5565;
+    cursor: pointer;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table.stream td{
+    text-align: left!important;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table.stream td>div{
+    height: 220px;
+    width: 364px;
+    text-align: center;
+    background-color: #000;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table.stream td a{
+    float: right;
+    margin-right: 18px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table td.metaVideo,
+.component_dataMonitor_widget_search>.listContainer .single table td.metaImage{
+    padding-right: 15px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .single table td.metaImage>div>img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* list-group */
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item{
+    padding-left: 22px;
+    border-radius: 0px;
+    color: #000;
+    font-size: 15px;
+    z-index: inherit;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item.active{
+    color: #fff;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div{
+    width: 100%;
+    padding-top: 4px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition-property: height,opacity;
+    transition-duration: 0.5s;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>div.img{
+    position: absolute;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    margin-top: -4px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>div.img>img{
+    width: 38px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>div.img+span{
+    color: #e7711b;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>span{
+    width: 100%;
+    display: block;
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>span .latestTM{
+    font-size: 12px;
+    float: right;
+    padding-top: 4px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item>div>span:last-child>i{
+    margin-right: 10px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item.active>div>span{
+    color: #fff;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item span.label{
+    margin-left: 3px;
+    display: none;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item span.label>i{
+    color: #f7f7f7;
+    margin-right: 3px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item span.label.first{
+    margin-left: 10px;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item.active span.label{
+    display: inline;
+    background-color: #f8ac59!important;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>.list-group-item:hover span.label{
+    display: inline;
+    background-color: #ccc;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>a.getMore{
+    width: 100%;
+}
+
+.component_dataMonitor_widget_search>.listContainer .list-group>a.getMore>div{
+    height: 50px;
+    line-height: 60px;
+    opacity: 1;
+    text-align: center;
+    color: #9c9c9c;
+}

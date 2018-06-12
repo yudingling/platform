@@ -1,0 +1,40 @@
+<div>
+    <div class="btn-group" data-toggle="buttons" style="margin: 10px 0px 0px 10px;">
+        <label class="btn btn-default chkBalance">
+            <input type="radio" class="balance" name="payType" autocomplete="off"> 余额
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" class="wechat" name="payType" autocomplete="off"> 微信
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" class="alipay" name="payType" autocomplete="off"> 支付宝
+        </label>
+    </div>
+    <div class="payQr center" style="height: 150px;">
+        <div class="BalanceDiv center">
+            <form class="form-horizontal" style="padding-top: 10px">
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">账户余额：</label>
+                    <label class="col-sm-8 col-md-8 control-label labelForVal balanceVal">&nbsp;</label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-4 col-md-4 control-label">支付金额：</label>
+                    <label class="col-sm-8 col-md-8 control-label labelForVal payVal">&nbsp;</label>
+                </div>
+                <div class="form-group form-group-sm balancePay" style="display: none">
+                    <label class="col-sm-4 col-md-4 control-label">登陆密码：</label>
+                    <div class="col-sm-5 col-md-5">
+                        <input type="password" class="form-control payPwd">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <button type="button" class="btn btn-primary" style="padding: 4px 16px;">支 付</button>
+                    </div>
+                </div>
+            </form>
+	    </div>
+	    <div class="WeChatDiv center">
+	    </div>
+	    <div class="AlipayDiv center"> 	       
+	    </div>  	 
+    </div>
+</div>

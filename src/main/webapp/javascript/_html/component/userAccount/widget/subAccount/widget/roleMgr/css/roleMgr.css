@@ -1,0 +1,102 @@
+.component_userAccount_widget_subAccount_roleMgr{
+    width: 100%;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul{
+	margin: 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li a{
+	margin-left: 10px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.append i{
+	color: #4CA293;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.delete i{
+	color: #ed5565;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.append i:hover{
+    color: #469594;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.delete i:hover{
+	color: #d9534f;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.ok a,
+.component_userAccount_widget_subAccount_roleMgr>ul>li.cancel a{
+    font-size: 13px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.ok a{
+	color: #ed5565!important;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>ul>li.cancel a{
+	color: #2b2b2b!important;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div{
+    height: 400px;
+    position: relative;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div{
+    height: 100%;
+    position: relative;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree{
+    width: 250px;
+    border: 1px solid #e7eaec;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree .ztree{
+	padding: 0px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree .ztree li a{
+	height: 40px!important;
+	padding-left: 10px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree .ztree li a>.node_name{
+	line-height: 40px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree .ztree li span.button.chk{
+	margin-top: 12px!important;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleTree .ztree li a.curSelectedNode{
+	background-color: rgb(32, 118, 142);
+	color: #fff;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleContent{
+    position: absolute;
+    left: 270px;
+    right: 10px;
+    top: 0px;
+    background-color: #f3f3f4;
+    padding-top: 20px;
+    border-radius: 3px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleContent>.cmd .btn{
+    width: 84px;
+    display: none;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleContent>.cmd .btn:not(:first-child){
+    margin-left: 16px;
+}
+
+.component_userAccount_widget_subAccount_roleMgr>div>div.roleContent input{
+    max-width: 350px;
+}

@@ -1,0 +1,330 @@
+.component_infoCenter_widget_warn{
+    width: 100%;
+    height: 100%;
+}
+
+.component_infoCenter_widget_warn>*:not(.modal){
+    display: inline-block;
+    float: left;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter{
+    width: 220px;
+    margin-top: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #01728c;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li{
+    line-height: 35px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a{
+    color: inherit;
+    display: block;
+    padding-left: 25px;
+    border-left: 4px solid transparent;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a>span{
+    font-weight: bold;
+    margin-left: 2px;
+    color: #444;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>ul>li>a{
+    padding-left: 50px;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a:hover{
+    background-color: #d4e8e4;
+    /*border-left-color: rgba(103, 187, 170, 0.7);*/
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a>i{
+    position: absolute;
+    left: 13px;
+    line-height: 35px;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a.active{
+    background-color: #fff;
+    color: #173e4d;
+    border-left-color: rgb(103, 187, 170);
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li>a.active>span{
+    color: #356880;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li.catalog>a>i{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.component_infoCenter_widget_warn>ul.warnFilter li.catalog.open>a>i{
+    transform: rotate(0deg);
+}
+
+.component_infoCenter_widget_warn>div.rightContent{
+    position: absolute;
+    left: 220px;
+    right: 30px;
+    top: 20px;
+    bottom: 10px;
+    padding: 10px 20px 0px 20px;
+    background-color: #fff;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div{
+    width: 100%;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top{
+    height: 75px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage i:hover{
+    border-color: #ccc;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage>i{
+    font-size: 12px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>div.top>div.warnPage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+/*item*/
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 75px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom>div{
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom>div.trans{
+    transition: width 0.3s;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom>div.list{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom>div.detail{
+    width: 0px;
+    display: none;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom.showDetail>div.list{
+    width: 50%;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom.showDetail>div.detail{
+    width: 50%;
+    border: 1px solid #DBE3E5;
+    border-top: none;
+    border-bottom: none;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr{
+    line-height: 45px;
+    transition: background-color 0.4s;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr.unClosed{
+    font-weight: bold;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr:not(:last-child){
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr:not(.empty):hover,
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr.active{
+    background-color: #eeeff1;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr:not(.empty)>td:first-child{
+    cursor: pointer;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr>td:nth-child(1){
+    padding-left: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr>td:nth-child(2){
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #67bbaa;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr>td:last-child{
+    width: 150px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .warnsContainer tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}
+
+/*detail*/
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer{
+    min-height: 100px;
+    min-width: 400px;
+    position: relative;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>*:not(.fork-me-wrapper){
+    width: 100%;
+    position: relative;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar{
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 100px;
+    height: 45px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    background-color: #e9eaee;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar>*{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar button{
+    min-width: 80px;
+    padding: 5px 12px;
+    margin-top: 2px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar>.closeDetail{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar>.closeDetail>div{
+    background: url(../img/clear.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.actionBar>.closeDetail:hover>div{
+    background-position: -72px 0px;
+    opacity: 0.7;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.warnDetail{
+    border-bottom: 1px solid #DBE3E5;
+    padding-top: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.warnDetail .labelForVal{
+    font-weight: normal;
+}
+
+
+/*time line*/
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.timeLine svg .axis-layer.axis text{
+    transform: translateX(28px) translateY(-18px) rotate(-30deg);
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.timeLine svg text.label-text{
+    cursor: pointer;
+}
+
+/* label desc */
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.labelDesc>div{
+    padding-left: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.labelDesc>span:first-child{
+    display: block;
+    font-weight: bold;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.labelDesc>div>span{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.labelDesc>div:not(:last-child){
+    border-bottom: 1px dashed #b0b0b0;
+    padding-bottom: 10px;
+}
+
+.component_infoCenter_widget_warn>.rightContent>div>.bottom .detailContainer>.labelDesc>div{
+    padding-top: 10px;
+}

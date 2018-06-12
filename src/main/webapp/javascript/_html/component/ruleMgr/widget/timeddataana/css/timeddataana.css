@@ -1,0 +1,53 @@
+.component_ruleMgr_widget_tda{
+	width: 100%;
+}
+
+.component_ruleMgr_widget_tda div.chkTTs{
+	margin: 15px;
+}
+
+.component_ruleMgr_widget_tda div.chkTTs>*:not(:first-child){
+	margin-top: 15px;
+}
+
+.component_ruleMgr_widget_tda i.fa{
+	cursor: pointer;
+}
+
+.component_ruleMgr_widget_tda div.customScrollBar{
+	max-height: 180px;
+	padding: 0px;
+}
+
+.component_ruleMgr_widget_tda div.chkTT>*{
+	display: inline-block;
+}
+
+.component_ruleMgr_widget_tda div.chkTT .ttSection{
+	width: 60px;
+}
+
+.component_ruleMgr_widget_tda div.chkTT .ttDetail{
+	width: 160px;
+}
+
+.component_ruleMgr_widget_tda div.chkTT span{
+	margin: 0px 8px;
+}
+
+.component_ruleMgr_widget_tda div.chkTT span:first-child{
+	margin-left: 0px;
+}
+
+.component_ruleMgr_widget_tda div.add>label{
+	width: 100%;
+}
+
+.component_ruleMgr_widget_tda div.add>i.add{
+	float: right;
+	margin: 10px 20px;
+}
+
+.component_ruleMgr_widget_tda div.chkTT i.delete{
+	margin-left: 20px;
+}

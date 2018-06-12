@@ -1,0 +1,29 @@
+<div>
+    <form class="form-inline" style="padding: 10px;">
+        <div class="form-group  form-group-sm">
+            <label>起始时间:</label>
+            <input type="text" class="form-control stm tm">
+        </div>
+        <div class="form-group  form-group-sm">
+            <label>结束时间:</label>
+            <input type="text" class="form-control etm tm">
+        </div>
+        <div class="form-group  form-group-sm">
+            <button type="button" class="btn btn-info search" style="width: 90px">查 询</button>
+            <button type="button" class="btn btn-primary save" style="width: 90px; margin-left: 50px;" bindAuth="{periodData post}||{periodData put}||{periodData delete}">保 存</button>
+        </div>
+    </form>
+    <div class="chart" style="height: 210px">
+        <div class="chartContainer"></div>
+    </div>
+    <div class="cmdInfo">
+        <ul class="list-inline" style="margin: 0px;">
+            <li class="import" bindAuth="{periodData post}"><a href="javascript:void(0);" title="excel导入,列名为: tm、val" style="font-size: 19px;"><i class="fa fa-file-excel-o"></i></a></li>
+            <li class="append" bindAuth="{periodData post}"><a href="javascript:void(0);" title="新增"><i class="fa fa-plus-circle"></i></a></li>
+            <li class="delete" bindAuth="{periodData delete}"><a href="javascript:void(0);" title="删除"><i class="fa fa-minus-circle"></i></a></li>
+        </ul>
+    </div>
+    <div class="grid" style="height: 250px">
+        <div class="gridContainer"></div>
+    </div>
+</div>

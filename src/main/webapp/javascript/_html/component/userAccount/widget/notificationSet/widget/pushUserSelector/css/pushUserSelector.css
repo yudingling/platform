@@ -1,0 +1,103 @@
+.component_userAccount_widget_ntfSet_pushUserSelector{
+    width: 100%;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #e7eaec;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.cover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    cursor: not-allowed;
+    background-color: #356880;
+    opacity: 0.15;
+    display: none;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector.showCover{
+    box-shadow: none;
+    color: #b7b7b7;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector.showCover>.cover{
+    display: block;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head{
+    margin-bottom: 15px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>*{
+    display: inline-block;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul{
+	margin: 0px;
+    font-size: 18px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li a{
+	margin-left: 10px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.append i{
+	color: #4CA293;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.delete i{
+	color: #ed5565;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.append i:hover{
+    color: #469594;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.delete i:hover{
+	color: #d9534f;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.ok a,
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.cancel a{
+    font-size: 13px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.ok a{
+	color: #ed5565!important;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.head>ul>li.cancel a{
+	color: #2b2b2b!important;
+}
+
+
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.infoContainer>li{
+    position: relative;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.infoContainer>li.delete{
+    color: red;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.infoContainer>li input[type="checkbox"]{
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.infoContainer.showDelete>li>a{
+    padding-left: 18px;
+    padding-right: 6px;
+}
+
+.component_userAccount_widget_ntfSet_pushUserSelector>.infoContainer.showDelete>li input[type="checkbox"]{
+    display: block;
+}
+

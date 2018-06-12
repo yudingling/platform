@@ -1,0 +1,174 @@
+.component_my3rd_widget_myUsed,
+.component_my3rd_widget_myUsed>.customScrollBar{
+    width: 100%;
+    height: 100%;
+}
+
+/* service item */
+
+.component_my3rd_widget_myUsed .svContainer>.svItem{
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 10px 0px #d6d6d6;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+@media(max-width: 500px){
+    /*display two items in a row */
+    .component_my3rd_widget_myUsed .svContainer>.svItem{
+        width: 47%;
+        height: 170px;
+        margin-right: 3%;
+        display: inline-block;
+        float: left;
+    }
+    
+    .component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg{
+        height: 100px;
+    }
+    
+    .component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .endStr{
+        display: none;
+    }
+}
+
+@media(max-width: 260px){
+    /*display one item in a row */
+    .component_my3rd_widget_myUsed .svContainer>.svItem{
+        width: 100%;
+        height: 170px;
+        margin-right: 0px;
+        display: block;
+        float: inherit;
+    }
+    
+    .component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg{
+        height: 100px;
+    }
+    
+    .component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .endStr{
+        display: none;
+    }
+}
+
+@media(min-width: 500px){
+    /* responsive */
+    .component_my3rd_widget_myUsed .svContainer>.svItem{
+        width: 250px;
+        height: 240px;
+        margin-right: 15px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg{
+        height: 170px;
+    }
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg,
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>*{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>.imgDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>div.ii{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>.imgFix{
+    z-index: 2;
+    transition-duration: 0.2s;
+    background-color: #000;
+    transition-property: background-color, opacity;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>.imgDesc{
+    transition-duration: 0.1s;
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+    padding: 20px;
+    transition-property: opacity;
+    display: table;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemImg>.imgDesc>span{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem.needFee:hover>.itemImg>.imgFix{
+    opacity: 0.5;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem.needFee:hover>.itemImg>.imgDesc{
+    opacity: 1;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc{
+    padding: 11px 10px 0px 10px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc>span:first-child{
+    font-size: 14px; 
+    color: #333;
+    white-space: nowrap;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc>div:last-child{
+    margin-top: 5px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .endStr{
+    white-space: nowrap;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .icons i.fa-stop-circle{
+    color: #ed5565;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .icons i.fa-play-circle{
+    color: #4CA293;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .icons i.fa-external-link-square{
+    color: #28bacb;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc i{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem>.itemDesc .icons i{
+    margin-left: 13px;
+}
+
+
+.component_my3rd_widget_myUsed .svContainer>div.empty{
+    text-align: center;
+    line-height: 40px;
+}
+
+.component_my3rd_widget_myUsed .svContainer>.svItem .fork-me-link{
+    padding: 3px 31px;
+}

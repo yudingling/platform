@@ -1,0 +1,76 @@
+<div>
+    <div class="mrContent">
+        <div class="top" style="padding: 15px 10px 5px 10px; border-bottom: 1px solid #e0e1e2">
+            <div style="line-height: 40px; padding-right: 70px;">
+                <span>待处理 </span><span class="badge wait" style="color: #fff"></span>
+                <span style="margin-left: 20px;">处理中 </span><span class="badge executing" style="color: #fff"></span>
+            </div>
+            <div class="searchField" style="padding: 5px 0px;">
+                <div style="z-index: 1">
+                    <div class="input-group input-group-sm" style="width: 495px">
+                        <input type="text" class="form-control" placeholder="工单内容" style="font-size: 14px; height: 35px;">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default search" type="button" style="height: 35px;"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div style="display: none; z-index: 1">
+                    <input type="text" class="form-control clients" style="width: 240px;" placeholder="选择设备">
+                    <input type="text" class="form-control tm stm" placeholder="起始时间">
+                    <input type="text" class="form-control tm etm" placeholder="结束时间">
+                    <button class="btn btn-default search" type="button" style="padding: 5px 10px; border-color: #e5e6e7"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="javascript:void(0);" class="switch" style="vertical-align: bottom; margin-left: 15px;" title="查询条件切换">高级</a>
+                <a href="javascript:void(0);" class="add" style="vertical-align: bottom; margin-left: 5px; color: #f5840a" title="创建人工工单" bindAuth="{maintRecordUpt post}">创建工单</a>
+                <div style="right: 30px; position: absolute;">
+                    <div class="recSource"></div>
+                    <div class="recStatus" style="margin-left: 10px;"></div>
+                </div>
+            </div>
+            <div style="padding: 10px; position: relative; height: 55px;">
+                <div class="pull-left instance" style="margin-top: 20px;">
+                    <span class="level level0"></span>
+                    <span>待处理</span>
+                    <span class="level level1" style="margin-left: 15px;"></span>
+                    <span>处理中</span>
+                    <span class="level level2" style="margin-left: 15px;"></span>
+                    <span>已关闭</span>
+                </div>
+                <div class="pull-right warnPage">
+                    <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-arrow-right"></i>
+                    <input type="text" class="form-control currentPage">
+                    <span>/&nbsp;</span>
+                    <span class="totalPage"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="list customScrollBar">
+                <table class="recContainer" style="width:100%;">
+                </table>
+            </div>
+            <div class="detail">
+                <div class="actionBar">
+                    <button type="button" class="btn btn-default btn-rounded recClose" bindAuth="{maintRecordUpt put}"><i class="fa fa-close"></i>&nbsp;&nbsp;关闭工单</button>
+                    <span class="closeDetail pull-right"><div></div></span>
+                </div>
+                <div class="recDetail customScrollBar">
+                    <div class="recDetailCC"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 440px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">创建工单</h4>
+                </div>
+                <div class="modal-body" style="padding: 0px 0px 10px 0px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

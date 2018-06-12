@@ -1,0 +1,79 @@
+.component_userAccount_widget_resource_purchaseHistory,
+.component_userAccount_widget_resource_purchaseHistory>*{
+    width: 100%;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i{
+    font-size: 12px;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i:hover{
+    border-color: #ccc;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_userAccount_widget_resource_purchaseHistory>div>div.billPage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+.component_userAccount_widget_resource_purchaseHistory table tr{
+    height: 35px;
+    line-height: 35px;
+    transition: background-color 0.4s;
+}
+
+.component_userAccount_widget_resource_purchaseHistory table tr:not(.h):not(.empty):hover{
+    background-color: #eeeff1;
+}
+
+.component_userAccount_widget_resource_purchaseHistory table td,
+.component_userAccount_widget_resource_purchaseHistory table th{
+    text-align: center;
+}
+
+.component_userAccount_widget_resource_purchaseHistory table tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}

@@ -1,0 +1,28 @@
+.popovermenu{
+	background-color: #173e4d;
+}
+
+.popovermenu.bottom>.arrow:after{
+	border-bottom-color: #173e4d;
+}
+
+.popovermenu .popover-content{
+	padding: 0px;
+}
+
+.popovermenu ul{
+	margin: 0px;
+}
+
+.popovermenu li{
+	color: #fff;
+	cursor: pointer;
+	padding: 8px 20px;
+	font-size: normal;
+}
+
+.popovermenu li:hover{
+	background-color: #4ca293;
+	color: #f6f6f5;
+	border-radius: 4px;
+}

@@ -1,0 +1,114 @@
+<div>
+    <div style="height: 385px">
+        <div class="tabs">
+            <div data-pws-tab="base" class="base" data-pws-tab-name="描述">
+                <form class="form-horizontal">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">简介：</label>
+                        <div class="col-sm-7 col-md-7">
+                            <textarea class="form-control brief" style="height: 70px" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">详述：</label>
+                        <div class="col-sm-7 col-md-7">
+                            <textarea class="form-control desc" style="height: 100px" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">可见性</label>
+                        <div class="col-sm-7 col-md-7">
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="0" checked> 公开
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="1"> 私有
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="s3rdVisible" value="2"> 指定用户可见
+                            </label>
+                            <div class="visibleUidsCC" style="margin-top: 5px; display: none">
+                                <input type="text" class="form-control visibleUids" placeholder="多个用户id用回车分隔">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">帮助地址：</label>
+                        <div class="col-sm-7 col-md-7" style="padding-top: 5px;">
+                            <a href="#" target="_blank" class="help"><i class="fa fa-file-text-o" aria-hidden="true"></i> 查看</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div data-pws-tab="auth" class="auth" style="padding-left: 20px;" data-pws-tab-name="授权">
+                <span>所需权限</span>
+                <div class="customScrollBar">
+                    <div>
+                        <ul class="authList" style="margin-top: 10px">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-pws-tab="feeset" class="feeset" style="padding-left: 20px;" data-pws-tab-name="费用设置">
+                <div class="feeFree" style="display: none">
+                    <span>该服务免费</span>
+                </div>
+                <form class="feeCount form-horizontal" style="display: none">
+                    <span>按次数计费</span>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>试用次数</span>
+                            <input type="text" class="countFree form-control" placeholder="大于等于0">
+                            <span>，购买</span>
+                            <span class="countNum"></span>
+                            <span>次</span>
+                            <span>的费用</span>
+                            <input type="text" class="countBase form-control" placeholder="大于0.01">
+                            <span>(￥)</span>
+                        </div>
+                    </div>
+                </form>
+                <form class="feeTime form-horizontal" style="display: none">
+                    <span>按时长计费</span>
+                    <div class="form-group form-group-sm">
+                        <div class="col-md-12 col-sm-12">
+                            <span>试用天数</span>
+                            <input type="text" class="timeFree form-control" placeholder="大于等于0">
+                            <span>，购买</span>
+                            <span class="timePeriod"></span>
+                            <span>的费用</span>
+                            <input type="text" class="timeBase form-control" placeholder="大于0.01">
+                            <span>(￥)</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div data-pws-tab="runset" class="runset" data-pws-tab-name="其他">
+                <form class="form-horizontal">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">服务标识：</label>
+                        <label class="col-sm-8 col-md-8 control-label serviceKey"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">服务地址：</label>
+                        <label class="col-sm-8 col-md-8 control-label apiUrl"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">运行方式：</label>
+                        <div class="col-sm-9 col-md-9 control-label execTp customScrollBar">
+                            <div class="execTpcc"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 15px 20px 0px 0px; text-align: right;">
+        <from class="form-inline cmd">
+            <div class="form-group" bindAuth='{clientInfo put post}'>
+                <button type="button" class="btn btn-default cancel" style="width: 80px;">取 消</button>
+                <button type="button" class="btn btn-primary save" style="width: 80px; margin-left: 10px;">保 存</button>
+            </div>
+        </from>
+    </div>
+</div>

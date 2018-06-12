@@ -1,0 +1,119 @@
+
+.component_dataMonitor_widget_cliPrevCard{
+	border: none;
+    margin: 0px;
+    min-width: 200px;
+}
+
+/* table */
+
+.component_dataMonitor_widget_cliPrevCard table{
+    margin: 5px;
+}
+
+.component_dataMonitor_widget_cliPrevCard table tr{
+    white-space: nowrap;
+}
+
+.component_dataMonitor_widget_cliPrevCard table tr:first-child td{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 60px 2px 5px;
+    color: #356880;
+}
+
+.component_dataMonitor_widget_cliPrevCard table tr:not(:first-child) td{
+    padding: 5px 5px 0px 5px;
+}
+
+.component_dataMonitor_widget_cliPrevCard table tr:not(:first-child) td:last-child{
+    text-align: right;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.noSysMeta{
+    color: #ed5565;
+    cursor: pointer;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.noValue{
+    text-align: center!important;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaVideo,
+.component_dataMonitor_widget_cliPrevCard table td.metaImage,
+.component_dataMonitor_widget_cliPrevCard table td.empty{
+    text-align: left!important;
+    padding: 5px 0px 0px 0px!important;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaIcon{
+    text-align: left!important;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaIcon>i{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaIcon>span{
+    float: right;
+}
+
+.component_dataMonitor_widget_cliPrevCard table.stream{
+    width: 230px;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaVideo>div,
+.component_dataMonitor_widget_cliPrevCard table td.metaImage>div{
+    height: 190px;
+    min-width: 230px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    position: relative;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.empty>div{
+    height: 120px;
+    width: 100%;
+    min-width: 190px;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.empty>div>span{
+    text-align: center;
+    font-size: 15px;
+}
+
+.component_dataMonitor_widget_cliPrevCard table td.metaImage>div>img{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.component_dataMonitor_widget_cliPrevCard>.cardAct{
+    float: right;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    font-size: 14px;
+}
+
+.component_dataMonitor_widget_cliPrevCard>.cardAct>i{
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.component_dataMonitor_widget_cliPrevCard>.cardAct>i:hover{
+    color: #306e8c;
+}
+
+.component_dataMonitor_widget_cliPrevCard>.cardAct>i.star{
+    font-size: 16px;
+}

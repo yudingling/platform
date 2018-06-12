@@ -1,0 +1,335 @@
+.component_myMaint_actedList{
+	height: 100%;
+    background-color: #f9f7f7;
+	position: relative;
+}
+
+.component_myMaint_actedList>div.mrContent{
+    width: 100%;
+    height: 100%;
+}
+
+.component_myMaint_actedList>.mrContent>div,
+.component_myMaint_actedList>.mrContent>div.top>div{
+    width: 100%;
+}
+
+.component_myMaint_actedList>.mrContent>div.top>div>*,
+.component_myMaint_actedList>.mrContent>div.top .instance>*{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage i:hover{
+    border-color: #b7b7b7;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage>i{
+    font-size: 12px;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.warnPage>i:first-child:hover+i{
+    border-left-color: #b7b7b7;
+}
+
+.component_myMaint_actedList>.mrContent>.top span.executing.zero{
+    opacity: 0.4;
+}
+
+/*item*/
+
+.component_myMaint_actedList>.mrContent>.bottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 111px;
+    background-color: #fff;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>div{
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>div.trans{
+    transition: width 0.3s;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>div.list{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>div.detail{
+    width: 0px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom.showDetail>div.list{
+    width: 45%;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom.showDetail>div.detail{
+    width: 55%;
+    border: 1px solid #DBE3E5;
+    border-top: none;
+    border-bottom: none;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr{
+    line-height: 45px;
+    transition: background-color 0.4s;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr.closed{
+    opacity: 0.75;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr:not(:last-child){
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr:not(.empty):not(.h):hover,
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr.active{
+    background-color: #eeeff1;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr:not(.empty)>td:first-child{
+    cursor: pointer;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td{
+    text-align: center;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(1){
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(2){
+    text-align: left;
+    cursor: pointer;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}
+
+.component_myMaint_actedList>.mrContent>.top span.executing,
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td>span.level1,
+.component_myMaint_actedList>.mrContent>div.top div.instance>span.level1{
+    background-color: #F8AC59;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td>span.level2,
+.component_myMaint_actedList>.mrContent>div.top div.instance>span.level2{
+    background-color: #ccc;
+}
+
+.component_myMaint_actedList>.mrContent>div.top div.instance>span.level,
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td>span.level{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(4){
+    padding-left: 20px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(4)>div{
+    height: 8px;
+    border-radius: 3px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(4)>div>span{
+    opacity: 0;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    text-align: right;
+    width: 120px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(4)>div>span.min{
+    right: auto;
+    left: 0px;
+    text-align: left;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom .recContainer tr>td:nth-child(4):hover>div>span{
+    opacity: 1;
+}
+
+/*detail*/
+
+.component_myMaint_actedList>.mrContent>.bottom .detailContainer{
+    min-height: 100px;
+    min-width: 400px;
+    position: relative;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar{
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 30px;
+    height: 46px;
+    width: 100%;
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar>*{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar button{
+    min-width: 80px;
+    padding: 5px 12px;
+    margin-top: 2px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar>.closeDetail{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar>.closeDetail>div{
+    background: url(../img/clear.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.actionBar>.closeDetail:hover>div{
+    background-position: -72px 0px;
+    opacity: 0.7;
+}
+
+.component_myMaint_actedList>.mrContent>.bottom>.detail>.recDetail{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 46px;
+    background-color: #eeeff1;
+}
+
+.component_myMaint_actedList>.modal .imgAdder{
+    height: 120px; 
+    width: 100%; 
+    margin-top: 5px;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC{
+    white-space: nowrap;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: -moz-inline-box;
+    display: -webkit-inline-box;
+    padding-top: 5px;
+    height: 115px;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC>div{
+    margin-right: 3px;
+    text-align: center;
+    height: 100px;
+    width: auto;
+    display: inline-block;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC>div.tmp{
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    cursor: pointer;
+    line-height: 100px;
+    width: 100px;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC>div>img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC>div>div{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px 0px rgb(138, 138, 138);
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.component_myMaint_actedList>.modal .imgAdder .imgAdderCC>div:hover>div{
+    opacity: 1;
+}

@@ -1,0 +1,192 @@
+.main_mobile_dataMonitor_commonDetail {
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.main_mobile_dataMonitor_commonDetail > div:first-child {
+    position: absolute;
+    top: 0px;
+    bottom: 41px;
+    left: 0px;
+    width: 100%;
+}
+
+.main_mobile_dataMonitor_commonDetail > div:last-child {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    line-height: 40px;
+    border-top: 1px solid #b9ded7;
+    box-shadow: 6px 6px 15px 2px #6da59a;
+    font-weight: bold;
+}
+
+.main_mobile_dataMonitor_commonDetail > div:last-child > i {
+    padding: 0px 14px;
+    line-height: 40px;
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.navPanel{
+    position:relative;
+    z-index:2;
+    height: 45px;
+    line-height:45px;
+    vertical-align:middle;
+    background-color:white;
+ }  
+ 
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.navPanel>.myNav{
+    position:relative;
+    background-color:white;
+    height: 45px;
+    z-index: inherit;
+ }
+ 
+ .main_mobile_dataMonitor_commonDetail > div.detail>div>.navPanel>.myNav i{
+ 	font-size: 16px;
+ 	line-height: 30px;
+ }
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.navPanel>.topSearch {
+    width: 100%;
+    transform: translateY(-100%); 
+    transition: all 0.3s;
+    background-color:white;
+    padding: 8px 15px;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.navPanel>.topSearch.show {
+    transform: translateY(0%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.title {
+   background-color: #607D8B;
+    height: 53px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    font-size: 16px;
+    line-height: 53px;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.menuShim,
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.horzMetaDiv,
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.metaDataDiv{
+	top:98px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	position: absolute;
+	transition: all 0.5s;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.menuShim{
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+    background-color: #000;
+}
+
+
+/* horzMetaDiv */
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.horzMetaDiv.show {
+    transform: translateX(0%);
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.horzMetaDiv {
+    width: 65%;
+    z-index: 3;
+    background-color: #eee;
+    border-right: 1px solid #d9e0df;
+    transform: translateX(100%);
+}
+
+@media(max-width: 350px){
+	.main_mobile_dataMonitor_commonDetail > div.detail>div>.horzMetaDiv{
+		width: 80%;
+	}
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group {
+    width: 100%;
+    padding: 5px;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .tip {
+    text-align: center;
+    display: none;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn {
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding-left: 24px;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn.disabled {
+    color: #8c8c8c;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn.disabled:hover {
+    background-color: inherit;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn .fa-check {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    font-size: 12px;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn.active {
+    background-color: #69bcab;
+    color: #fff;
+}
+
+.main_mobile_dataMonitor_commonDetail> div.detail>div>.horzMetaDiv .btn-group label.btn.active .fa-check {
+    display: block;
+}
+ 
+ /* metaDataDiv */
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.metaDataDiv {
+    background-color: #e7e7e7;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.metaDataDiv .metaDataDivContent {
+    width: 100%;
+    padding: 10px;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.metaDataDiv .metaDataDivContent>.metaPluginSlc {
+    box-shadow: 0px 0px 3px 0px rgb(195, 195, 195);
+    display: inline-block;
+    width: 100%;
+    height:210px;
+    margin-bottom:10px;
+    background-color:#fff;
+}
+
+.main_mobile_dataMonitor_commonDetail > div.detail>div>.metaDataDiv .metaDataDivContent>.metaPluginSlc > div {
+    width: 100%;
+    height:100%;
+}
+ 

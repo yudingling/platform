@@ -1,0 +1,76 @@
+.component_3rdStore_widget_freeUse{
+    width: 100%;
+}
+
+.component_3rdStore_widget_freeUse .upgNav{
+    background: linear-gradient(to bottom, #67bbaa, #6cccb7);
+}
+
+.component_3rdStore_widget_freeUse .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.component_3rdStore_widget_freeUse .upgNav .cd-multi-steps li > *{
+    color: #fff;
+}
+
+.component_3rdStore_widget_freeUse .upgNav .cd-multi-steps li.current > *{
+    color: #007369;
+}
+
+.component_3rdStore_widget_freeUse .steps{
+	position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.component_3rdStore_widget_freeUse .steps>div>div:first-child{
+    height: 395px;
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+}
+
+.component_3rdStore_widget_freeUse .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.component_3rdStore_widget_freeUse .navSteps em{
+    font-size: inherit;
+}
+
+.component_3rdStore_widget_freeUse .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.component_3rdStore_widget_freeUse .step2 .finalInfo{
+    text-align: center;
+    padding: 90px 20px 20px 20px!important; 
+    font-size: 15px;
+}
+
+.component_3rdStore_widget_freeUse .step2 .finalInfo>span{
+    display: block;
+}
+
+.component_3rdStore_widget_freeUse .step2 .finalInfo i{
+    color: #67bbaa; 
+    font-size: 17px; 
+    margin-right: 5px; 
+    margin-bottom: 10px;
+}
+
+.component_3rdStore_widget_freeUse .steps .svNm{
+    color: #1a7bb9;
+}
+
+.component_3rdStore_widget_freeUse .steps button{
+    min-width: 80px;
+}
+
+

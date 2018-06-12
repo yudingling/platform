@@ -1,0 +1,29 @@
+.textSelector{
+	position: relative;
+}
+
+.textSelector .textContainer{
+	width:100%;
+	top:0px;
+	bottom:40px;
+	position:absolute;
+	overflow-y:auto
+}
+.textSelector .textContainer .txt{
+	width: 100%;
+    height: 100%;
+    border: none;
+}
+.textSelector .textContainer + div{
+	bottom:0px;
+	height:40px;
+	width:100%;
+	position:absolute;
+	padding-top:6px;
+	text-align:center;
+	border-top:1px solid #bfbfbf;
+}
+.textSelector .textContainer + div a{
+	width:65px;
+	padding:3px;
+}

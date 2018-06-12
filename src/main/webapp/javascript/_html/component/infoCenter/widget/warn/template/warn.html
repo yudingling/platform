@@ -1,0 +1,118 @@
+<div>
+    <ul class="warnFilter list-unstyled">
+        <li class="all"><a href="javascript:void(0);" data="all">所有告警<span></span></a></li>
+        <li class="catalog">
+            <a href="javascript:void(0);" data-toggle="collapse" data-target=".component_infoCenter_widget_warn .warnFilter1" aria-expanded="true"><i class="fa fa-angle-down"></i>告警状态</a>
+            <ul class="warnFilter warnFilter1 list-unstyled collapse in">
+                <li><a href="javascript:void(0);" data="0">未确认<span></span></a></li>
+                <li><a href="javascript:void(0);" data="1">已确认<span></span></a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="rightContent">
+        <div style="width:100%; height:100%; position: relative">
+            <div class="top" style="padding: 15px 0px; border-bottom: 1px solid #ddd">
+                <div class="input-group input-group-sm pull-left" style="max-width: 280px">
+                    <input type="text" class="form-control warnTxt" placeholder="搜索告警">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+                <div class="checkbox checkbox-primary pull-left" style="margin-left: 20px">
+                    <input class="styled" type="checkbox">
+                    <label>未关闭</label>
+                </div>
+                <div class="pull-right warnPage">
+                    <i class="fa fa-arrow-left"></i>
+                    <i class="fa fa-arrow-right"></i>
+                    <input type="text" class="form-control currentPage">
+                    <span>/&nbsp;</span>
+                    <span class="totalPage"></span>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="list customScrollBar">
+                    <table class="warnsContainer" style="width:100%;">
+                    </table>
+                </div>
+                <div class="detail customScrollBar">
+                    <div class="detailContainer">
+                        <div class="actionBar">
+                            <button type="button" class="btn btn-primary btn-rounded wrnAction wrnChk" bindAuth="{updateWarn put}"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;确认</button>
+                            <div class="btn-group wrnForward" bindAuth="{forwardWarnSms post}||{forwardWarnEmail post}||{forwardWarnWechat post}">
+                                <button type="button" class="btn btn-success btn-rounded dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-external-link"></i>&nbsp;&nbsp;转发 <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu" style="min-width: 100px">
+                                    <li class="wrnAction" data="msg" bindAuth="{forwardWarnSms post}"><a href="javascript:void(0);">短信</a></li>
+                                    <li class="wrnAction" data="mail" bindAuth="{forwardWarnEmail post}"><a href="javascript:void(0);">邮件</a></li>
+                                    <li class="wrnAction" data="wechat" bindAuth="{forwardWarnWechat post}"><a href="javascript:void(0);">微信公众号</a></li>
+                                    <li class="wrnAction" data="maint" bindAuth="{maintRecordUpt post}"><a href="javascript:void(0);">维修工单</a></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-default btn-rounded wrnAction wrnClose"  bindAuth="{updateWarn put}"><i class="fa fa-close"></i>&nbsp;&nbsp;关闭</button>
+                            <span class="closeDetail pull-right"><div></div></span>
+                        </div>
+                        <div class="warnDetail">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">设备:</label>
+                                    <div class="col-sm-9 col-md-9">
+                                        <label class="control-label labelForVal clientNM"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">元数据:</label>
+                                    <div class="col-sm-9 col-md-9">
+                                        <label class="control-label labelForVal metadataNM"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 col-md-3 control-label">规则:</label>
+                                    <div class="col-sm-9 col-md-9">
+                                        <label class="control-label labelForVal ruleNM"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12 col-md-12">
+                                        <label class="control-label labelForVal warnDesc" style="padding-left:20px; padding-right:20px; text-align:left"></label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="timeLine" style="padding: 15px 0px">
+                        </div>
+                        <div class="labelDesc" style="display:none; padding:10px 20px; color:#356880">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade forwardWin" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body" style="padding-bottom: 10px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel" data-dismiss="modal">取 消</button>
+                    <button type="button" class="btn btn-primary sure">确 定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade forwardMaint" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document" style="max-width: 440px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">创建工单</h4>
+                </div>
+                <div class="modal-body" style="padding: 0px 0px 10px 0px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

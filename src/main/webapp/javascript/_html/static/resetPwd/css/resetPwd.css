@@ -1,0 +1,47 @@
+
+.static_resetPwd{
+    height: 100%;
+}
+
+.static_resetPwd .icon{
+    width: 100%;
+    height: 100px;
+    background: url(../../../common/linkimg/logo.png) no-repeat;
+    background-position: 25% 20%;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.static_resetPwd form{
+    height: 420px;
+    max-width: 300px;
+    width: 100%;
+}
+
+@media(max-width: 300px){
+    .static_resetPwd form{
+        padding: 0px 10px;
+    }
+}
+
+.static_resetPwd form .pt{
+    text-align: center; 
+    font-size: 18px
+}
+
+.static_resetPwd form>button{
+	margin-top: 20px;
+    width: 100%;
+}
+
+.static_resetPwd form>p{
+	margin-top: 30px;
+}
+
+.static_resetPwd .copyright{
+	position: absolute;
+	bottom: 16px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}

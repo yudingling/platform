@@ -1,0 +1,76 @@
+<div>
+    <div class="slc">
+        <div class="chart">
+            <div class="chartContainer"></div>
+        </div>
+        <div class="grid">
+            <div class="gridContainer"></div>
+            <div class="callDataContainer">
+                <form class="form-horizontal" style="margin:40px 20px 20px 20px">
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">设备：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal clientNm"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">元数据：</label>
+                        <label class="col-sm-9 col-md-9 control-label labelForVal metaNm"></label>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-3 col-md-3 control-label">召测类型：</label>
+                        <div class="col-sm-9 col-md-9">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" class="historical" name="callTP" autocomplete="off" checked> 历史数据
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" class="realTime" name="callTP" autocomplete="off"> 实时数据
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm callTMRange">
+                        <label class="col-sm-3 col-md-3 control-label">时间范围：</label>
+                        <div class="col-sm-9 col-md-9 tmRange">
+                            <input type="text" class="form-control stm tm">
+                            <span> ~ </span>
+                            <input type="text" class="form-control etm tm">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-sm-offset-3 col-md-offset-3 col-sm-9 col-md-9">
+                            <button type="button" class=" btn btn-primary cmdBtn" style="width: 70px; margin-top: 10px">执 行</button>
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <div class="col-sm-offset-3 col-md-offset-3 col-sm-9 col-md-9">
+                            <label class="labelForVal desc"></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <ul class="drawerMenu">
+        <li> 
+            <a href="javascript:void(0);"><i class="fa fa-angle-double-down"></i></a>
+            <ul>
+                <li class="showChart"><a href="javascript:void(0);"><i class="fa fa-line-chart"></i></a><span>图形</span></li>
+                <li class="showGrid"><a href="javascript:void(0);"><i class="fa fa-table"></i></a><span>表格</span></li>
+                <li class="showCmd" bindAuth="{metaCommand_history post}&&{metaCommand_realTime post}"><a href="javascript:void(0);"><i class="fa fa-binoculars"></i></a><span>数据召测</span></li>
+                <li class="editData" bindAuth="{periodData post}||{periodData put}||{periodData delete}"><a href="javascript:void(0);"><i class="fa fa-pencil-square-o"></i></a><span>编辑</span></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog modal-lg" role="document" style="min-width: 900px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body" style="padding: 0px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

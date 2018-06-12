@@ -1,0 +1,40 @@
+.component_my3rd_widget_myCreated_widget_editor{
+    width: 100%;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .auth>.customScrollBar{
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+    border-radius: 3px;
+    border: 1px solid #bababa;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .auth>span:first-child,
+.component_my3rd_widget_myCreated_widget_editor .tabs .feeset>*>span:first-child{
+    display: block; 
+    padding-bottom: 5px;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .feeset .form-group>div>input{
+    display: inline-block;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .feeset .form-group>div>input{
+    width: 100px;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .runset .form-group>*:last-child{
+    text-align: left;
+    font-weight: normal;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .runset .form-group .execTp .execTpcc>span{
+    display: block;
+}
+
+.component_my3rd_widget_myCreated_widget_editor .tabs .runset .form-group .execTp.customScrollBar{
+    max-height: 210px;
+}

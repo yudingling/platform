@@ -1,0 +1,278 @@
+.component_infoCenter_widget_note{
+    width: 100%;
+    height: 100%;
+}
+
+.component_infoCenter_widget_note>*{
+    display: inline-block;
+    float: left;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter{
+    width: 220px;
+    margin-top: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #01728c;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li{
+    line-height: 35px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a{
+    color: inherit;
+    display: block;
+    padding-left: 25px;
+    border-left: 4px solid transparent;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a>span{
+    font-weight: bold;
+    margin-left: 2px;
+    color: #444;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>ul>li>a{
+    padding-left: 50px;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a:hover{
+    background-color: #d4e8e4;
+    /*border-left-color: rgba(103, 187, 170, 0.7);*/
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a>i{
+    position: absolute;
+    left: 13px;
+    line-height: 35px;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a.active{
+    background-color: #fff;
+    color: #173e4d;
+    border-left-color: rgb(103, 187, 170);
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li>a.active>span{
+    color: #356880;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li.catalog>a>i{
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.component_infoCenter_widget_note>ul.noteFilter li.catalog.open>a>i{
+    transform: rotate(0deg);
+}
+
+.component_infoCenter_widget_note>div.rightContent{
+    position: absolute;
+    left: 220px;
+    right: 30px;
+    top: 20px;
+    bottom: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div{
+    width: 100%;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div{
+    width: 100%;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div.search>div.instance{
+    display: inline-block;
+    float: left;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div.search>div.instance>span:first-child{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child{
+    height: 45px;
+    padding-left: 6px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child i:hover{
+    border-color: #ccc;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>*,
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>div.notePage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>div.notePage>i{
+    font-size: 12px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>div.notePage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>div.notePage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div:last-child>div.notePage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+/*item*/
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 116px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem{
+    overflow: hidden;
+    /* clear .panel */
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem:not(:last-child){
+    border-bottom: 1px solid #DBE3E5;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc{
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.4s;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(1){
+    line-height: initial;
+    margin: 11px 19px 10px 10px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>.checkbox>label:after{
+    padding-top: 5px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(2){
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    float: left;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>div.top>div.search>div.instance>span.info,
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(2).info{
+    background-color: #1ab394;
+}
+.component_infoCenter_widget_note>.rightContent>div>div.top>div.search>div.instance>span.warn,
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(2).warn{
+    background-color: #F8AC59;
+}
+.component_infoCenter_widget_note>.rightContent>div>div.top>div.search>div.instance>span.error,
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(2).error{
+    background-color: #EF5352;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(3){
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 80px;
+    right: 150px;
+    cursor: pointer;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDesc>:nth-child(4){
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem.unRead>.itemDesc>:not(:first-child){
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDetail{
+    padding: 0px 0px 0px 50px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem:hover>div,
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem.open>div{
+    background-color: #eeeff1;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem.open>.itemDesc{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDetail table{
+    width: 100%;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDetail tr:first-child{
+    color: #00afd8;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDetail tr:first-child>td{
+    padding-top: 10px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>.noteItem>.itemDetail tr:last-child td{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+.component_infoCenter_widget_note>.rightContent>div>.bottom .notesContainer>div.empty{
+    text-align: center;
+    line-height: 80px;
+}

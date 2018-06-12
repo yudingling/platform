@@ -1,0 +1,308 @@
+.component_maintUser{
+	height: 100%;
+	min-width: 750px;
+	position: relative;
+}
+
+.component_maintUser >nav .nav{
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.component_maintUser >nav .nav>li{
+	float: left;
+}
+
+.component_maintUser >nav .nav>li.active{
+    background-color: transparent!important;
+}
+
+.component_maintUser >nav .nav>li>a{
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 24px 20px;
+    font-size: 14px;
+}
+
+.component_maintUser >nav .nav>li>a:focus,
+.component_maintUser >nav .nav>li>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_maintUser >nav .nav>li.active>a{
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+@media(max-width: 768px){
+	.component_maintUser >nav .nav>li.active>a{
+    	box-shadow: 0 -6px 0 0 #67bbaa inset;
+	}
+}
+
+.component_maintUser >nav .nav>li.active>a,
+.component_maintUser >nav .nav>li.active>a:focus,
+.component_maintUser >nav .nav>li.active>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_maintUser>.content{
+    top: 62px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #EAEAEA;
+    position: absolute;
+}
+
+.component_maintUser>.content>div{
+    width: 100%;
+}
+
+.component_maintUser>.content>.ctTop{
+    height: 40px;
+    position: relative;
+}
+
+.component_maintUser>.content>.ctTop>*{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.component_maintUser>.content>.ctBottom{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.component_maintUser>.content>.ctTop>ul{
+	margin: 0px;
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.component_maintUser>.content>.ctTop>div{
+    max-width: 188px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.component_maintUser>.content>.ctTop>ul>li a{
+	margin-left: 10px;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.append i{
+	color: #4CA293;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.delete i{
+	color: #ed5565;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.append i:hover{
+    color: #469594;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.delete i:hover{
+	color: #d9534f;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.ok a,
+.component_maintUser>.content>.ctTop>ul>li.cancel a{
+    font-size: 13px;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.ok a{
+	color: #ed5565!important;
+}
+
+.component_maintUser>.content>.ctTop>ul>li.cancel a{
+	color: #2b2b2b!important;
+}
+
+.component_maintUser>.content>.ctBottom>*{
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.component_maintUser>.content>.ctBottom>.list{
+    width: 300px;
+    box-shadow: 5px 6px 12px 0px #dedede;
+}
+
+.component_maintUser>.content>.ctBottom>.detail{
+    position: absolute;
+    left: 310px;
+    right: 0px;
+    top: 0px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>*{
+    background-color: #fff;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailTop{
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom{
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailTop>.btn,
+.component_maintUser>.content>.ctBottom>.detail>.detailTop>.uOther>.btn{
+    padding: 5px 12px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    border-radius: 0px;
+    float: left;
+    margin-left: 2px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userList{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 50px;
+    bottom: 0px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage{
+    height: 45px;
+    padding-left: 6px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage i:hover{
+    border-color: #ccc;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage>i{
+    font-size: 12px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .notePage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr:not(.empty){
+    height: 35px;
+    line-height: 35px;
+    transition: background-color 0.4s;
+    border-bottom: 1px dashed #eaeaea;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr:not(.h):not(.empty):hover{
+    background-color: #eeeff1;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td,
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table th{
+    text-align: center;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td>*{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td>.icon{
+    width: 36px;
+    height: 36px;
+    margin-top: 3px;
+    background-size: contain;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr.h>th:first-child{
+    width: 120px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td:first-child{
+    text-align: left;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td>.checkbox{
+    line-height: initial;
+    margin: 11px 19px 10px 10px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table td>.checkbox>label:after{
+    padding-top: 5px;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr.uUnActive{
+    color: #21acbb;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr.uDisabled{
+    color: #a9a9a9;
+}
+
+.component_maintUser>.content>.ctBottom>.detail>.detailBottom .userListCC>table tr:not(.uNormal) .icon{
+    opacity: 0.4;
+}
+
+.component_maintUser>.modal .labelForVal{
+    text-align: left;
+    font-weight: normal;
+}

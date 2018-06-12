@@ -1,0 +1,121 @@
+
+.slider{
+	border:none;
+    position: relative;
+}
+
+.slider.left{
+	float:right;
+	
+	/*左边框加阴影*/
+    -moz-box-shadow: 0.15em 0.01em 0.3em #dbdbdb;
+    -webkit-box-shadow: 0.15em 0.01em 0.3em #dbdbdb;
+    box-shadow: -0.1em 0.01em 0.3em #dbdbdb;
+}
+.slider.right{
+	float:left;
+	
+	/*右边框加阴影*/
+    -moz-box-shadow: 0.15em 0.01em 0.3em #dbdbdb;
+    -webkit-box-shadow: 0.15em 0.01em 0.3em #dbdbdb;
+    box-shadow: 0.15em 0.01em 0.3em #dbdbdb;
+}
+.slider.up{
+	/*上边框加阴影*/
+	border-top:1px solid #ccc;
+    -moz-box-shadow: 0 -0.01em 0.3em #dbdbdb;
+    -webkit-box-shadow: 0 -0.01em 0.3em #dbdbdb;
+    box-shadow: 0 -0.01em 0.3em #dbdbdb;
+}
+.slider.down{
+	/*下边框加阴影*/
+	border-bottom:1px solid #ccc;
+    -moz-box-shadow: 1px 1px 2px #dbdbdb;
+    -webkit-box-shadow: 1px 1px 2px #dbdbdb;
+    box-shadow: 1px 1px 2px #dbdbdb;
+}
+
+.slider .slideCover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.slider .slideCoverReverse{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+	
+
+.objContainer{
+	position:absolute; 
+    overflow:hidden; 
+    display:none;
+    z-index: 10;
+}
+
+.objContainer .pullBtnDiv{
+	overflow: hidden; 
+	background-position:center;
+	background-repeat:no-repeat;
+	color:#777;
+	position: relative;
+	border:none;
+    z-index: 1;
+}
+
+.objContainer .pullBtnDiv.left{
+	float:right;
+	width: 14px;
+	padding-right:4px;
+    height: 100%;
+	background-image: url('./img/pullBtn.png');
+	
+	/*顺时针180度*/
+	-moz-transform:rotate(180deg); 
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);	
+}
+.objContainer .pullBtnDiv.right{
+	width: 14px;
+	padding-left:4px;
+    height: 100%;
+	background-image: url('./img/pullBtn.png');
+}
+
+.objContainer .pullBtnDiv.up{
+	width:100%;
+	height: 17px;
+	text-align:center;
+	background-position:center center;
+	background-image: url('./img/pullBtn_down.png');
+}
+
+.objContainer .pullBtnDiv.down{
+	width:100%;
+	height: 17px;
+	text-align:center;
+	background-position:center center;
+	background-image: url('./img/pullBtn_down.png');
+	
+	/*顺针转90*/
+	-moz-transform:rotate(180deg); 
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+.objContainer .pullBtnDiv>i{
+	cursor:pointer;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 8px;
+    height: 16px;
+    margin: auto;
+}

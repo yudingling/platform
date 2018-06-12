@@ -1,0 +1,111 @@
+
+.component_deviceMgr_widget_dc_md{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.component_deviceMgr_widget_dc_md .setTop{
+    height: 36px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding: 0px 16px;
+    background-color: #fff;
+}
+
+.component_deviceMgr_widget_dc_md .setTop>div{
+    display: inline-block;
+}
+
+.component_deviceMgr_widget_dc_md .setTop .actionDiv{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.component_deviceMgr_widget_dc_md .setTop .actionDiv>*{
+    margin-right: 12px;
+}
+
+.component_deviceMgr_widget_dc_md i.fa{
+    cursor: pointer;
+}
+
+.component_deviceMgr_widget_dc_md .setTop i.spec{
+	font-size: 14px;
+}
+
+.component_deviceMgr_widget_dc_md .setTop .ok{
+	color: #ed5565;
+}
+
+.component_deviceMgr_widget_dc_md .setCenter{
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.component_deviceMgr_widget_dc_md .setCenter>div{
+	height: 100%;
+	position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.component_deviceMgr_widget_dc_md .mdList{
+	width: 30%;
+	border-right: 1px solid rgb(229, 229, 229);
+}
+
+.component_deviceMgr_widget_dc_md .mdList .ztree{
+	padding: 0px;
+}
+
+.component_deviceMgr_widget_dc_md .mdList .ztree li a{
+	height: 40px!important;
+	padding-left: 10px;
+}
+
+.component_deviceMgr_widget_dc_md .mdList .ztree li a>.node_name{
+	line-height: 40px;
+}
+
+.component_deviceMgr_widget_dc_md .mdList .ztree li span.button.chk{
+	margin-top: 12px!important;
+}
+
+.component_deviceMgr_widget_dc_md .mdList .ztree li a.curSelectedNode{
+	background-color: rgb(32, 118, 142);
+	color: #fff;
+}
+
+.component_deviceMgr_widget_dc_md .mdContent{
+	width: 70%;
+}
+
+.component_deviceMgr_widget_dc_md .mdContent form{
+	padding: 20px;
+}
+
+.component_deviceMgr_widget_dc_md .setCenter i.sysMetaList{
+    margin-top: 7px;
+}
+
+.component_deviceMgr_widget_dc_md .mdContent .metaSysChgInfo{
+    display: none; 
+    color: #fd495c; 
+    margin-top: 10px;
+}
+
+.component_deviceMgr_widget_dc_md .mdContent .form-horizontal .form-group .col-sm-8:not(label),
+.component_deviceMgr_widget_dc_md .mdContent .form-horizontal .form-group .col-md-8:not(label){
+	max-width: 200px;
+}
+
+@media(max-width: 1200px){
+	.component_deviceMgr_widget_dc_md .mdContent .form-horizontal .form-group{
+		margin: 0px 0px 20px 0px;
+	}
+}

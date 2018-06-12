@@ -1,0 +1,15 @@
+.myTcPlayer{
+    overflow: hidden;
+}
+
+.myTcPlayer .vcp-player .vcp-bigplay{
+    display: none!important;
+}
+
+.myTcPlayer .vcp-player .vcp-loading{
+    margin: inherit!important;
+}
+
+.myTcPlayer.mb .vcp-player .vcp-loading{
+	display: none!important;
+}

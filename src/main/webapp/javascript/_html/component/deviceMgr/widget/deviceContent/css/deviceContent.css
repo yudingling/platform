@@ -1,0 +1,179 @@
+
+.component_deviceMgr_widget_dc{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    min-width: 770px;
+}
+
+.component_deviceMgr_widget_dc .cmd{
+    position: absolute;
+    right: 45px;
+    top: 0px;
+}
+
+.component_deviceMgr_widget_dc .cmd .btn{
+    width: 84px;
+    display: none;
+}
+
+.component_deviceMgr_widget_dc .cmd .btn:not(:first-child){
+    margin-left: 16px;
+}
+
+.component_deviceMgr_widget_dc .rightContainer{
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.component_deviceMgr_widget_dc .rightContainer>div,
+.component_deviceMgr_widget_dc .rightContainer>div>div{
+	height: 100%;
+}
+
+.component_deviceMgr_widget_dc .rightContainer .form-group>label:last-child{
+    text-align: left;
+    font-weight: normal;
+}
+
+.component_deviceMgr_widget_dc .tabs i.fa{
+    cursor: pointer;
+}
+
+.component_deviceMgr_widget_dc i.mapMarker,
+.component_deviceMgr_widget_dc i.historyFirmware,
+.component_deviceMgr_widget_dc i.historyShadow{
+    color: #4ca293;
+    margin-top: 8px;
+}
+
+.component_deviceMgr_widget_dc .stateDesc{
+	background-color: #536e7b;
+	color: #fff;
+}
+
+.component_deviceMgr_widget_dc .metadata{
+	padding: 33px 0px 0px 5px;
+}
+
+.component_deviceMgr_widget_dc .hisSD{
+    display: none;
+}
+
+.component_deviceMgr_widget_dc .form-group{
+	margin-bottom: 20px;	
+}
+
+.component_deviceMgr_widget_dc a.hisItem>div{
+    float: left;
+    background-color: #929191;
+    color: #fff;
+    text-align: center;
+    width: 35px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.component_deviceMgr_widget_dc a.hisItem>span{
+    font-size: 12px;
+}
+
+.component_deviceMgr_widget_dc a.hisItem>:last-child{
+    float: right;
+    max-width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #989898;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem,
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2{
+    border-left: none;
+    border-right: none;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem:first-child,
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2:first-child{
+    border-top: none;
+    border-radius: 0px;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem:last-child,
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2:last-child{
+    border-radius: 0px;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem.active,
+.component_deviceMgr_widget_dc a.list-group-item.hisItem.active:focus,
+.component_deviceMgr_widget_dc a.list-group-item.hisItem.active:hover{
+    background-color: #A8DDD2;
+    border-color: transparent;
+    color: #000;
+}
+.component_deviceMgr_widget_dc a.list-group-item.hisItem.active>span{
+    color: #000;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2>div{
+    font-weight: bold;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2>span{
+    color: #989898;
+    font-size: 12px;
+}
+
+.component_deviceMgr_widget_dc a.list-group-item.hisItem2>:last-child{
+    float: right;
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media(max-width: 1350px){
+	.component_deviceMgr_widget_dc .tabs>.pro>.myPanel{
+		left: 10%!important;
+	}
+}
+
+@media(max-width: 1200px){
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group{
+		margin: 0px 0px 20px 0px;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .control-label{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .control-label:not(.labelForVal){
+		padding: 0px;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-sm-8,
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-md-8{
+		width: 75%;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-sm-2,
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-md-2{
+		min-width: 100px;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs .myPanel{
+		left: 10%;
+		right: inherit;
+	}
+	
+	.component_deviceMgr_widget_dc .tabs>.pro>.myPanel{
+		left: 2%!important;
+	}
+}
+
+@media(max-width: 940px){
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-sm-8,
+	.component_deviceMgr_widget_dc .tabs .form-horizontal .form-group .col-md-8{
+		width: auto;
+	}
+}

@@ -1,0 +1,64 @@
+<div>
+    <form class="form-inline">
+        <div class="form-group">
+            <label>提现至：</label>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" data="0" name="wdType" autocomplete="off"> 微信
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" data="1" name="wdType" autocomplete="off"> 支付宝
+                </label>
+            </div>
+        </div>
+    </form>
+    <div style="padding-top: 35px;" class="row">
+        <div class="col-md-8 col-sm-8">
+            <form class="form-horizontal accountInfo">
+                <div class="form-group form-group-sm">
+                    <label class="col-md-4 col-sm-4">账户</label>
+                    <div class="col-md-6 col-sm-6">
+                        <select class="form-control wdAccountId"></select>
+                    </div>
+                    <div class="col-md-2 col-sm-2" style="text-align: left; padding: 0px; padding-top: 3px;">
+                        <a href="javascript:void(0);" class="appendWd">账户管理</a>
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-md-4 col-sm-4">姓名</label>
+                    <label class="col-md-8 col-sm-8 wdAccountNm"></label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-md-4 col-sm-4">金额</label>
+                    <div class="col-md-6 col-sm-6" style="max-width: 150px; padding-right: 5px;">
+                        <input type="text" class="form-control wdAmount" placeholder=">= 0.1">
+                    </div>
+                    <label class="col-md-2 col-sm-2" style="text-align: left; padding: 0px;">￥</label>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-md-4 col-sm-4">登陆密码</label>
+                    <div class="col-md-6 col-sm-6">
+                        <input type="password" class="form-control wdPwd">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <button type="button" class="btn btn-primary btn-lg btn-block doWithdraw" style="max-width: 150px;">确 定</button>
+        </div>
+    </div>
+    <div style="height: 50px; border-bottom: 1px solid #ddd">
+        <span style="line-height: 50px; font-weight: bold;">提现记录</span>
+        <div class="pull-right wdPage">
+            <i class="fa fa-arrow-left"></i>
+            <i class="fa fa-arrow-right"></i>
+            <input type="text" class="form-control currentPage">
+            <span>/&nbsp;</span>
+            <span class="totalPage"></span>
+        </div>
+    </div>
+    <div style="padding: 20px 0px 10px 0px">
+        <table style="width: 100%">
+        </table>
+    </div>
+</div>

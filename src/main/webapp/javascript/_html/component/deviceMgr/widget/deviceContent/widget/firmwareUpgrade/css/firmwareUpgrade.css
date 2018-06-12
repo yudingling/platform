@@ -1,0 +1,47 @@
+
+.component_deviceMgr_widget_dc_fwUpg{
+    width: 340px;
+    position: relative;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .upgNav{
+    background-color: #ced3d4;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .steps{
+	position: relative;
+    height: 330px;
+    overflow: hidden;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .steps>div>div:first-child,
+.component_deviceMgr_widget_dc_fwUpg .steps>div>form:first-child{
+    height: 280px;
+    width: 100%;
+    padding: 10px;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .navSteps em{
+    font-size: inherit;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.component_deviceMgr_widget_dc_fwUpg .step3 .finalInfo span{
+    font-weight: bold;
+}

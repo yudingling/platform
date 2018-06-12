@@ -1,0 +1,32 @@
+<div>
+    <form class="form-inline" style="padding: 10px;">
+        <div class="form-group  form-group-sm">
+            <label>起始时间:</label>
+            <input type="text" class="form-control stm tm">
+        </div>
+        <div class="form-group  form-group-sm">
+            <label>结束时间:</label>
+            <input type="text" class="form-control etm tm">
+        </div>
+        <div class="form-group  form-group-sm">
+            <button type="button" class="btn btn-info search" style="width: 90px">查 询</button>
+            <button type="button" class="btn btn-primary save" style="width: 90px; margin-left: 50px;" bindAuth="{periodData post}||{periodData put}||{periodData delete}">保 存</button>
+        </div>
+    </form>
+    <div>
+        <div class="col-md-4 col-sm-4">
+            <div class="cmdInfo">
+                <ul class="list-inline" style="margin: 0px;">
+                    <li class="delete" bindAuth="{imageData delete}"><a href="javascript:void(0);" title="删除"><i class="fa fa-minus-circle"></i></a></li>
+                </ul>
+            </div>
+            <div class="grid" style="height: 350px">
+                <div class="gridContainer" style="width: 100%; height: 100%; border: none!important;"></div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-8" style="height: 382px; background-color: #000">
+            <img>
+        </div>
+    </div>
+    
+</div>

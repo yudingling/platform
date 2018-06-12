@@ -1,0 +1,103 @@
+
+.static_signup{
+    height: 100%;
+}
+
+.static_signup .icon{
+    width: 100%;
+    height: 100px;
+    background: url(../../../common/linkimg/logo.png) no-repeat;
+    background-position: 30% 20%;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.static_signup form{
+    height: 420px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.static_signup .fg1{
+	height: 190px;
+	overflow: hidden;
+}
+
+.static_signup .steps{
+	position: relative;
+	height: 100%;
+}
+
+.static_signup .steps>div{
+	padding: 0px 50px;
+}
+
+@media(max-width: 600px){
+	.static_signup .steps{
+		padding: 0px 30px;
+	}
+	
+	.static_signup .cd-breadcrumb li, .cd-multi-steps li{
+		float: none;
+	}
+}
+
+.static_signup .steps>div>*{
+	margin-bottom: 10px;
+}
+
+.static_signup .steps>div>button{
+	width: 40%;
+}
+
+.static_signup .steps>div>button.prev{
+	float: left;
+}
+
+.static_signup .verifyDiv{
+	display: inline-block;
+	width: 100%;
+}
+
+.static_signup .verifyDiv>*{
+	float: left;
+}
+
+.static_signup .verifyDiv .btn{
+	color: #635f5f;
+	border: 1px solid #ccc;
+}
+
+.static_signup .verifyDiv input{
+	width: 40%;
+	margin-right: 10px;
+}
+
+.static_signup .steps .step3{
+	font-size: 16px;
+	padding-top: 60px!important;
+}
+
+.static_signup form>button{
+	margin-top: 20px;
+}
+
+.static_signup form>p{
+	margin-top: 30px;
+}
+
+.static_signup .fg2{
+	padding-top: 5px;
+}
+
+.static_signup .navSteps em{
+	font-style: normal;
+}
+
+.static_signup .copyright{
+	position: absolute;
+	bottom: 16px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}

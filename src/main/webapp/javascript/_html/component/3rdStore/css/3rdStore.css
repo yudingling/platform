@@ -1,0 +1,318 @@
+.component_3rdStore{
+	height: 100%;
+	min-width: 830px;
+	position: relative;
+}
+
+.component_3rdStore>nav .nav{
+	padding-left: 10px;
+	margin: 0px;
+}
+
+.component_3rdStore>nav .nav>li{
+	float: left;
+}
+
+.component_3rdStore>nav .nav>li.active{
+    background-color: transparent!important;
+}
+
+.component_3rdStore>nav .nav>li>a{
+    font-weight: normal;
+    color: #4a5357;
+    padding: 18px 20px 24px 20px;
+    font-size: 14px;
+}
+
+.component_3rdStore>nav .nav>li>a:focus,
+.component_3rdStore>nav .nav>li>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_3rdStore>nav .nav>li.active>a{
+    box-shadow: 0 -5px 0 0 #67bbaa inset;
+}
+
+@media(max-width: 768px){
+	.component_3rdStore>nav .nav>li.active>a{
+    	box-shadow: 0 -6px 0 0 #67bbaa inset;
+	}
+}
+
+.component_3rdStore>nav .nav>li.active>a,
+.component_3rdStore>nav .nav>li.active>a:focus,
+.component_3rdStore>nav .nav>li.active>a:hover{
+    color: #317290!important;
+    background-color: transparent!important;
+}
+
+.component_3rdStore>.content{
+    top: 62px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #f3f3f4;
+    position: absolute;
+    box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.component_3rdStore>.content>div.components{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px 20px 0px 20px;
+}
+
+/* top */
+
+.component_3rdStore>.content>div.components>div.top>div{
+    width: 100%;
+}
+
+.component_3rdStore>.content>div.components>div.top>div.search>div.instance{
+    display: inline-block;
+    float: left;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child{
+    height: 45px;
+    padding-left: 6px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>*:not(:last-child){
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>.svPage>i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>.svPage>input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>.svPage>i:hover{
+    border-color: #ccc;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>*,
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>*{
+    display: inline-block;
+    float: left;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>span{
+    line-height: 30px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>*{
+    line-height: 45px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>i{
+    font-size: 12px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_3rdStore>.content>div.components>div.top>div:last-child>div.svPage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+/*bottom*/
+
+.component_3rdStore>.content>div.components>.bottom{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+    top: 136px;
+    background-color: #fff;
+}
+
+.component_3rdStore>.content>div.components>.bottom>div{
+    position: relative; 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix>.menuPanel{
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    transform: translateX(100%);
+    transition-duration: 0.3s;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix>.menuPanel>.menuHeader{
+    height: 44px;
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix>.menuPanel>.menuContainer{
+    position: absolute;
+    top: 44px;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix>.menuShim{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    transition: opacity 0.3s;
+    z-index: -1;
+    background-color: #000;
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix.shown>.menuPanel{
+    transform: translateX(0%);
+}
+
+.component_3rdStore>.content>div.components>.bottom .menuFix.shown>.menuShim{
+    opacity: 0.3;
+}
+
+/* service item */
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem{
+    height: 240px;
+    width: 250px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 10px 0px #d6d6d6;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg{
+    width: 100%;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg,
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>*{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>.imgDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>div.ii{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>.imgFix{
+    z-index: 2;
+    transition-duration: 0.2s;
+    background-color: #000;
+    transition-property: background-color, opacity;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>.imgDesc{
+    transition-duration: 0.1s;
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+    padding: 20px;
+    transition-property: opacity;
+    display: table;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>.fork-me-wrapper{
+    z-index: 1;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemImg>.imgDesc>span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem:hover>.itemImg>.imgFix{
+    opacity: 0.5;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem:hover>.itemImg>.imgDesc{
+    opacity: 1;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc{
+    padding: 11px 10px 0px 10px;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc>span:first-child{
+    font-size: 14px; 
+    color: #333
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc .fee{
+    color: #ff6700
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc i{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc i,
+.component_3rdStore>.content>div.components>.bottom .svContainer>.svItem>.itemDesc .fee .free{
+    color: #8baf04;
+}
+
+.component_3rdStore>.content>div.components>.bottom .svContainer>div.empty{
+    text-align: center;
+    line-height: 60px;
+}

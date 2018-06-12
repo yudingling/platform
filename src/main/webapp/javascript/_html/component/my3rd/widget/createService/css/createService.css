@@ -1,0 +1,203 @@
+.component_my3rd_widget_createService{
+    width: 100%;
+}
+
+.component_my3rd_widget_createService .upgNav{
+    background: linear-gradient(to bottom, #67bbaa, #6cccb7);
+}
+
+.component_my3rd_widget_createService .upgNav ol{
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.component_my3rd_widget_createService .upgNav .cd-multi-steps li > *{
+    color: #fff;
+}
+
+.component_my3rd_widget_createService .upgNav .cd-multi-steps li.current > *{
+    color: #007369;
+}
+
+.component_my3rd_widget_createService .steps{
+	position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.component_my3rd_widget_createService .steps>div>div:first-child,
+.component_my3rd_widget_createService .steps>div>form:first-child{
+    height: 380px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.component_my3rd_widget_createService .steps .fmDesc{
+    padding-left: 6px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.component_my3rd_widget_createService .steps .unit{
+    padding: 0px;
+    line-height: 30px;
+}
+
+.component_my3rd_widget_createService .steps .unit>span{
+    margin-left: -6px;
+}
+
+.component_my3rd_widget_createService .steps .fmDesc>span{
+    display: inline-block;
+    float: left;
+}
+
+.component_my3rd_widget_createService .steps .fmDesc>span.nochange{
+    margin: -3px 3px 0px 3px;
+}
+
+.component_my3rd_widget_createService .steps .btnRow{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.component_my3rd_widget_createService .navSteps em{
+    font-size: inherit;
+}
+
+.component_my3rd_widget_createService .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li{
+    width: 60px;
+}
+
+.component_my3rd_widget_createService .steps .nochange{
+    padding: 0px;
+}
+
+.component_my3rd_widget_createService .steps span.nochange{
+    color: #ed5565;
+    font-size: 21px;
+}
+
+.component_my3rd_widget_createService .steps div.nochange>span{
+    display: inline-block;
+    float: left;
+}
+
+.component_my3rd_widget_createService .steps .step1 .imgDiv{
+    width: 250px; 
+    height: 175px; 
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    padding: 0px;
+    margin: 0px 15px;
+}
+
+.component_my3rd_widget_createService .steps .step1 .imgDiv+div{
+    line-height: 175px;
+}
+
+.component_my3rd_widget_createService .steps .step1 .imgDiv>img{
+    max-width: 100%;
+}
+
+
+.component_my3rd_widget_createService .steps .step3 div.chkTTs{
+	margin: 15px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTTs>*:not(:first-child){
+	margin-top: 15px;
+}
+
+.component_my3rd_widget_createService .steps .step3 i.fa{
+	cursor: pointer;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.customScrollBar{
+	height: 230px;
+	padding: 0px;
+    margin-left: 15px;
+    border-radius: 3px;
+    border: 1px solid #bababa;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT>*{
+	display: inline-block;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT .ttSection{
+	width: 60px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT .ttDetail{
+	width: 160px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT span{
+	margin: 0px 8px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT span:first-child{
+	margin-left: 0px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.add>label{
+	width: 100%;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.add>i.add{
+	float: right;
+	margin: 10px 20px;
+}
+
+.component_my3rd_widget_createService .steps .step3 div.chkTT i.delete{
+	margin-left: 20px;
+}
+
+.component_my3rd_widget_createService .steps .step4>div{
+    padding: 10px 180px!important;
+}
+
+.component_my3rd_widget_createService .steps .step5>div:first-child{
+    padding: 10px 0px 0px 300px!important;
+}
+
+.component_my3rd_widget_createService .steps .step4 div.customScrollBar{
+    height: 320px; 
+    border: 1px solid #bababa;
+    padding-left: 10px;
+}
+
+.component_my3rd_widget_createService .steps .step4 .form-group>div>div,
+.component_my3rd_widget_createService .steps .step4 .form-group>div>input,
+.component_my3rd_widget_createService .steps .step5 .form-group>div>div,
+.component_my3rd_widget_createService .steps .step5 .form-group>div>input{
+    display: inline-block;
+}
+
+.component_my3rd_widget_createService .steps .step4 .form-group>div>input,
+.component_my3rd_widget_createService .steps .step5 .form-group>div>input{
+    width: 100px;
+}
+
+.component_my3rd_widget_createService .steps .step6 .finalInfo{
+    text-align: center;
+    padding-top: 90px!important; 
+    font-size: 15px;
+}
+
+.component_my3rd_widget_createService .steps .step6 .finalInfo>span{
+    display: block;
+}
+
+.component_my3rd_widget_createService .steps .step6 .finalInfo i{
+    color: #67bbaa; 
+    font-size: 17px; 
+    margin-right: 5px; 
+    margin-bottom: 10px;
+}

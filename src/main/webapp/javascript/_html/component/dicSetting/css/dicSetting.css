@@ -1,0 +1,46 @@
+.component_dicSetting {
+    height: 100%;
+    width: 100%;
+}
+
+.component_dicSetting .search {
+	width: 50%;
+    max-width: 300px;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+.component_dicSetting > .content {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 10px;
+    top: 72px;
+}
+
+.component_dicSetting > .content > div {
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.component_dicSetting > .content > .detail label.check {
+    padding-left: 35px;
+}
+
+.component_dicSetting > .content > .grid {
+    margin-left: 5%;
+    width: 38%;
+}
+
+.component_dicSetting > .content > .detail {
+    width: 52%;
+    border-left: none;
+}
+
+.component_dicSetting label.labelForVal {
+    text-align: left;
+    font-weight: normal;
+}

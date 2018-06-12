@@ -1,0 +1,85 @@
+
+.static_subUserVerify{
+    height: 100%;
+}
+
+.static_subUserVerify .icon{
+    width: 100%;
+    height: 100px;
+    background: url(../../../common/linkimg/logo.png) no-repeat;
+    background-position: 30% 20%;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+.static_subUserVerify form{
+    height: 480px;
+    max-width: 300px;
+    width: 100%;
+}
+
+@media(max-width: 300px){
+    .static_subUserVerify form{
+        padding: 0px 10px;
+    }
+}
+
+.static_subUserVerify form .pt{
+    text-align: center; 
+    font-size: 18px
+}
+
+.static_subUserVerify form>button{
+	margin-top: 20px;
+    width: 100%;
+}
+
+.static_subUserVerify form>p{
+	margin-top: 30px;
+}
+
+
+.static_subUserVerify .verifyDiv{
+	display: inline-block;
+	width: 100%;
+}
+
+.static_subUserVerify .verifyDiv>*{
+	float: left;
+}
+
+.static_subUserVerify .verifyDiv .btn{
+	color: #635f5f;
+	border: 1px solid #ccc;
+}
+
+.static_subUserVerify .verifyDiv input{
+	width: 40%;
+	margin-right: 10px;
+}
+
+
+.static_subUserVerify .copyright{
+	position: absolute;
+	bottom: 16px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+
+.static_subUserVerify .areaForm{
+    text-align: left;
+    padding-top: 10px;
+    position: relative;
+}
+
+.static_subUserVerify .areaForm>i{
+    cursor: pointer; 
+    float: right; 
+    margin-top: 6px; 
+    color: #aaa;
+}
+
+.static_subUserVerify .areaForm>i:hover{
+    color: rgb(103, 106, 108);
+}

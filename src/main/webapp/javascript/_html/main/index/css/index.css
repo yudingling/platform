@@ -1,0 +1,26 @@
+
+.main_index{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.main_index>.top{
+	height: 50px;
+}
+
+.main_index>.content{
+    position: absolute;
+    top: 50px;
+    background-color: #f6f6f5;
+    bottom: 0px;
+    width: 100%;
+}
+
+.main_index>.content>.contentInner{
+    height: 100%;
+    width: 100%;
+}
+
+.main_index>.content>.contentInner>div{
+    animation-duration: 0.5s;
+}

@@ -1,0 +1,20 @@
+.component_ruleMgr_widget_thw{
+	width: 100%;
+}
+
+.component_ruleMgr_widget_thw input[type='text']{
+	width: 90px;
+}
+
+.component_ruleMgr_widget_thw div.radio:not(:first-child){
+	margin-top: 10px;
+}
+
+.component_ruleMgr_widget_thw div.radio>label>*{
+	display: inline-block;
+}
+
+.component_ruleMgr_widget_thw div.radio>label>input[type='radio']{
+	margin-top: 8px;
+}
+

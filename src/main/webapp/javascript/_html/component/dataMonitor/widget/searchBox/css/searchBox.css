@@ -1,0 +1,134 @@
+.component_dataMonitor_widget_searchBox{
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+}
+
+.component_dataMonitor_widget_searchBox>*{
+    border: none;
+}
+
+.component_dataMonitor_widget_searchBox>.input-group-addon{
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+.component_dataMonitor_widget_searchBox>*:first-child,
+.component_dataMonitor_widget_searchBox.hideMenu>input{
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+}
+
+.component_dataMonitor_widget_searchBox>.input-group-addon.search{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.component_dataMonitor_widget_searchBox>.menu>div{
+    background: url(../img/menu.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+}
+
+.component_dataMonitor_widget_searchBox>.remove>div:before{
+    content: '';
+    display: block;
+    background: url(../img/clear.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+    transition: background 0.15s;
+}
+
+.component_dataMonitor_widget_searchBox>.remove>div.wait:before{
+    background: url(../img/wait.gif) no-repeat;
+}
+
+.component_dataMonitor_widget_searchBox.init>.remove{
+    display: none;
+}
+
+.component_dataMonitor_widget_searchBox>.search>div{
+    background: url(../img/search.png) no-repeat;
+    background-position: 0px 0px;
+    height: 24px;
+    width: 24px;
+}
+.component_dataMonitor_widget_searchBox>.search:hover>div{
+    background-position: -24px 0px;
+}
+
+.component_dataMonitor_widget_searchBox>.split{
+    padding: 0px;
+    cursor: default;
+}
+
+.component_dataMonitor_widget_searchBox.init>.split{
+    display: none;
+}
+
+.component_dataMonitor_widget_searchBox>.split>div{
+    width: 1px;
+    height: 24px;
+    border-left: 1px solid #ccc;
+}
+
+.component_dataMonitor_widget_searchBox.hideMenu>.menu{
+    display: none;
+}
+
+/*auto hint*/
+
+.component_dataMonitor_widget_searchBox>ul{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 100%;
+    background-color: #fff;
+    display: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 1px solid #e4e4e4;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+    font-size: 15px;
+    z-index: 1;
+    color: #8c8c8c;
+}
+
+.component_dataMonitor_widget_searchBox>ul>li{
+    padding-left: 58px;
+    line-height: 38px;
+    cursor: default;
+}
+
+.component_dataMonitor_widget_searchBox>ul>li>i.fa{
+    position: absolute;
+    left: 17px;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.component_dataMonitor_widget_searchBox>ul>li>div{
+    width: 100%;
+}
+
+.component_dataMonitor_widget_searchBox>ul>li:hover{
+    background-color: #fafafa;
+}
+
+.component_dataMonitor_widget_searchBox>ul>li:not(:last-child)>div{
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.component_dataMonitor_widget_searchBox.showPrompt>ul{
+    display: block;
+}
+
+.component_dataMonitor_widget_searchBox.showPrompt>*:first-child,
+.component_dataMonitor_widget_searchBox.hideMenu.showPrompt>input{
+    border-bottom-left-radius: 0px!important;
+}
+
+.component_dataMonitor_widget_searchBox.showPrompt>.input-group-addon.search{
+    border-bottom-right-radius: 0px;
+}

@@ -1,0 +1,163 @@
+.component_deviceMgr_widget_customCmd .search{
+    height: 46px;
+}
+
+.component_deviceMgr_widget_customCmd .search>form .tm{
+    width: 100px;
+}
+
+.component_deviceMgr_widget_customCmd .search>form *{
+	display: inline-block;
+}
+
+.component_deviceMgr_widget_customCmd .search>form>button{
+    height: 36px;
+    width: 80px;
+}
+
+.component_deviceMgr_widget_customCmd .search>form>button.switch{
+    display: none;
+}
+
+.component_deviceMgr_widget_customCmd .search>form>*:not(.add):not(.save){
+    margin-right: 20px;
+}
+
+.component_deviceMgr_widget_customCmd .search.showAdd>form>*:not(.switch){
+    display: none;
+}
+
+.component_deviceMgr_widget_customCmd .search.showAdd>form>button.switch{
+    display: block;
+}
+
+.component_deviceMgr_widget_customCmd .content{
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1>.grid{
+    width: 55%;
+}
+
+/* hide the horizontal scroll bar in jqxgrid */
+.component_deviceMgr_widget_customCmd .content>.step1>.grid .jqx-scrollbar-custom-zd[id^='horizontal']{
+    display: none;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1>.detail{
+    width: 45%;
+    border-left: none;
+    background-color: #f1f1f1;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1>.detail form>div{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1>.detail form>div>*:first-child{
+    text-align: center;
+    font-weight: normal;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step1 label.labelForVal{
+    text-align: left;
+    font-weight: normal;
+    padding-left: 0px;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step2{
+    background-color: #f1f1f1;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step2>div{
+    float: left;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step2>.newTree{
+    width: 37%;
+    padding: 10px;
+}
+
+.component_deviceMgr_widget_customCmd .content>.step2>.newContent{
+    width: 63%;
+    padding: 17px 10px 0px 10px;
+}
+
+
+/* 111 */
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px !important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > input {
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i:hover {
+    border-color: #ccc;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > * {
+    display: inline-block;
+    float: left;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > * {
+    line-height: 45px;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i {
+    font-size: 12px;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i:first-child {
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i:first-child + i {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_deviceMgr_widget_customCmd > .content .grid > .svPage > i:first-child:hover + i {
+    border-left-color: #ccc;
+}
+
+@media(max-width: 800px){
+	.component_deviceMgr_widget_customCmd .search>form .nameOrIdFG{
+		display: none;
+	}
+}

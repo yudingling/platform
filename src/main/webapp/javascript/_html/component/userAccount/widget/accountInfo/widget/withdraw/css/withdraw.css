@@ -1,0 +1,99 @@
+.component_userAccount_widget_accountInfo_withdraw,
+.component_userAccount_widget_accountInfo_withdraw>*{
+    width: 100%;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>form .btn-group>label{
+    width: 70px;
+    padding: 4px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>form .btn-group>label.active{
+    background-color: #67bbaa;
+    color: #fff;
+    border-color: #67bbaa;
+}
+
+.component_userAccount_widget_accountInfo_withdraw .accountInfo label{
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw .accountInfo .form-group>label:first-child{
+    text-align: right;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>*{
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i{
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px!important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>input{
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px; 
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i{
+    font-size: 12px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i:hover{
+    border-color: #ccc;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i:first-child{
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i:first-child+i{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_userAccount_widget_accountInfo_withdraw>div>div.wdPage>i:first-child:hover+i{
+    border-left-color: #ccc;
+}
+
+.component_userAccount_widget_accountInfo_withdraw table tr{
+    height: 35px;
+    line-height: 35px;
+    transition: background-color 0.4s;
+}
+
+.component_userAccount_widget_accountInfo_withdraw table tr:not(.h):not(.empty):hover{
+    background-color: #eeeff1;
+}
+
+.component_userAccount_widget_accountInfo_withdraw table td,
+.component_userAccount_widget_accountInfo_withdraw table th{
+    text-align: center;
+}
+
+.component_userAccount_widget_accountInfo_withdraw table tr.empty>td{
+    text-align: center!important;
+    line-height: 80px!important;
+    padding: 0px!important;
+}

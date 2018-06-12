@@ -1,0 +1,68 @@
+
+.fork-me-wrapper {
+  width: 100px;
+  height: 100px;
+  position: absolute!important;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 6;
+}
+
+.fork-me {
+    width: auto;
+    height: auto;
+  position: absolute;
+  top: 8px;
+    right: -31px;
+    padding: 0px;
+    box-shadow: 0 0 7px 0 #888;
+  background-color: #a00000;
+  background-repeat: no-repeat;
+  background-position: center center;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  overflow: hidden;
+  white-space: nowrap;
+    text-decoration: none;
+}
+
+
+  .fork-me-link, .fork-me-link:link, .fork-me-link:visited, .fork-me-link:hover, .fork-me-link:focus, .fork-me-link:active {
+      display: block;
+  height: 100%;
+  text-decoration: none;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 3px 38px;
+    border: 1px solid #fff;
+    text-shadow: 0 0 5px #444;
+    font-size: 10pt;
+  }
+
+.fork-me-link:focus {
+  text-decoration: none;
+}
+
+.fork-me-text {
+  display: inline;
+}
+
+
+.fork-me-left {
+  left: 0;
+  right: auto;
+}
+.fork-me-left .fork-me {
+  left: -40px;
+    right: auto;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.fork-me-fixed {
+  position: fixed;
+}

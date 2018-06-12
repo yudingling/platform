@@ -1,0 +1,51 @@
+.component_3rdStore_widget_3rdsinfo{
+    width: 100%;
+}
+
+.component_3rdStore_widget_3rdsinfo>*:not(.modal){
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descImg{
+    position: relative; 
+    text-align: center; 
+    padding: 0px;
+    background: linear-gradient(to top, #e6eae9, rgba(92, 75, 81, 0));
+    max-height: 200px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT1 span{
+    margin-left: 5px;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT1 i{
+    color: #8baf04;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT1 span{
+    color: #929292;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT2{
+    padding-top: 10px;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT2>span:first-child{
+    font-weight: bold;
+}
+
+.component_3rdStore_widget_3rdsinfo>.descT2>div:last-child{
+    margin-top: 10px;
+}
+
+.component_3rdStore_widget_3rdsinfo .authList>li{
+    line-height: 25px;
+}
+
+.component_3rdStore_widget_3rdsinfo *[title]{
+    cursor: pointer;
+}

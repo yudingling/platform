@@ -1,0 +1,135 @@
+.component_3rdReview {
+    height: 100%;
+    width: 100%;
+}
+
+.component_3rdReview .search {
+    width: 50%;
+    max-width: 300px;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+.component_3rdReview > .content {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    top: 72px;
+}
+
+.component_3rdReview > .content > div {
+    float: left;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.component_3rdReview > .content > .detail label.check {
+    padding-left: 35px;
+}
+
+.component_3rdReview > .content > .grid {
+    margin-left: 5%;
+    width: 38%;
+}
+
+.component_3rdReview > .content > .grid>div:first-child{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	bottom: 50px;
+}
+
+.component_3rdReview > .content > .grid>div:last-child{
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	height: 40px;
+}
+
+.component_3rdReview > .content > .detail {
+    width: 52%;
+    border-left: none;
+}
+
+.component_3rdReview > .content > .detail>div>.outter{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	bottom: 40px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.component_3rdReview > .content > .detail>div>.checkBtn{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+}
+
+.component_3rdReview label.labelForVal {
+    text-align: left;
+    font-weight: normal;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px !important;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+.component_3rdReview > .content > .grid > .svPage > input {
+    margin-top: 7px;
+    margin-right: 5px;
+    width: 40px;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i:hover {
+    border-color: #ccc;
+}
+
+.component_3rdReview > .content > .grid > .svPage > * {
+    display: inline-block;
+    float: left;
+}
+
+.component_3rdReview > .content > .grid > .svPage > * {
+    line-height: 45px;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i {
+    font-size: 12px;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i:first-child {
+    margin-right: 0px;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i:first-child + i {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.component_3rdReview > .content > .grid > .svPage > i:first-child:hover + i {
+    border-left-color: #ccc;
+}
