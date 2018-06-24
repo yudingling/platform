@@ -19,9 +19,9 @@ import junit.framework.TestCase;
 public class WechatMenu extends TestCase {
 	public void setMenu(){
 		String menuJson = "{\"button\":["
-			+ "{\"name\":\"查询\", \"sub_button\":[{\"type\":\"view\",\"name\":\"设备信息\",\"url\":\"http://hfsys.cn/platformMobile/s/deviceInfo\"},{\"type\":\"view\",\"name\":\"数据查询\",\"url\":\"http://hfsys.cn/platformMobile/s/dataMonitor\"},{\"type\":\"view\",\"name\":\"最新数据\",\"url\":\"http://hfsys.cn/platformMobile/s/latestData\"}]},"
-			+ "{\"name\":\"个人中心\", \"sub_button\":[{\"type\":\"view\",\"name\":\"个人信息\",\"url\":\"http://hfsys.cn/platformMobile/s/userInfo\"},{\"type\":\"view\",\"name\":\"消息中心\",\"url\":\"http://hfsys.cn/platformMobile/s/infoCenter\"},{\"type\":\"view\",\"name\":\"服务中心\",\"url\":\"http://hfsys.cn/platformMobile/s/service3rd\"}]},"
-			+ "{\"name\":\"设置\", \"sub_button\":[{\"type\":\"view\",\"name\":\"账号绑定\",\"url\":\"http://hfsys.cn/platformMobile/s/appBind\"}]}"
+			+ "{\"name\":\"查询\", \"sub_button\":[{\"type\":\"view\",\"name\":\"设备信息\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/deviceInfo\"},{\"type\":\"view\",\"name\":\"数据查询\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/dataMonitor\"},{\"type\":\"view\",\"name\":\"最新数据\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/latestData\"}]},"
+			+ "{\"name\":\"个人中心\", \"sub_button\":[{\"type\":\"view\",\"name\":\"个人信息\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/userInfo\"},{\"type\":\"view\",\"name\":\"消息中心\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/infoCenter\"},{\"type\":\"view\",\"name\":\"服务中心\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/service3rd\"}]},"
+			+ "{\"name\":\"设置\", \"sub_button\":[{\"type\":\"view\",\"name\":\"账号绑定\",\"url\":\"http://cloud.hfsys.cn/platformMobile/s/appBind\"}]}"
 			+ "]}";
 		
 		System.out.println(menuJson);
