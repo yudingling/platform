@@ -18,7 +18,7 @@ define(['tool/base',
 		init: function(domObj, options){
             document.documentElement.setAttribute("data-agent", navigator.userAgent);
             
-            domObj.addClass('myBlur');
+            domObj.addClass('myBlur').empty();
             
             var div = $('<div style="background-image: url('+ options.img +')"></div>');
             _divblurCss(div, options.blur);
